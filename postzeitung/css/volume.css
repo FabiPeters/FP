@@ -1,0 +1,87 @@
+/* Main text container styling */
+.volume_text {
+    font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.4;  /* Reduced from 1.6 */
+    color: #333;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1.5rem;  /* Reduced from 2rem */
+}
+
+/* Page number styling */
+.page-number {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.8rem 0;  /* Reduced from 1.5rem */
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Front page styling */
+.front {
+    margin-bottom: 1.2rem;  /* Reduced from 2rem */
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Body and articles styling */
+.body {
+    text-align: justify;
+}
+
+/* Article styling */
+.article {
+    margin-bottom: 1.5rem;  /* Reduced from 2.5rem */
+    padding-bottom: 1rem;  /* Reduced from 1.5rem */
+    border-bottom: 1px solid #e5e1d8;
+}
+
+.article:last-child {
+    border-bottom: none;
+}
+
+/* Headings styling */
+h2 {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 1.2rem;  /* Slightly reduced */
+    margin: 0.8rem 0 0.6rem;  /* Reduced from 1.5rem 0 1rem */
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Paragraphs styling */
+p {
+    margin-bottom: 0.8rem;  /* Reduced from 1.2rem */
+    margin-top: 0.3rem;
+}
+
+/* Inline text styling */
+.aq {
+    font-family:sans-serif /* needs to be visually distinct from the rest of the text */
+}
+
+/* Back section styling */
+.back {
+    margin-top: 1.5rem;  /* Reduced from 3rem */
+    text-align: center;
+}
+
+/* Line breaks in historical documents often have less spacing */
+br {
+    line-height: 1.2;
+    display: block;
+    content: "";
+    margin-top: 0.1rem;
+}
+
+/* Optional: Add some responsive adjustments */
+@media screen and (max-width: 600px) {
+    .volume_text {
+        padding: 0.8rem;  /* Reduced from 1rem */
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+}

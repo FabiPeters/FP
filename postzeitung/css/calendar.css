@@ -1,0 +1,105 @@
+
+/*.calendar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}*/
+.month {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+    background: #f5f5f5;
+}
+
+.month-name {
+    margin: 0.5em;
+
+}
+
+table {
+    padding: 1em;
+    width: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+td {
+    width: 3em;
+    height: 2em;
+    /*text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;*/
+}
+
+/* Calendar tooltip styles */
+td.has-article {
+    position: relative;
+    cursor: pointer;
+}
+
+.has-article {
+    background-color: #e6f2ff;
+    font-weight: bold;
+}
+
+.multi-article {
+    background-color: #d0e8ff;
+}
+
+.day-number sup {
+    font-size: 0.65em;
+    color: #0066cc;
+    vertical-align: super;
+}
+
+.article-tooltip {
+    visibility: hidden;
+    width: auto;
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+td.has-article:hover .article-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.article-link {
+    margin: 5px 0;
+}
+
+.article-link a {
+    color: #0066cc;
+    text-decoration: none;
+    display: block;
+    padding: 3px 0;
+}
+
+.article-link a:hover {
+    text-decoration: underline;
+}
+
+.tooltip-divider {
+    margin: 5px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}

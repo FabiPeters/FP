@@ -1,0 +1,73 @@
+
+body {
+    --primary-color: blue;
+}
+
+#page-header {
+    padding: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#site-header {
+    padding: 2em;
+    border-bottom: 2px solid #777;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.main{
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+main {
+    
+}
+
+footer {
+    padding: 2em;
+    border-top: 2px solid #777;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/* Document Styling */
+
+.text {
+    max-width: 800px;
+    font-family: "Roboto Serif", serif;
+    color: #333;
+}
+
+.text.front {
+    text-align: center;
+}
+
+span.aq {
+    font-family: Roboto, sans-serif;
+}
+
+span.g {
+    letter-spacing:0.3em
+}
+
+span.page-number {
+    font-size: 0.8em;
+    color: #666;
+}
+
+span.page-number::before {
+    content: "[Seite ";
+}
+
+span.page-number::after {
+    content: "]";
+}
+
+.sic::after {
+    content: " [sic]";
+    font-size: 0.8em;
+    color: #666;
+}
