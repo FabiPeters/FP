@@ -1,6 +1,6 @@
 
 body {
-    --primary-color: blue;
+
 }
 
 #page-header {
@@ -36,7 +36,6 @@ footer {
 /* Document Styling */
 
 .text {
-    max-width: 800px;
     font-family: "Roboto Serif", serif;
     color: #333;
 }
