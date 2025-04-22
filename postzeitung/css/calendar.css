@@ -10,7 +10,6 @@
     justify-content: center;
     flex-direction: column;
     margin: 1em;
-    background: #f5f5f5;
 }
 
 .month-name {
@@ -70,10 +69,10 @@ td.has-article {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 10px;
     position: absolute;
-    z-index: 1;
+    z-index: 20;
     bottom: 100%;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -100%;
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -83,11 +82,19 @@ td.has-article:hover .article-tooltip {
     opacity: 1;
 }
 
+.article-tooltip ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .article-link {
     margin: 5px 0;
 }
 
 .article-link a {
+    white-space: nowrap;
+    width: 100%;
     color: #0066cc;
     text-decoration: none;
     display: block;
