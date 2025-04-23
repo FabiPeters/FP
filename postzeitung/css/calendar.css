@@ -5,21 +5,27 @@
     flex-wrap: wrap;
     justify-content: center;
 }*/
-.month {
+
+main.calendar {
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.month {
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    margin: 1em;
 }
 
 .month-name {
-    margin: 0.5em;
-
+    font-size: 1.2em;
+    margin: 0.5em 16px;
+    text-align: center;
 }
 
-table {
-    padding: 1em;
-    width: auto;
+.month table {
+    margin: 1em;
     border-collapse: collapse;
     text-align: center;
 }
@@ -109,4 +115,21 @@ td.has-article:hover .article-tooltip {
     margin: 5px 0;
     border: 0;
     border-top: 1px solid #eee;
+}
+
+@media screen and (min-width : 35.5em) {
+    .month {
+        
+    }
+}
+
+@media screen and (min-width : 48em) {
+    .month {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 64em) {
+    .month {
+        width: 33.3333%;
+    }
 }
