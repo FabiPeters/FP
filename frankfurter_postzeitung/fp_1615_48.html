@@ -2,47 +2,116 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frankfurter Postzeitung, Jahrgang 1615, 48</title>
       <link rel="stylesheet" href="frankfurter_postzeitung.css">
-      <title>Jg. 1615, Ausgabe 48</title>
-   </head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
-      <header id="site-header">
-         <nav class="breadcrumbs"><a href="index.html">Frankfurter Postzeitung</a><span> / </span><a href="all_years.html">Jahrgänge</a><span> / </span><a href="fp_1615.html">1615</a><span> / </span><a href="fp_1615_48.html" class="active">48</a></nav>
-      </header>
-      <div class="page-content">
-         <aside>
-            <nav id="horizontal"><a href="fp_1615_47.html"> &lt; </a><span> — </span><a href="fp_1615_49.html"> &gt; </a></nav>
-            <nav id="siblings">
-               <ul>
-                  <li><a href="fp_1615_39.html">39</a></li>
-                  <li><a href="fp_1615_42.html">42</a></li>
-                  <li><a href="fp_1615_43.html">43</a></li>
-                  <li><a href="fp_1615_46.html">46</a></li>
-                  <li><a href="fp_1615_47.html">47</a></li>
-                  <li>48</li>
-                  <li><a href="fp_1615_49.html">49</a></li>
-               </ul>
-            </nav>
-         </aside>
-         <main>
+      <header>
+         <nav class="breadcrumbs">
             <ul>
-               <li><a href="fp_1615_48_1.html">
-                     Auß deß Graffenhaage vom 30. Novemb. 1615.
-                     				</a></li>
-               <li><a href="fp_1615_48_2.html">
-                     Auß Coͤlln vom 10. Decemb. 1615.
-                     				</a></li>
-               <li><a href="fp_1615_48_3.html">
-                     Auß Rom vom 21. Novemb.
-                     				</a></li>
-               <li><a href="fp_1615_48_4.html">
-                     Auß Venedig vom 27. Dito.
-                     				</a></li>
+               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
+               <li class="crumb"><a href="fp_1615.html">1615</a></li>
+               <li><a href="fp_1615_48.html" class="active">48</a></li>
             </ul>
-         </main>
-      </div>
+         </nav>
+         <nav class="horizontal"><a href="fp_1615_47.html"><button>&lt;</button></a><span> — </span><a href="fp_1615_49.html"><button>&gt;</button></a></nav>
+         <hr>
+      </header>
+      <aside id="nav">
+         <nav id="siblings">
+            <ul>
+               <li><a href="fp_1615_39.html">39</a></li>
+               <li><a href="fp_1615_42.html">42</a></li>
+               <li><a href="fp_1615_43.html">43</a></li>
+               <li><a href="fp_1615_46.html">46</a></li>
+               <li><a href="fp_1615_47.html">47</a></li>
+               <li>48</li>
+               <li><a href="fp_1615_49.html">49</a></li>
+            </ul>
+         </nav>
+      </aside>
+      <main>
+         <h1>Frankfurter Postzeitung, Jahrgang 1615, 48</h1>
+         <section id="map_coresspondence"></section><script>
+                var map = L.map('map_coresspondence').setView([49.54, 5.76], 4);
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+                L.marker([50.11, 8.68]).addTo(map).bindPopup("Frankfurt").bindTooltip("Frankfurt");
+                
+                    L.marker([52.08, 4.31]).bindPopup(`<a href="fp_1615_48_1.html" rel="noopener noreferrer">1. Den Haag (30. 11.)</a>`).bindTooltip("1. Den Haag (30. 11.)").addTo(map);
+                
+                    L.marker([50.942222222222, 6.9577777777778]).bindPopup(`<a href="fp_1615_48_2.html" rel="noopener noreferrer">2. Köln (10. 12.)</a>`).bindTooltip("2. Köln (10. 12.)").addTo(map);
+                
+                    L.marker([41.893055555556, 12.482777777778]).bindPopup(`<a href="fp_1615_48_3.html" rel="noopener noreferrer">3. Rom (21. 11.)</a>`).bindTooltip("3. Rom (21. 11.)").addTo(map);
+                
+                    L.marker([45.439722222222, 12.331944444444]).bindPopup(`<a href="fp_1615_48_4.html" rel="noopener noreferrer">4. Venedig (27. 11.)</a>`).bindTooltip("4. Venedig (27. 11.)").addTo(map);
+                
+                    L.marker([50.0875, 14.421388888888888]).bindPopup(`<a href="fp_1615_48_5.html" rel="noopener noreferrer">5. Prag (28. 11.)</a>`).bindTooltip("5. Prag (28. 11.)").addTo(map);
+                </script><section>
+            <ol>
+               <li><a href="fp_1615_48_1.html">
+                     Auß deß Graffenhaage vom 30. Novemb. 1615.</a><ul>
+                     <li><a href="fp_1615_48_1.html#1">
+                           AVß Franckreich ſeynd ſeithero [...] </a></li>
+                     <li><a href="fp_1615_48_1.html#2">Die Vnirten Printzen ſollen [...] </a></li>
+                     <li><a href="fp_1615_48_1.html#3">Erſtlich daß die alte Koͤnigin
+                            [...] </a></li>
+                     <li><a href="fp_1615_48_1.html#4">Sonſten waren die Brandenburgiſche Reutter [...] </a></li>
+                     <li><a href="fp_1615_48_1.html#5">Die juͤngſt auß Londen melden/ [...] </a></li>
+                     <li><a href="fp_1615_48_1.html#6">Als Herr Graff Ernſt Caſimir von Naſſaw
+                            [...] </a></li>
+                     <li><a href="fp_1615_48_1.html#7">Kuͤnfftigen Mittwochen iſt [...] </a></li>
+                     <li><a href="fp_1615_48_1.html#8">Vor wenig Tagen iſt [...] </a></li>
+                  </ul>
+               </li>
+               <li><a href="fp_1615_48_2.html">
+                     Auß Coͤlln vom 10. Decemb. 1615.</a><ul>
+                     <li><a href="fp_1615_48_2.html#1">Wir haben mit vnſerm Juͤngſten vermeld/ [...] </a></li>
+                     <li><a href="fp_1615_48_2.html#2">Auß Hamburg. [...] </a></li>
+                     <li><a href="fp_1615_48_2.html#3">Der Rittmeiſter Quadt von Vſengarten/ [...] </a></li>
+                     <li><a href="fp_1615_48_2.html#4">Auß Franckreich hat man/ [...] </a></li>
+                     <li><a href="fp_1615_48_2.html#5">Sonſt will auch verlauten/ [...] </a></li>
+                     <li><a href="fp_1615_48_2.html#6">Auß Engellandt hat man/ [...] </a></li>
+                     <li><a href="fp_1615_48_2.html#7">Weilen der Koͤnig von Dennemarck
+                            [...] </a></li>
+                     <li><a href="fp_1615_48_2.html#8">Von Bruͤſſel wird geſchrieben/ [...] </a></li>
+                     <li><a href="fp_1615_48_2.html#9">Etlche Tag hernacher iſt [...] </a></li>
+                     <li><a href="fp_1615_48_2.html#10">Der 
+                           Comte du Boucquoy
+                           aber [...] </a></li>
+                     <li><a href="fp_1615_48_2.html#11"> Zu Duͤſſeldorff hat man [...] </a></li>
+                  </ul>
+               </li>
+               <li><a href="fp_1615_48_3.html">
+                     Auß Rom vom 21. Novemb.</a><ul>
+                     <li><a href="fp_1615_48_3.html#1">Sontags iſt [...] </a></li>
+                  </ul>
+               </li>
+               <li><a href="fp_1615_48_4.html">
+                     Auß Venedig vom 27. Dito.</a><ul>
+                     <li><a href="fp_1615_48_4.html#1">
+                           Meylaͤndische Brieff bringen/ [...] </a></li>
+                     <li><a href="fp_1615_48_4.html#2">Auß Leuante hat man [...] </a></li>
+                     <li><a href="fp_1615_48_4.html#3">Auß Conſtantinopel wird geſchrieben [...] </a></li>
+                  </ul>
+               </li>
+               <li><a href="fp_1615_48_5.html">
+                     Aus Prag vom 28. Ditto.</a><ul>
+                     <li><a href="fp_1615_48_5.html#1">Vorgeſtern nach Mittag [...] </a></li>
+                  </ul>
+               </li>
+            </ol>
+         </section>
+      </main>
+      <aside id="meta"></aside>
       <footer>
-         <div>Hier entsteht ein Footer.</div>
-      </footer><script src="frankfurter_postzeitung.js"></script></body>
+         <hr>
+         <ul>
+            <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>
+         </ul>
+      </footer>
+   </body>
 </html>

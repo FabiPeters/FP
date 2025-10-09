@@ -2,71 +2,86 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frankfurter Postzeitung, Jahrgang 1618, 4, Korrespondenz 7</title>
       <link rel="stylesheet" href="frankfurter_postzeitung.css">
-      <title>Jg. 1618, Ausg. 4, Artikel 7</title>
-   </head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
-      <header id="site-header">
-         <nav class="breadcrumbs"><a href="index.html">Frankfurter Postzeitung</a><span> / </span><a href="all_years.html">Jahrgänge</a><span> / </span><a href="fp_1618.html">1618</a><span> / </span><a href="fp_1618_4.html">4</a><span> / </span><a href="fp_1618_4_7.html" class="active">7</a></nav>
+      <header>
+         <nav class="breadcrumbs">
+            <ul>
+               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
+               <li class="crumb"><a href="fp_1618.html">1618</a></li>
+               <li class="crumb"><a href="fp_1618_4.html">4</a></li>
+               <li><a href="fp_1618_4_7.html" class="active">7. Köln (1. 2.)</a></li>
+            </ul>
+         </nav>
+         <nav class="horizontal"><a href="fp_1618_4_6.html"><button>&lt;</button></a><span> — </span><a href="fp_1618_16_1.html"><button>&gt;</button></a></nav>
+         <hr>
       </header>
-      <div class="page-content">
-         <aside>
-            <nav id="horizontal"><a href="fp_1618_4_6.html"> &lt; </a><span> — </span><a href="fp_1618_16_1.html"> &gt; </a></nav>
-            <nav id="siblings">
-               <ul>
-                  <li><a href="fp_1618_4_1.html">1</a></li>
-                  <li><a href="fp_1618_4_2.html">2</a></li>
-                  <li><a href="fp_1618_4_3.html">3</a></li>
-                  <li><a href="fp_1618_4_4.html">4</a></li>
-                  <li><a href="fp_1618_4_5.html">5</a></li>
-                  <li><a href="fp_1618_4_6.html">6</a></li>
-                  <li>7</li>
-               </ul>
-            </nav>
-         </aside>
-         <main>
-            <article class="letter" id="fp_1618_4_7">
-               
-               <div class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904384" target="_blank">SUUB: 904384</a></div>
-               <h2>
-                  Auß <span class="place">Coͤlln</span> vom <span class="date" title="1618-02-01">1. Febr.</span>
+      <aside id="nav">
+         <nav id="siblings">
+            <ul>
+               <li><a href="fp_1618_4_1.html">1. Košice (8. 1.)</a></li>
+               <li><a href="fp_1618_4_2.html">2. Wien (17. 1.)</a></li>
+               <li><a href="fp_1618_4_3.html">3. Prag (23. 1.)</a></li>
+               <li><a href="fp_1618_4_4.html">4. Rom (13. 1.)</a></li>
+               <li><a href="fp_1618_4_5.html">5. Venedig (19. 1.)</a></li>
+               <li><a href="fp_1618_4_6.html">6. Den Haag (25. 1.)</a></li>
+               <li>7. Köln (1. 2.)</li>
+            </ul>
+         </nav>
+      </aside>
+      <main>
+         <section>
+            <article class="correspondence" id="fp_1618_4_7">
+               <span class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904384" target="_blank">SUUB: 904384</a></span><h2>
+                  <span class="lb">1</span>Auß Coͤlln vom <span class="date" title="1618-02-01">1. Febr.</span>
                   </h2>
                
                <p>
-                  Mit Particular Brieffe vernimpt man auß <span class="place">Hollandt</span>/ daß der leidige Religions-
-                  					<br>ſtreit noch eben ſtarck im Schwang gehe/ vnnd werde noch Muͤhe koſten/ denſelben
-                  					<br>gaͤntzlich hinzulegen/ der Hollaͤndiſchen Staͤnde Verſamblung waͤhret auch noch.
-                  				</p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_4_7.html#1" id="1" class="correspondence-milestone">[#1:]</a>
+                  Mit Particular Brieffe vernimpt man auß Hollandt/ daß der leidige Religions-
+                  <span class="br"></span><br><span class="lb">2</span>ſtreit noch eben ſtarck im Schwang gehe/ vnnd werde noch Muͤhe koſten/ denſelben
+                  <span class="br"></span><br><span class="lb">3</span>gaͤntzlich hinzulegen/ der Hollaͤndiſchen Staͤnde Verſamblung waͤhret auch noch.</p>
                
                <p>
-                  Jn <span class="place">dem Haag</span> helt der Schwediſche Amb. bey den Herꝛn Staden ſtarck an/ ſei-
-                  					<br>nem <span class="person">Koͤnig</span> Krafft mit jme vor dieſem auffgerichten Buͤndnitß 4000. Mann zu zu-
-                  					<br>ſchicken/ vnd zu vnterhalten/ darauff ſich aber die Herꝛn Staden noch nichts gewiſ-
-                  					<br>ſes reſolviren koͤnnen/ iſt zu beſorgen/ wann die Sach/ auff die lange Bahn moͤchte
-                  					<br>gezogen/ vnd die wirckliche Huͤlff nicht geleiſtet werdenſ/ der Schwede werde ſich
+                  <span class="lb">1</span>
+                  <a href="fp_1618_4_7.html#2" id="2" class="correspondence-milestone">[#2:]</a>
+                  Jn dem Haag helt der Schwediſche Amb. bey den Herꝛn Staden ſtarck an/ ſei-
+                  <span class="br"></span><br><span class="lb">2</span>nem Koͤnig Krafft mit jme vor dieſem auffgerichten Buͤndnitß 4000. Mann zu zu-
+                  <span class="br"></span><br><span class="lb">3</span>ſchicken/ vnd zu vnterhalten/ darauff ſich aber die Herꝛn Staden noch nichts gewiſ-
+                  <span class="br"></span><br><span class="lb">4</span>ſes reſolviren koͤnnen/ iſt zu beſorgen/ wann die Sach/ auff die lange Bahn moͤchte
+                  <span class="br"></span><br><span class="lb">5</span>gezogen/ vnd die wirckliche Huͤlff nicht geleiſtet werdenſ/ der Schwede werde ſich
                   ſehr
-                  					<br>vnluſtig darob erzeigen. Es haben die Venediger von den Herꝛn Staden begehrt/
-                  					<br>daß ſie auff jren Koſten in <span class="place">Hollandt</span> 12. groſſe/ vnnd ſtarcke Schiff moͤchten bawen
-                  					<br>laſſen/ hierin wird man jnen ohne Zweiffel gern wilfahren.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">6</span>vnluſtig darob erzeigen. Es haben die Venediger von den Herꝛn Staden begehrt/
+                  <span class="br"></span><br><span class="lb">7</span>daß ſie auff jren Koſten in Hollandt 12. groſſe/ vnnd ſtarcke Schiff moͤchten bawen
+                  <span class="br"></span><br><span class="lb">8</span>laſſen/ hierin wird man jnen ohne Zweiffel gern wilfahren.</p>
                
                <p>
-                  Jhre <span class="person">F. Durchl. Pfaltz Neuburg</span> ſind verſchienen Freytag/ von <span class="place">Weſel</span> zu <span class="place">Duͤſſel-</span>
-                  <br>
-                  <span class="place">dorff</span> wider angelanget/ werden aber in kurtzem nach <span class="place">Bruͤſſel</span> verreiſen/ dieſer Orten
-                  					<br>wil man jetzt widerumb vom Xantiſchen Vertrag reden/ vnd berichten etliche/ daß
-                  					<br>jre F. Durchl nit vngeneigt ſeyn/ mit dem Churhauß Brandenburg ſich wegen der
-                  					<br>
-                  <span class="place">Guͤligiſchen Landen</span>
-                  <span class="aq">prouiſionaliter</span> zu vergleichen/ es ſollen auch noch gewiß die ge-
-                  					<br>ringe Staͤttlin von den ſchweren Guarniſonen erlaſſen werden/ welches wol zu
-                  					<br>wuͤnſchen.
-                  				</p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_4_7.html#3" id="3" class="correspondence-milestone">[#3:]</a>
+                  Jhre F. Durchl. Pfaltz Neuburg ſind verſchienen Freytag/ von Weſel zu Duͤſſel-
+                  <span class="br"></span><br><span class="lb">2</span>dorff wider angelanget/ werden aber in kurtzem nach Bruͤſſel verreiſen/ dieſer Orten
+                  <span class="br"></span><br><span class="lb">3</span>wil man jetzt widerumb vom Xantiſchen Vertrag reden/ vnd berichten etliche/ daß
+                  <span class="br"></span><br><span class="lb">4</span>jre F. Durchl nit vngeneigt ſeyn/ mit dem Churhauß Brandenburg ſich wegen der
+                  <span class="br"></span><br><span class="lb">5</span>
+                  Guͤligiſchen Landen
+                  prouiſionaliter zu vergleichen/ es ſollen auch noch gewiß die ge-
+                  <span class="br"></span><br><span class="lb">6</span>ringe Staͤttlin von den ſchweren Guarniſonen erlaſſen werden/ welches wol zu
+                  <span class="br"></span><br><span class="lb">7</span>wuͤnſchen.</p>
                </article>
-         </main>
-      </div>
+         </section>
+      </main>
+      <aside id="meta">
+         <section class="metadata"></section>
+      </aside>
       <footer>
-         <div>Hier entsteht ein Footer.</div>
-      </footer><script src="frankfurter_postzeitung.js"></script></body>
+         <hr>
+         <ul>
+            <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>
+         </ul>
+      </footer>
+   </body>
 </html>

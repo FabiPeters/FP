@@ -2,72 +2,86 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frankfurter Postzeitung, Jahrgang 1618, 45, Korrespondenz 3</title>
       <link rel="stylesheet" href="frankfurter_postzeitung.css">
-      <title>Jg. 1618, Ausg. 45, Artikel 3</title>
-   </head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
-      <header id="site-header">
-         <nav class="breadcrumbs"><a href="index.html">Frankfurter Postzeitung</a><span> / </span><a href="all_years.html">Jahrgänge</a><span> / </span><a href="fp_1618.html">1618</a><span> / </span><a href="fp_1618_45.html">45</a><span> / </span><a href="fp_1618_45_3.html" class="active">3</a></nav>
+      <header>
+         <nav class="breadcrumbs">
+            <ul>
+               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
+               <li class="crumb"><a href="fp_1618.html">1618</a></li>
+               <li class="crumb"><a href="fp_1618_45.html">45</a></li>
+               <li><a href="fp_1618_45_3.html" class="active">3. Venedig (2. 11.)</a></li>
+            </ul>
+         </nav>
+         <nav class="horizontal"><a href="fp_1618_45_2.html"><button>&lt;</button></a><span> — </span><a href="fp_1618_45_4.html"><button>&gt;</button></a></nav>
+         <hr>
       </header>
-      <div class="page-content">
-         <aside>
-            <nav id="horizontal"><a href="fp_1618_45_2.html"> &lt; </a><span> — </span><a href="fp_1618_45_4.html"> &gt; </a></nav>
-            <nav id="siblings">
-               <ul>
-                  <li><a href="fp_1618_45_1.html">1</a></li>
-                  <li><a href="fp_1618_45_2.html">2</a></li>
-                  <li>3</li>
-                  <li><a href="fp_1618_45_4.html">4</a></li>
-                  <li><a href="fp_1618_45_5.html">5</a></li>
-                  <li><a href="fp_1618_45_6.html">6</a></li>
-                  <li><a href="fp_1618_45_7.html">7</a></li>
-                  <li><a href="fp_1618_45_8.html">8</a></li>
-               </ul>
-            </nav>
-         </aside>
-         <main>
-            <article class="letter" id="fp_1618_45_3">
-               
-               <div class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904439" target="_blank">SUUB: 904439</a></div>
-               <h2>
-                  Auß <span class="place">Venedig</span> vom <span class="date" title="1618-11-02">2. Nouemb</span>.
-                  				</h2>
+      <aside id="nav">
+         <nav id="siblings">
+            <ul>
+               <li><a href="fp_1618_45_1.html">1. Paris (26. 10.)</a></li>
+               <li><a href="fp_1618_45_2.html">2. Rom (27. 10.)</a></li>
+               <li>3. Venedig (2. 11.)</li>
+               <li><a href="fp_1618_45_4.html">4. Wien (1. 11.)</a></li>
+               <li><a href="fp_1618_45_5.html">5. Prag (4. 11.)</a></li>
+               <li><a href="fp_1618_45_6.html">6. Den Haag (6. 11.)</a></li>
+               <li><a href="fp_1618_45_7.html">7. Amsterdam (7. 11.)</a></li>
+               <li><a href="fp_1618_45_8.html">8. Köln (13. 10.)</a></li>
+            </ul>
+         </nav>
+      </aside>
+      <main>
+         <section>
+            <article class="correspondence" id="fp_1618_45_3">
+               <span class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904439" target="_blank">SUUB: 904439</a></span><h2>
+                  <span class="lb">1</span>Auß Venedig vom <span class="date" title="1618-11-02">2. Nouemb</span>.</h2>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_45_3.html#1" id="1" class="correspondence-milestone">[#1:]</a>
                   Von Liſabona hat man/ daß 4. reichgeladene Schiff auß den Orientaliſchen
-                  					<br>Jndien vnd Portugal in der Jnſul Terzere ankom̃en/ haben viel Diamanten/ vnd
-                  					<br>vnzahlbare Perlẽ bey ſich/ Es were allda eine newe Partida von 500000. Cronen
-                  					<br>beſchloſſen/ 200000. zu Nuͤrmberg/ 250000. zu Meyland/ vñ den Reſt am Spa-
-                  					<br>niſchen Hof/ in 4. Monaten/ allemal ein <span class="aq">quota</span> zu bezahlen/ vnd denn von andern
-                  					<br>80000. Cronen nach Niderland fuͤr den Marcheſe Spinola/ vmb Kriegsproui-
-                  					<br>ſion zu machen.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>Jndien vnd Portugal in der Jnſul Terzere ankom̃en/ haben viel Diamanten/ vnd
+                  <span class="br"></span><br><span class="lb">3</span>vnzahlbare Perlẽ bey ſich/ Es were allda eine newe Partida von 500000. Cronen
+                  <span class="br"></span><br><span class="lb">4</span>beſchloſſen/ 200000. zu Nuͤrmberg/ 250000. zu Meyland/ vñ den Reſt am Spa-
+                  <span class="br"></span><br><span class="lb">5</span>niſchen Hof/ in 4. Monaten/ allemal ein quota zu bezahlen/ vnd denn von andern
+                  <span class="br"></span><br><span class="lb">6</span>80000. Cronen nach Niderland fuͤr den Marcheſe Spinola/ vmb Kriegsproui-
+                  <span class="br"></span><br><span class="lb">7</span>ſion zu machen.</p>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_45_3.html#2" id="2" class="correspondence-milestone">[#2:]</a>
+                  
                   Meilendiſche Brieff bringen/ daß die allda gebliebene Compagnien in jre Loga-
-                  					<br>menter gelegt werden/ vnd gienge das Geſchrey/ man were im Werck/ einen newen
-                  					<br>Fund/ Reuterey in Kriegsleuſſten bey der hand zu haben/ in effect zu bringen. Die
-                  					<br>Schweitz: vnd Graubuͤnteriſche Catholiſche Liga helt beym Gubern vmb Hilffe
-                  					<br>ſtarck an/ vnd das ſein Exc. ſich mit jnen verbinden ſolle/ vmb die Catholiſchen wi-
-                  					<br>der in vorigen Standt eynzuſetzen / S. Exc. gibt jnen zwar gute hoffnung/ hat aber
-                  				</p>
-               
-               <div class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904440" target="_blank">SUUB: 904440</a></div>
+                  <span class="br"></span><br><span class="lb">2</span>menter gelegt werden/ vnd gienge das Geſchrey/ man were im Werck/ einen newen
+                  <span class="br"></span><br><span class="lb">3</span>Fund/ Reuterey in Kriegsleuſſten bey der hand zu haben/ in effect zu bringen. Die
+                  <span class="br"></span><br><span class="lb">4</span>Schweitz: vnd Graubuͤnteriſche Catholiſche Liga helt beym Gubern vmb Hilffe
+                  <span class="br"></span><br><span class="lb">5</span>ſtarck an/ vnd das ſein Exc. ſich mit jnen verbinden ſolle/ vmb die Catholiſchen wi-
+                  <span class="br"></span><br><span class="lb">6</span>der in vorigen Standt eynzuſetzen / S. Exc. gibt jnen zwar gute hoffnung/ hat aber</p>
+               <span class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904440" target="_blank">SUUB: 904440</a></span>
                
                <p>
-                  vnter deſſen ein Currir nach Spania abgefertiget/ jrer Maj. ſolchs zu berichten.
-                  				</p>
+                  <span class="lb">1</span>vnter deſſen ein Currir nach Spania abgefertiget/ jrer Maj. ſolchs zu berichten.</p>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_45_3.html#3" id="3" class="correspondence-milestone">[#3:]</a>
                   Allhie iſt ein reichgeladenes Schiff von Conſtantinopel ankom̃en/ vnd hat man
-                  					<br>dz vnſer Armada ſich zu Corfu befinde/ vnd hetten denen von Candia erleubt/ nach
-                  					<br>hauß zu fahren/ die runde Vaſellẽ aber weren bey <span class="aq">Monte S. Angelo</span> geſehẽ worden.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>dz vnſer Armada ſich zu Corfu befinde/ vnd hetten denen von Candia erleubt/ nach
+                  <span class="br"></span><br><span class="lb">3</span>hauß zu fahren/ die runde Vaſellẽ aber weren bey Monte S. Angelo geſehẽ worden.</p>
                </article>
-         </main>
-      </div>
+         </section>
+      </main>
+      <aside id="meta">
+         <section class="metadata"></section>
+      </aside>
       <footer>
-         <div>Hier entsteht ein Footer.</div>
-      </footer><script src="frankfurter_postzeitung.js"></script></body>
+         <hr>
+         <ul>
+            <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>
+         </ul>
+      </footer>
+   </body>
 </html>

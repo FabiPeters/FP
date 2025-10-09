@@ -2,76 +2,94 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frankfurter Postzeitung, Jahrgang 1618, 38, Korrespondenz 7</title>
       <link rel="stylesheet" href="frankfurter_postzeitung.css">
-      <title>Jg. 1618, Ausg. 38, Artikel 7</title>
-   </head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
-      <header id="site-header">
-         <nav class="breadcrumbs"><a href="index.html">Frankfurter Postzeitung</a><span> / </span><a href="all_years.html">Jahrgänge</a><span> / </span><a href="fp_1618.html">1618</a><span> / </span><a href="fp_1618_38.html">38</a><span> / </span><a href="fp_1618_38_7.html" class="active">7</a></nav>
+      <header>
+         <nav class="breadcrumbs">
+            <ul>
+               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
+               <li class="crumb"><a href="fp_1618.html">1618</a></li>
+               <li class="crumb"><a href="fp_1618_38.html">38</a></li>
+               <li><a href="fp_1618_38_7.html" class="active">7. Amsterdam (19. 9.)</a></li>
+            </ul>
+         </nav>
+         <nav class="horizontal"><a href="fp_1618_38_6.html"><button>&lt;</button></a><span> — </span><a href="fp_1618_38_8.html"><button>&gt;</button></a></nav>
+         <hr>
       </header>
-      <div class="page-content">
-         <aside>
-            <nav id="horizontal"><a href="fp_1618_38_6.html"> &lt; </a><span> — </span><a href="fp_1618_38_8.html"> &gt; </a></nav>
-            <nav id="siblings">
-               <ul>
-                  <li><a href="fp_1618_38_1.html">1</a></li>
-                  <li><a href="fp_1618_38_2.html">2</a></li>
-                  <li><a href="fp_1618_38_3.html">3</a></li>
-                  <li><a href="fp_1618_38_4.html">4</a></li>
-                  <li><a href="fp_1618_38_5.html">5</a></li>
-                  <li><a href="fp_1618_38_6.html">6</a></li>
-                  <li>7</li>
-                  <li><a href="fp_1618_38_8.html">8</a></li>
-               </ul>
-            </nav>
-         </aside>
-         <main>
-            <article class="letter" id="fp_1618_38_7">
-               
-               <div class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904412" target="_blank">SUUB: 904412</a></div>
-               <h2>
-                  Auß <span class="place">Ambſterdamb</span> vom <span class="date" title="1618-09-19">19. Ditto</span>.
-                  				</h2>
+      <aside id="nav">
+         <nav id="siblings">
+            <ul>
+               <li><a href="fp_1618_38_1.html">1. Rom (8. 9.)</a></li>
+               <li><a href="fp_1618_38_2.html">2. Venedig (14. 9.)</a></li>
+               <li><a href="fp_1618_38_3.html">3. Wien (13. 9.)</a></li>
+               <li><a href="fp_1618_38_4.html">4. Wien (14. 9.)</a></li>
+               <li><a href="fp_1618_38_5.html">5. Prag (16. 9.)</a></li>
+               <li><a href="fp_1618_38_6.html">6. Den Haag (18. 9.)</a></li>
+               <li>7. Amsterdam (19. 9.)</li>
+               <li><a href="fp_1618_38_8.html">8. Köln (26. 9.)</a></li>
+            </ul>
+         </nav>
+      </aside>
+      <main>
+         <section>
+            <article class="correspondence" id="fp_1618_38_7">
+               <span class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904412" target="_blank">SUUB: 904412</a></span><h2>
+                  <span class="lb">1</span>Auß Ambſterdamb vom <span class="date" title="1618-09-19">19. Ditto</span>.</h2>
                
                <p>
-                  Von Vtrecht haben wir/ daß ob wol der <span class="aq">Secretarius</span> Ledenberg gefaͤnglich
-                  					<br>nach dem Haag gefuͤhret/ ſeine Behauſung mit Soldaten bewahrt werde/ vnnd
-                  					<br>alle ſeine Guter auffgeſchrieben.
-                  				</p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_38_7.html#1" id="1" class="correspondence-milestone">[#1:]</a>
+                  Von Vtrecht haben wir/ daß ob wol der Secretarius Ledenberg gefaͤnglich
+                  <span class="br"></span><br><span class="lb">2</span>nach dem Haag gefuͤhret/ ſeine Behauſung mit Soldaten bewahrt werde/ vnnd
+                  <span class="br"></span><br><span class="lb">3</span>alle ſeine Guter auffgeſchrieben.</p>
                
                <p>
-                  Der fuͤrnembſte Armenianiſche Prediger <span class="aq">Taurinus</span> hat ſich allbereit vor 14.
-                  					<br>Tagen von dannen abſentirt/ dann er ſolle der <span class="aq">Author</span> deß Schmehebuͤchlins die
-                  					<br>Wagſchale genant ſeyn/ welchs wider deß Engeliſchen Amb. vor dieſem dẽ Herꝛn
-                  					<br>Staden General gethane Oration außgangen/ vnd damals auff den Authorn
-                  					<br>500 fl. geſetzt worden/ der Trucker zu Vtrecht ſolle es ſelbſten an tag bracht haben/
-                  					<br>deßwegen der <span class="aq">Taurinus</span> daſelbſt vor 8. Tagen mit der groſſen Glocken eingeleutet
-                  					<br>wordẽ/ ſich zu verantworten/ ſeine Guͤter ſollen bereit verarreſtirt ſeyn/ Sontag
-                  ha-
-                  					<br>ben die alte Reformirten in der Thumbkirchen zu Vtrecht geprediget.
-                  				</p>
-               
-               <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_38_7.html#2" id="2" class="correspondence-milestone">[#2:]</a>
+                  Der fuͤrnembſte Armenianiſche Prediger <span class="aq">Taurinus</span>
                   
-                  <span class="aq">loannes Vtembogart,</span> welcher vor dieſem Hoffprediger im Haag geweſen/
-                  					<br>koͤmpt auch nicht herfuͤr/ der wirdt mit andern ſeinen Conſorten vieler groben
-                  					<br>ſtreitpuncten beſchuldiget/ in Summe die groſſe Enderung in 6 Wochen iſt ſo
-                  					<br>groß/ daß man ſich gnugſamb zu verwundern.
-                  				</p>
+                  <span class="aq"></span> hat ſich allbereit vor 14.
+                  <span class="br"></span><br><span class="lb">2</span>Tagen von dannen abſentirt/ dann er ſolle der Author deß Schmehebuͤchlins die
+                  <span class="br"></span><br><span class="lb">3</span>Wagſchale genant ſeyn/ welchs wider deß Engeliſchen Amb. vor dieſem dẽ Herꝛn
+                  <span class="br"></span><br><span class="lb">4</span>Staden General gethane Oration außgangen/ vnd damals auff den Authorn
+                  <span class="br"></span><br><span class="lb">5</span>500 fl. geſetzt worden/ der Trucker zu Vtrecht ſolle es ſelbſten an tag bracht haben/
+                  <span class="br"></span><br><span class="lb">6</span>deßwegen der Taurinus daſelbſt vor 8. Tagen mit der groſſen Glocken eingeleutet
+                  <span class="br"></span><br><span class="lb">7</span>wordẽ/ ſich zu verantworten/ ſeine Guͤter ſollen bereit verarreſtirt ſeyn/ Sontag
+                  ha-
+                  <span class="br"></span><br><span class="lb">8</span>ben die alte Reformirten in der Thumbkirchen zu Vtrecht geprediget.</p>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_38_7.html#3" id="3" class="correspondence-milestone">[#3:]</a>
+                  
+                  loannes Vtembogart, welcher vor dieſem Hoffprediger im Haag geweſen/
+                  <span class="br"></span><br><span class="lb">2</span>koͤmpt auch nicht herfuͤr/ der wirdt mit andern ſeinen Conſorten vieler groben
+                  <span class="br"></span><br><span class="lb">3</span>ſtreitpuncten beſchuldiget/ in Summe die groſſe Enderung in 6 Wochen iſt ſo
+                  <span class="br"></span><br><span class="lb">4</span>groß/ daß man ſich gnugſamb zu verwundern.</p>
+               
+               <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_38_7.html#4" id="4" class="correspondence-milestone">[#4:]</a>
                   Die jenige ſo von Harlem kommen/ melden/ daß S. Exc. dieſe Wochen allda
-                  					<br>mit etlichen Deputirten der Herꝛn Staden General ankommen ſolle/ dann vnge-
-                  					<br>fehr vor 12. Tagen der Magiſtrat allda hat veraͤndert werden ſollen/ aber biß zu
-                  					<br>S. Exc. Ankunfft verſchoben/ von dannen ſollen ſie nach Northollandt/ vmb die
-                  					<br>Staͤtt/ als Alcmar/ Horn/ vnd Muͤnnickendamb zu beſuchen/ dieweil ſelbige Ma-
-                  					<br>giſtrat vnnd Buͤrger noch in Differentz ſtehen/ dieſelbe auch bey zu legen.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>mit etlichen Deputirten der Herꝛn Staden General ankommen ſolle/ dann vnge-
+                  <span class="br"></span><br><span class="lb">3</span>fehr vor 12. Tagen der Magiſtrat allda hat veraͤndert werden ſollen/ aber biß zu
+                  <span class="br"></span><br><span class="lb">4</span>S. Exc. Ankunfft verſchoben/ von dannen ſollen ſie nach Northollandt/ vmb die
+                  <span class="br"></span><br><span class="lb">5</span>Staͤtt/ als Alcmar/ Horn/ vnd Muͤnnickendamb zu beſuchen/ dieweil ſelbige Ma-
+                  <span class="br"></span><br><span class="lb">6</span>giſtrat vnnd Buͤrger noch in Differentz ſtehen/ dieſelbe auch bey zu legen.</p>
                </article>
-         </main>
-      </div>
+         </section>
+      </main>
+      <aside id="meta">
+         <section class="metadata"></section>
+      </aside>
       <footer>
-         <div>Hier entsteht ein Footer.</div>
-      </footer><script src="frankfurter_postzeitung.js"></script></body>
+         <hr>
+         <ul>
+            <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>
+         </ul>
+      </footer>
+   </body>
 </html>

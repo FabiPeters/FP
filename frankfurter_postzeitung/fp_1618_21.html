@@ -2,76 +2,163 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frankfurter Postzeitung, Jahrgang 1618, 21</title>
       <link rel="stylesheet" href="frankfurter_postzeitung.css">
-      <title>Jg. 1618, Ausgabe 21</title>
-   </head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
-      <header id="site-header">
-         <nav class="breadcrumbs"><a href="index.html">Frankfurter Postzeitung</a><span> / </span><a href="all_years.html">Jahrgänge</a><span> / </span><a href="fp_1618.html">1618</a><span> / </span><a href="fp_1618_21.html" class="active">21</a></nav>
-      </header>
-      <div class="page-content">
-         <aside>
-            <nav id="horizontal"><a href="fp_1618_16.html"> &lt; </a><span> — </span><a href="fp_1618_22.html"> &gt; </a></nav>
-            <nav id="siblings">
-               <ul>
-                  <li><a href="fp_1618_4.html">4</a></li>
-                  <li><a href="fp_1618_16.html">16</a></li>
-                  <li>21</li>
-                  <li><a href="fp_1618_22.html">22</a></li>
-                  <li><a href="fp_1618_33.html">33</a></li>
-                  <li><a href="fp_1618_35.html">35</a></li>
-                  <li><a href="fp_1618_36.html">36</a></li>
-                  <li><a href="fp_1618_38.html">38</a></li>
-                  <li><a href="fp_1618_39.html">39</a></li>
-                  <li><a href="fp_1618_40.html">40</a></li>
-                  <li><a href="fp_1618_41.html">41</a></li>
-                  <li><a href="fp_1618_42.html">42</a></li>
-                  <li><a href="fp_1618_43.html">43</a></li>
-                  <li><a href="fp_1618_44.html">44</a></li>
-                  <li><a href="fp_1618_45.html">45</a></li>
-                  <li><a href="fp_1618_46.html">46</a></li>
-                  <li><a href="fp_1618_47.html">47</a></li>
-                  <li><a href="fp_1618_49.html">49</a></li>
-                  <li><a href="fp_1618_50.html">50</a></li>
-                  <li><a href="fp_1618_51.html">51</a></li>
-                  <li><a href="fp_1618_52.html">52</a></li>
-               </ul>
-            </nav>
-         </aside>
-         <main>
+      <header>
+         <nav class="breadcrumbs">
             <ul>
+               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
+               <li class="crumb"><a href="fp_1618.html">1618</a></li>
+               <li><a href="fp_1618_21.html" class="active">21</a></li>
+            </ul>
+         </nav>
+         <nav class="horizontal"><a href="fp_1618_16.html"><button>&lt;</button></a><span> — </span><a href="fp_1618_22.html"><button>&gt;</button></a></nav>
+         <hr>
+      </header>
+      <aside id="nav">
+         <nav id="siblings">
+            <ul>
+               <li><a href="fp_1618_4.html">4</a></li>
+               <li><a href="fp_1618_16.html">16</a></li>
+               <li>21</li>
+               <li><a href="fp_1618_22.html">22</a></li>
+               <li><a href="fp_1618_33.html">33</a></li>
+               <li><a href="fp_1618_35.html">35</a></li>
+               <li><a href="fp_1618_36.html">36</a></li>
+               <li><a href="fp_1618_38.html">38</a></li>
+               <li><a href="fp_1618_39.html">39</a></li>
+               <li><a href="fp_1618_40.html">40</a></li>
+               <li><a href="fp_1618_41.html">41</a></li>
+               <li><a href="fp_1618_42.html">42</a></li>
+               <li><a href="fp_1618_43.html">43</a></li>
+               <li><a href="fp_1618_44.html">44</a></li>
+               <li><a href="fp_1618_45.html">45</a></li>
+               <li><a href="fp_1618_46.html">46</a></li>
+               <li><a href="fp_1618_47.html">47</a></li>
+               <li><a href="fp_1618_49.html">49</a></li>
+               <li><a href="fp_1618_50.html">50</a></li>
+               <li><a href="fp_1618_51.html">51</a></li>
+               <li><a href="fp_1618_52.html">52</a></li>
+            </ul>
+         </nav>
+      </aside>
+      <main>
+         <h1>Frankfurter Postzeitung, Jahrgang 1618, 21</h1>
+         <section id="map_coresspondence"></section><script>
+                var map = L.map('map_coresspondence').setView([49.54, 5.76], 4);
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+                L.marker([50.11, 8.68]).addTo(map).bindPopup("Frankfurt").bindTooltip("Frankfurt");
+                
+                    L.marker([41.893055555556, 12.482777777778]).bindPopup(`<a href="fp_1618_21_1.html" rel="noopener noreferrer">1. Rom (12. 5.)</a>`).bindTooltip("1. Rom (12. 5.)").addTo(map);
+                
+                    L.marker([45.439722222222, 12.331944444444]).bindPopup(`<a href="fp_1618_21_2.html" rel="noopener noreferrer">2. Venedig (18. 5.)</a>`).bindTooltip("2. Venedig (18. 5.)").addTo(map);
+                
+                    L.marker([45.7675, 4.835]).bindPopup(`<a href="fp_1618_21_3.html" rel="noopener noreferrer">3. Lyon (13. 5.)</a>`).bindTooltip("3. Lyon (13. 5.)").addTo(map);
+                
+                    L.marker([49.016666666666666, 12.083333333333334]).bindPopup(`<a href="fp_1618_21_4.html" rel="noopener noreferrer">4. Regensburg (21. 5.)</a>`).bindTooltip("4. Regensburg (21. 5.)").addTo(map);
+                
+                    L.marker([48.144722222222, 17.112777777778]).bindPopup(`<a href="fp_1618_21_5.html" rel="noopener noreferrer">5. Bratislava (13. 5.)</a>`).bindTooltip("5. Bratislava (13. 5.)").addTo(map);
+                
+                    L.marker([48.208333333333336, 16.3725]).bindPopup(`<a href="fp_1618_21_6.html" rel="noopener noreferrer">6. Wien (16. 5.)</a>`).bindTooltip("6. Wien (16. 5.)").addTo(map);
+                
+                    L.marker([50.0875, 14.421388888888888]).bindPopup(`<a href="fp_1618_21_7.html" rel="noopener noreferrer">7. Prag (21. 5.)</a>`).bindTooltip("7. Prag (21. 5.)").addTo(map);
+                
+                    L.marker([52.08, 4.31]).bindPopup(`<a href="fp_1618_21_8.html" rel="noopener noreferrer">8. Den Haag (24. 5.)</a>`).bindTooltip("8. Den Haag (24. 5.)").addTo(map);
+                
+                    L.marker([50.942222222222, 6.9577777777778]).bindPopup(`<a href="fp_1618_21_9.html" rel="noopener noreferrer">9. Köln (30. 5.)</a>`).bindTooltip("9. Köln (30. 5.)").addTo(map);
+                </script><section>
+            <ol>
                <li><a href="fp_1618_21_1.html">
-                     Auß Rom/ vom 12. Maij/ Anno 1618.
-                     				</a></li>
+                     Auß Rom/ vom 12. Maij/ Anno 1618.</a><ul>
+                     <li><a href="fp_1618_21_1.html#1">
+                           DEr Vice Re zu Neapoli hat [...] </a></li>
+                     <li><a href="fp_1618_21_1.html#2">Brieffe auß Palermo in Sicilia melden/ [...] </a></li>
+                     <li><a href="fp_1618_21_1.html#3">Zu Neapoli iſt [...] </a></li>
+                     <li><a href="fp_1618_21_1.html#4">Im 
+                           Porto d' Alicanta, ſind [...] </a></li>
+                  </ul>
+               </li>
                <li><a href="fp_1618_21_2.html">
-                     Auß Venedig/ vom 18. Ditto.
-                     				</a></li>
+                     Auß Venedig/ vom 18. Ditto.</a><ul>
+                     <li><a href="fp_1618_21_2.html#1">Montags iſt [...] </a></li>
+                     <li><a href="fp_1618_21_2.html#2">Der Meylaͤndiſche Gubern. hat [...] </a></li>
+                     <li><a href="fp_1618_21_2.html#3">Zu Marſilia ſind [...] </a></li>
+                     <li><a href="fp_1618_21_2.html#4">Die 300. abgefuͤhrte Soldaten von Oneglia/ [...] </a></li>
+                     <li><a href="fp_1618_21_2.html#5">Jn Lombardia ſind [...] </a></li>
+                     <li><a href="fp_1618_21_2.html#6">
+                           Conſtantinopolitaniſche Brieffe berichten/ [...] </a></li>
+                  </ul>
+               </li>
                <li><a href="fp_1618_21_3.html">
-                     Auß Lyon/ vom 13. Ditto.
-                     				</a></li>
+                     Auß Lyon/ vom 13. Ditto.</a><ul>
+                     <li><a href="fp_1618_21_3.html#1">
+                           Pariſer Brieffe melden/ [...] </a></li>
+                     <li><a href="fp_1618_21_3.html#2">Der Genueſiſche Amb bleibet [...] </a></li>
+                  </ul>
+               </li>
                <li><a href="fp_1618_21_4.html">
-                     Auß Regenſpurg/ vom 21. Ditto.
-                     				</a></li>
+                     Auß Regenſpurg/ vom 21. Ditto.</a><ul>
+                     <li><a href="fp_1618_21_4.html#1">Der Churfuͤrſten Tag ſol [...] </a></li>
+                     <li><a href="fp_1618_21_4.html#2">Sonſten hat [...] </a></li>
+                  </ul>
+               </li>
                <li><a href="fp_1618_21_5.html">
-                     Auß Preßburg/ vom 13. Ditto.
-                     				</a></li>
+                     Auß Preßburg/ vom 13. Ditto.</a><ul>
+                     <li><a href="fp_1618_21_5.html#1">Demnach die Hungarn [...] </a></li>
+                  </ul>
+               </li>
                <li><a href="fp_1618_21_6.html">
-                     Auß Wien/ vom 16. Ditto.
-                     				</a></li>
+                     Auß Wien/ vom 16. Ditto.</a><ul>
+                     <li><a href="fp_1618_21_6.html#1">Geſtern vmb 9. Uhr vor Mittag/ [...] </a></li>
+                     <li><a href="fp_1618_21_6.html#2">Die newe Tuͤrckiſche Bottſchafft hat [...] </a></li>
+                     <li><a href="fp_1618_21_6.html#3">Sonſten iſt [...] </a></li>
+                     <li><a href="fp_1618_21_6.html#4">Der 
+                           Haſſan Baſſa
+                           hat [...] </a></li>
+                     <li><a href="fp_1618_21_6.html#5">Der Koͤnig in Spania hat [...] </a></li>
+                  </ul>
+               </li>
                <li><a href="fp_1618_21_7.html">
                      Auß Prag den 21. Ditto.
-                     </a></li>
+                     </a><ul>
+                     <li><a href="fp_1618_21_7.html#1">Brieff auß Preßlaw meldẽ/ [...] </a></li>
+                     <li><a href="fp_1618_21_7.html#2">Auß Littaw hat man/ [...] </a></li>
+                     <li><a href="fp_1618_21_7.html#3">Die Herꝛn Defenſores,
+                            [...] </a></li>
+                  </ul>
+               </li>
                <li><a href="fp_1618_21_8.html">
-                     Auß deß Gravenhaag vom 24. Ditto.
-                     				</a></li>
+                     Auß deß Gravenhaag vom 24. Ditto.</a><ul>
+                     <li><a href="fp_1618_21_8.html#1">Allhier gehet [...] </a></li>
+                     <li><a href="fp_1618_21_8.html#2">Man hat von Deventer/ [...] </a></li>
+                     <li><a href="fp_1618_21_8.html#3">Ob nun wol die von Campen [...] </a></li>
+                     <li><a href="fp_1618_21_8.html#4">Die von Vtrecht haben [...] </a></li>
+                     <li><a href="fp_1618_21_8.html#5">Zu Ambſterdamb waren [...] </a></li>
+                     <li><a href="fp_1618_21_8.html#6">
+                           Daſelbſten waren [...] </a></li>
+                  </ul>
+               </li>
                <li><a href="fp_1618_21_9.html">
-                     Auß Coͤlln den 30. Ditto.
-                     				</a></li>
-            </ul>
-         </main>
-      </div>
+                     Auß Coͤlln den 30. Ditto.</a><ul>
+                     <li><a href="fp_1618_21_9.html#1">Man macht allhier [...] </a></li>
+                     <li><a href="fp_1618_21_9.html#2">Von Arnheimb wirdt geſchrieben/ [...] </a></li>
+                  </ul>
+               </li>
+            </ol>
+         </section>
+      </main>
+      <aside id="meta"></aside>
       <footer>
-         <div>Hier entsteht ein Footer.</div>
-      </footer><script src="frankfurter_postzeitung.js"></script></body>
+         <hr>
+         <ul>
+            <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>
+         </ul>
+      </footer>
+   </body>
 </html>

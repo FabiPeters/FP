@@ -2,56 +2,70 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frankfurter Postzeitung, Jahrgang 1618, 35, Korrespondenz 7</title>
       <link rel="stylesheet" href="frankfurter_postzeitung.css">
-      <title>Jg. 1618, Ausg. 35, Artikel 7</title>
-   </head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
-      <header id="site-header">
-         <nav class="breadcrumbs"><a href="index.html">Frankfurter Postzeitung</a><span> / </span><a href="all_years.html">Jahrgänge</a><span> / </span><a href="fp_1618.html">1618</a><span> / </span><a href="fp_1618_35.html">35</a><span> / </span><a href="fp_1618_35_7.html" class="active">7</a></nav>
+      <header>
+         <nav class="breadcrumbs">
+            <ul>
+               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
+               <li class="crumb"><a href="fp_1618.html">1618</a></li>
+               <li class="crumb"><a href="fp_1618_35.html">35</a></li>
+               <li><a href="fp_1618_35_7.html" class="active">7. Amsterdam (31. 8.)</a></li>
+            </ul>
+         </nav>
+         <nav class="horizontal"><a href="fp_1618_35_6.html"><button>&lt;</button></a><span> — </span><a href="fp_1618_35_8.html"><button>&gt;</button></a></nav>
+         <hr>
       </header>
-      <div class="page-content">
-         <aside>
-            <nav id="horizontal"><a href="fp_1618_35_6.html"> &lt; </a><span> — </span><a href="fp_1618_35_8.html"> &gt; </a></nav>
-            <nav id="siblings">
-               <ul>
-                  <li><a href="fp_1618_35_1.html">1</a></li>
-                  <li><a href="fp_1618_35_2.html">2</a></li>
-                  <li><a href="fp_1618_35_3.html">3</a></li>
-                  <li><a href="fp_1618_35_4.html">4</a></li>
-                  <li><a href="fp_1618_35_5.html">5</a></li>
-                  <li><a href="fp_1618_35_6.html">6</a></li>
-                  <li>7</li>
-                  <li><a href="fp_1618_35_8.html">8</a></li>
-               </ul>
-            </nav>
-         </aside>
-         <main>
-            <article class="letter" id="fp_1618_35_7">
-               
-               <div class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904404" target="_blank">SUUB: 904404</a></div>
-               <h2>
-                  Auß <span class="place">Ambſterdamb</span> vom <span class="date" title="1618-08-31">31. Ditto</span>.
-                  				</h2>
+      <aside id="nav">
+         <nav id="siblings">
+            <ul>
+               <li><a href="fp_1618_35_1.html">1. Rom (18. 8.)</a></li>
+               <li><a href="fp_1618_35_2.html">2. Venedig (24. 8.)</a></li>
+               <li><a href="fp_1618_35_3.html">3. Pfaffenschlag bei Waidhofen an der Thaya (18. 8.)</a></li>
+               <li><a href="fp_1618_35_4.html">4. Wien (22. 8.)</a></li>
+               <li><a href="fp_1618_35_5.html">5. Prag (27. 8.)</a></li>
+               <li><a href="fp_1618_35_6.html">6. Den Haag (30. 8.)</a></li>
+               <li>7. Amsterdam (31. 8.)</li>
+               <li><a href="fp_1618_35_8.html">8. Köln (4. 9.)</a></li>
+            </ul>
+         </nav>
+      </aside>
+      <main>
+         <section>
+            <article class="correspondence" id="fp_1618_35_7">
+               <span class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904404" target="_blank">SUUB: 904404</a></span><h2>
+                  <span class="lb">1</span>Auß Ambſterdamb vom <span class="date" title="1618-08-31">31. Ditto</span>.</h2>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_35_7.html#1" id="1" class="correspondence-milestone">[#1:]</a>
                   Kuͤnfftigen Monat ſollen etliche dieſer Landten Theologen zu Delfft einen
-                  					<br>
-                  <span class="aq">Prouincial Synodum</span> halten/ vmb eine Fuͤrbereitung zu dem <span class="aq">National Synodo</span>
-                  <br>zu machen/ auch alles was zu der Kirchen Sachen noͤthig/ zu deliberiren.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>
+                  Prouincial Synodum halten/ vmb eine Fuͤrbereitung zu dem National Synodo
+                  <span class="br"></span><br><span class="lb">3</span>zu machen/ auch alles was zu der Kirchen Sachen noͤthig/ zu deliberiren.</p>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_35_7.html#2" id="2" class="correspondence-milestone">[#2:]</a>
                   Man gibt auß/ die Warthgelder haben den Staͤtten vber 12. Tonnen Goldts
-                  					<br>gekoſtet/ vnd hat die Statt Leyden hie/ zu deren Abdanckung 90000fl. auffgenom-
-                  					<br>men. Zu Utrecht iſt es jetzt ſtill/ allein daß nach den Authoren dieſer Newerun-
-                  					<br>gen ſtarck inquirirt wirdt/ vnd verlaut daß die von Utrecht 130000 fl. auff einem
-                  					<br>gewiſſen Termin auffbringen ſollen.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>gekoſtet/ vnd hat die Statt Leyden hie/ zu deren Abdanckung 90000fl. auffgenom-
+                  <span class="br"></span><br><span class="lb">3</span>men. Zu Utrecht iſt es jetzt ſtill/ allein daß nach den Authoren dieſer Newerun-
+                  <span class="br"></span><br><span class="lb">4</span>gen ſtarck inquirirt wirdt/ vnd verlaut daß die von Utrecht 130000 fl. auff einem
+                  <span class="br"></span><br><span class="lb">5</span>gewiſſen Termin auffbringen ſollen.</p>
                </article>
-         </main>
-      </div>
+         </section>
+      </main>
+      <aside id="meta">
+         <section class="metadata"></section>
+      </aside>
       <footer>
-         <div>Hier entsteht ein Footer.</div>
-      </footer><script src="frankfurter_postzeitung.js"></script></body>
+         <hr>
+         <ul>
+            <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>
+         </ul>
+      </footer>
+   </body>
 </html>

@@ -2,73 +2,92 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frankfurter Postzeitung, Jahrgang 1618, 42, Korrespondenz 4</title>
       <link rel="stylesheet" href="frankfurter_postzeitung.css">
-      <title>Jg. 1618, Ausg. 42, Artikel 4</title>
-   </head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
-      <header id="site-header">
-         <nav class="breadcrumbs"><a href="index.html">Frankfurter Postzeitung</a><span> / </span><a href="all_years.html">Jahrgänge</a><span> / </span><a href="fp_1618.html">1618</a><span> / </span><a href="fp_1618_42.html">42</a><span> / </span><a href="fp_1618_42_4.html" class="active">4</a></nav>
+      <header>
+         <nav class="breadcrumbs">
+            <ul>
+               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
+               <li class="crumb"><a href="fp_1618.html">1618</a></li>
+               <li class="crumb"><a href="fp_1618_42.html">42</a></li>
+               <li><a href="fp_1618_42_4.html" class="active">4. Prag (14. 10.)</a></li>
+            </ul>
+         </nav>
+         <nav class="horizontal"><a href="fp_1618_42_3.html"><button>&lt;</button></a><span> — </span><a href="fp_1618_42_5.html"><button>&gt;</button></a></nav>
+         <hr>
       </header>
-      <div class="page-content">
-         <aside>
-            <nav id="horizontal"><a href="fp_1618_42_3.html"> &lt; </a><span> — </span><a href="fp_1618_42_5.html"> &gt; </a></nav>
-            <nav id="siblings">
-               <ul>
-                  <li><a href="fp_1618_42_1.html">1</a></li>
-                  <li><a href="fp_1618_42_2.html">2</a></li>
-                  <li><a href="fp_1618_42_3.html">3</a></li>
-                  <li>4</li>
-                  <li><a href="fp_1618_42_5.html">5</a></li>
-                  <li><a href="fp_1618_42_6.html">6</a></li>
-                  <li><a href="fp_1618_42_7.html">7</a></li>
-               </ul>
-            </nav>
-         </aside>
-         <main>
-            <article class="letter" id="fp_1618_42_4">
+      <aside id="nav">
+         <nav id="siblings">
+            <ul>
+               <li><a href="fp_1618_42_1.html">1. Rom (6. 10.)</a></li>
+               <li><a href="fp_1618_42_2.html">2. Venedig (12. 10.)</a></li>
+               <li><a href="fp_1618_42_3.html">3. Wien (11. 10.)</a></li>
+               <li>4. Prag (14. 10.)</li>
+               <li><a href="fp_1618_42_5.html">5. Den Haag (16. 10.)</a></li>
+               <li><a href="fp_1618_42_6.html">6. Amsterdam (17. 10.)</a></li>
+               <li><a href="fp_1618_42_7.html">7. Köln (23. 10.)</a></li>
+            </ul>
+         </nav>
+      </aside>
+      <main>
+         <section>
+            <article class="correspondence" id="fp_1618_42_4">
+               <span class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904427" target="_blank">SUUB: 904427</a></span>
                
-               <div class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904427" target="_blank">SUUB: 904427</a></div>
                <h2>
-                  Auß <span class="place">Prag</span> vom <span class="date" title="1618-10-14">14. Ditto</span>.
-                  				</h2>
+                  <span class="lb">1</span>Auß Prag vom <span class="date" title="1618-10-14">14. Ditto</span>.</h2>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_42_4.html#1" id="1" class="correspondence-milestone">[#1:]</a>
                   Dieſer Tagen ſeynd die Geſandten/ ſo zu Chur Brandenburg geſchickt wor-
-                  					<br>den/ mit gutem <span class="aq">contento</span> wider allhero gelangt/ ſo kommen die Soldaten Hauf-
-                  					<br>fen weiß herb/ vnd ſeynd 5. Corneten Herꝛn von <span class="aq">Dona</span> gehoͤrig/ gemuſtert/ vnd
-                  					<br>ins Laͤger geſchickt worden/ ſo erwart man auch darzu 2. Corneten/ die ſchon im
-                  					<br>Anzug/ ſo hernach geſchickt werden ſollen/ es ſeynd auch noch vff 2. Regiment
-                  					<br>Volcks Beſtallungs heraus kommen/ vnd ſolle hergegen das Bawersvolck ab-
-                  					<br>gedanckt/ vnd nach Hauß gelaſſen werden/ ſonſtē thut man die Schleſiſche Huͤlff
-                  					<br>auch erwarten/ daß alſo einem ſchlechten Frieden gleich ſiehet.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>den/ mit gutem contento wider allhero gelangt/ ſo kommen die Soldaten Hauf-
+                  <span class="br"></span><br><span class="lb">3</span>fen weiß herb/ vnd ſeynd 5. Corneten Herꝛn von Dona gehoͤrig/ gemuſtert/ vnd
+                  <span class="br"></span><br><span class="lb">4</span>ins Laͤger geſchickt worden/ ſo erwart man auch darzu 2. Corneten/ die ſchon im
+                  <span class="br"></span><br><span class="lb">5</span>Anzug/ ſo hernach geſchickt werden ſollen/ es ſeynd auch noch vff 2. Regiment
+                  <span class="br"></span><br><span class="lb">6</span>Volcks Beſtallungs heraus kommen/ vnd ſolle hergegen das Bawersvolck ab-
+                  <span class="br"></span><br><span class="lb">7</span>gedanckt/ vnd nach Hauß gelaſſen werden/ ſonſtē thut man die Schleſiſche Huͤlff
+                  <span class="br"></span><br><span class="lb">8</span>auch erwarten/ daß alſo einem ſchlechten Frieden gleich ſiehet.</p>
                
                <p>
-                  Donnerſtags haben die 5. Faͤhnlen deß Obriſten Tſcherodin zum zum Regiment
-                  					<br>ſchweren muͤſſen/ daruon ſollen morgen 3. Faͤhnlein dem Laͤger zu geſchickt werdē/
-                  					<br>vnd ſollen die andere dieſe Wochen auch folgen.
-                  				</p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_42_4.html#2" id="2" class="correspondence-milestone">[#2:]</a>
+                  
+                  <span class="date" title="0000-00-00">Donnerſtags</span> haben die 5. Faͤhnlen deß Obriſten Tſcherodin zum zum Regiment
+                  <span class="br"></span><br><span class="lb">2</span>ſchweren muͤſſen/ daruon ſollen morgen 3. Faͤhnlein dem Laͤger zu geſchickt werdē/
+                  <span class="br"></span><br><span class="lb">3</span>vnd ſollen die andere dieſe Wochen auch folgen.</p>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_42_4.html#3" id="3" class="correspondence-milestone">[#3:]</a>
                   Sonſſen iſt der Graff von Mansfelt/ ſo noch vor Pilſen ligt/ von den Herꝛn
-                  					<br>Staͤnden bereit das 4. mal mit ſtarker Vermahnung bey der Statt abzlaſſen/
-                  					<br>vnd vermoͤg gegebener Ordinantz an jetzo vff die Herrſchafft Crumau zu/ (weilen
-                  					<br>es mit ſelbigen auch mißlich ſtehen wil) mit dem Volck zueylen/ erſucht/ von deme
-                  					<br>aber nur Antwort geben worden/ er laſſe von ſelbiger Statt ohne Rechnung ſei-
-                  					<br>nes von jnen erſchoſſenen Leuthenants nit abe/ wolte ehe gar wider zuruͤck ziehē.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>Staͤnden bereit das 4. mal mit ſtarker Vermahnung bey der Statt abzlaſſen/
+                  <span class="br"></span><br><span class="lb">3</span>vnd vermoͤg gegebener Ordinantz an jetzo vff die Herrſchafft Crumau zu/ (weilen
+                  <span class="br"></span><br><span class="lb">4</span>es mit ſelbigen auch mißlich ſtehen wil) mit dem Volck zueylen/ erſucht/ von deme
+                  <span class="br"></span><br><span class="lb">5</span>aber nur Antwort geben worden/ er laſſe von ſelbiger Statt ohne Rechnung ſei-
+                  <span class="br"></span><br><span class="lb">6</span>nes von jnen erſchoſſenen Leuthenants nit abe/ wolte ehe gar wider zuruͤck ziehē.</p>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_42_4.html#4" id="4" class="correspondence-milestone">[#4:]</a>
                   Jetzt vernimpt man von Pilſen ferꝛner/ daß der Graff von Mansfeldt ſelbige
-                  					<br>Statt hart belaͤgert/ alſo/ daß ſich die darinn nicht ſehen oder hoͤren doͤrffen laſſen/
-                  					<br>die ſollen bereit fuͤr die Pluͤnderung dem Graffen etlich 1000. fl. vnnd jedem Sol-
-                  					<br>daten einen Monat Soldt zu bezahlen anerbotten haben.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>Statt hart belaͤgert/ alſo/ daß ſich die darinn nicht ſehen oder hoͤren doͤrffen laſſen/
+                  <span class="br"></span><br><span class="lb">3</span>die ſollen bereit fuͤr die Pluͤnderung dem Graffen etlich 1000. fl. vnnd jedem Sol-
+                  <span class="br"></span><br><span class="lb">4</span>daten einen Monat Soldt zu bezahlen anerbotten haben.</p>
                </article>
-         </main>
-      </div>
+         </section>
+      </main>
+      <aside id="meta">
+         <section class="metadata"></section>
+      </aside>
       <footer>
-         <div>Hier entsteht ein Footer.</div>
-      </footer><script src="frankfurter_postzeitung.js"></script></body>
+         <hr>
+         <ul>
+            <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>
+         </ul>
+      </footer>
+   </body>
 </html>

@@ -2,71 +2,82 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frankfurter Postzeitung, Jahrgang 1615, 39, Korrespondenz 3</title>
       <link rel="stylesheet" href="frankfurter_postzeitung.css">
-      <title>Jg. 1615, Ausg. 39, Artikel 3</title>
-   </head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
-      <header id="site-header">
-         <nav class="breadcrumbs"><a href="index.html">Frankfurter Postzeitung</a><span> / </span><a href="all_years.html">Jahrgänge</a><span> / </span><a href="fp_1615.html">1615</a><span> / </span><a href="fp_1615_39.html">39</a><span> / </span><a href="fp_1615_39_3.html" class="active">3</a></nav>
+      <header>
+         <nav class="breadcrumbs">
+            <ul>
+               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
+               <li class="crumb"><a href="fp_1615.html">1615</a></li>
+               <li class="crumb"><a href="fp_1615_39.html">39</a></li>
+               <li><a href="fp_1615_39_3.html" class="active">3. Braunschweig (28. 9.)</a></li>
+            </ul>
+         </nav>
+         <nav class="horizontal"><a href="fp_1615_39_2.html"><button>&lt;</button></a><span> — </span><a href="fp_1615_39_4.html"><button>&gt;</button></a></nav>
+         <hr>
       </header>
-      <div class="page-content">
-         <aside>
-            <nav id="horizontal"><a href="fp_1615_39_2.html"> &lt; </a><span> — </span><a href="fp_1615_39_4.html"> &gt; </a></nav>
-            <nav id="siblings">
-               <ul>
-                  <li><a href="fp_1615_39_1.html">1</a></li>
-                  <li><a href="fp_1615_39_2.html">2</a></li>
-                  <li>3</li>
-                  <li><a href="fp_1615_39_4.html">4</a></li>
-                  <li><a href="fp_1615_39_5.html">5</a></li>
-                  <li><a href="fp_1615_39_6.html">6</a></li>
-               </ul>
-            </nav>
-         </aside>
-         <main>
-            <article class="letter" id="fp_1615_39_3">
-               
-               <div class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904228" target="_blank">SUUB: 904228</a></div>
-               <h2>
-                  Auß Landt zu <span class="place">Braunſchweig</span>/ vom <span class="date" title="1615-09-28">28. Dito</span>.
-                  				</h2>
+      <aside id="nav">
+         <nav id="siblings">
+            <ul>
+               <li><a href="fp_1615_39_1.html">1. Köln (8. 10.)</a></li>
+               <li><a href="fp_1615_39_2.html">2. Breslau (20. 9.)</a></li>
+               <li>3. Braunschweig (28. 9.)</li>
+               <li><a href="fp_1615_39_4.html">4. Magdeburg (29. 9.)</a></li>
+               <li><a href="fp_1615_39_5.html">5. Prag (2. 10.)</a></li>
+               <li><a href="fp_1615_39_6.html">6. Wien (26. 10.)</a></li>
+            </ul>
+         </nav>
+      </aside>
+      <main>
+         <section>
+            <article class="correspondence" id="fp_1615_39_3">
+               <span class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904228" target="_blank">SUUB: 904228</a></span><h2>
+                  <span class="lb">1</span>Auß Landt zu Braunſchweig/ vom <span class="date" title="1615-09-28">28. Dito</span>.</h2>
                
                <p>
-                  Auff <span class="date" title="1615-09-23">23.</span> dieſes hat der Hertzog abermal einen Sturm anlauffen laſſen / vnd
-                  					<br>Graff Philpp von Manſfeldt auff einer ſeiten die Vorſtatt verfallen/ vnnd in
-                  					<br>Brand geſteckt/ doch wider weichen muͤſſen/ vnd hat ſich das Feuer auch ſelbſt
-                  				</p>
+                  <span class="lb">1</span>
+                  <a href="fp_1615_39_3.html#1" id="1" class="correspondence-milestone">[#1:]</a>
+                  Auff <span class="date" title="1615-09-23">23. dieſes</span> dieſes hat der Hertzog abermal einen Sturm anlauffen laſſen/ vnd
+                  <span class="br"></span><br><span class="lb">2</span>
+                  Graff Philpp von Manſfeldt auff einer ſeiten die Vorſtatt verfallen/ vnnd in
+                  <span class="br"></span><br><span class="lb">3</span>Brand geſteckt/ doch wider weichen muͤſſen/ vnd hat ſich das Feuer auch ſelbſt</p>
                
-               <div class="catchword">
-                  wider
-                  				</div>
-               
-               <div class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904229" target="_blank">SUUB: 904229</a></div>
+               <section class="catchword">
+                  <span class="lb">1</span>wider</section>
+               <span class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904229" target="_blank">SUUB: 904229</a></span>
                
                <p>
-                  wider geleſcht am andern Ort iſt die <span class="supplied">[verſertigte]</span> Prucken zu <span class="supplied">[kurtz]</span> geweſen / vnd al-
-                  					<br>ſo mit Verluſt etlich 100. zuruͤck getriebn worden. Es ſeynd nur 3. groſſe ſchan-
-                  					<br>
-                  <span class="supplied">[tz]</span>en / darinnen das meiſte Volck / vnd darauß die Statt ſo ſehr beſchoſſen wirt / vnd
-                  					<br>ſonſt noch etlich ſchantzen umb der Statt / in welchen 3. oder 4. Fahnen Volcks
-                  					<br>lige/ Graff Wolff von Manſfeldt ſtreift mit ziemlicher ſtarcker Reuterey auff
-                  					<br>der Hanſer Staͤtt Volck. Sontags / 2. ſtund vor Tag ſeynd 600. zu Fuß / vnd
-                  					<br>400 zu Roſſz außerleſene Soldaten ſicher in die Statt kommen / die werden nun
-                  					<br>ſtuͤndlich ein gewaltigen Außfall thun / begeren kein Volck mehr hinein / ſondern
-                  					<br>es wird das ander Volck ſo noch zu Zell liegt / vnd deß Bremer Volcke nur erwar-
-                  					<br>tet/ dem Hertzogen ins Landt fallen / die haben allbereit das Hauß Stoltenau ein-
-                  					<br>genommen/ bemuͤhen ſich ſehr dem Hertzogen die Proviandt abzuſchneiden / Der
-                  					<br>Koͤnig in Dennemarck iſt wider nach Hauß verreißt / 6000. Denen vnd 6000.
-                  					<br>Schweden herauß zu fuͤhren / denen wird man ſo viel moͤglich auff den Dienſt
-                  					<br>warten / vnd obwoln deß Hertzogs Vnderthanen verhofft / weil ſie ſo viel ſchatzung
-                  					<br>geben / wuͤrden mit dem Vffbott verſchonet werden / ſo wird doch jetzt der fuͤnffte
-                  					<br>Mann vffgebotten.
-                  				</p>
+                  <span class="lb">1</span>wider geleſcht am andern Ort iſt die <span class="supplied">[verſertigte]</span> Prucken zu <span class="supplied">[kurtz]</span> geweſen/ vnd al-
+                  <span class="br"></span><br><span class="lb">2</span>ſo mit Verluſt etlich 100. zuruͤck getriebn worden. Es ſeynd nur 3. groſſe ſchan-
+                  <span class="br"></span><br><span class="lb">3</span>
+                  <span class="supplied">[tz]</span>en/ darinnen das meiſte Volck/ vnd darauß die Statt ſo ſehr beſchoſſen wirt/ vnd
+                  <span class="br"></span><br><span class="lb">4</span>ſonſt noch etlich ſchantzen umb der Statt/ in welchen 3. oder 4. Fahnen Volcks
+                  <span class="br"></span><br><span class="lb">5</span>lige/ Graff Wolff von Manſfeldt ſtreift mit ziemlicher ſtarcker Reuterey auff
+                  <span class="br"></span><br><span class="lb">6</span>der Hanſer Staͤtt Volck. Sontags/ 2. ſtund vor Tag ſeynd 600. zu Fuß/ vnd
+                  <span class="br"></span><br><span class="lb">7</span>400 zu Roſſz außerleſene Soldaten ſicher in die Statt kommen/ die werden nun
+                  <span class="br"></span><br><span class="lb">8</span>ſtuͤndlich ein gewaltigen Außfall thun/ begeren kein Volck mehr hinein/ ſondern
+                  <span class="br"></span><br><span class="lb">9</span>es wird das ander Volck ſo noch zu Zell liegt/ vnd deß Bremer Volcke nur erwar-
+                  <span class="br"></span><br><span class="lb">10</span>tet/ dem Hertzogen ins Landt fallen/ die haben allbereit das Hauß Stoltenau ein-
+                  <span class="br"></span><br><span class="lb">11</span>genommen/ bemuͤhen ſich ſehr dem Hertzogen die Proviandt abzuſchneiden/ Der
+                  <span class="br"></span><br><span class="lb">12</span>Koͤnig in Dennemarck iſt wider nach Hauß verreißt/ 6000. Denen vnd 6000.
+                  <span class="br"></span><br><span class="lb">13</span>Schweden herauß zu fuͤhren/ denen wird man ſo viel moͤglich auff den Dienſt
+                  <span class="br"></span><br><span class="lb">14</span>warten/ vnd obwoln deß Hertzogs Vnderthanen verhofft/ weil ſie ſo viel ſchatzung
+                  <span class="br"></span><br><span class="lb">15</span>geben/ wuͤrden mit dem Vffbott verſchonet werden/ ſo wird doch jetzt der fuͤnffte
+                  <span class="br"></span><br><span class="lb">16</span>Mann vffgebotten.</p>
                </article>
-         </main>
-      </div>
+         </section>
+      </main>
+      <aside id="meta">
+         <section class="metadata"></section>
+      </aside>
       <footer>
-         <div>Hier entsteht ein Footer.</div>
-      </footer><script src="frankfurter_postzeitung.js"></script></body>
+         <hr>
+         <ul>
+            <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>
+         </ul>
+      </footer>
+   </body>
 </html>

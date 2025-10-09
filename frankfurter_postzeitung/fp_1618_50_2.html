@@ -2,93 +2,111 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frankfurter Postzeitung, Jahrgang 1618, 50, Korrespondenz 2</title>
       <link rel="stylesheet" href="frankfurter_postzeitung.css">
-      <title>Jg. 1618, Ausg. 50, Artikel 2</title>
-   </head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
-      <header id="site-header">
-         <nav class="breadcrumbs"><a href="index.html">Frankfurter Postzeitung</a><span> / </span><a href="all_years.html">Jahrgänge</a><span> / </span><a href="fp_1618.html">1618</a><span> / </span><a href="fp_1618_50.html">50</a><span> / </span><a href="fp_1618_50_2.html" class="active">2</a></nav>
+      <header>
+         <nav class="breadcrumbs">
+            <ul>
+               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
+               <li class="crumb"><a href="fp_1618.html">1618</a></li>
+               <li class="crumb"><a href="fp_1618_50.html">50</a></li>
+               <li><a href="fp_1618_50_2.html" class="active">2. Venedig (7. 12.)</a></li>
+            </ul>
+         </nav>
+         <nav class="horizontal"><a href="fp_1618_50_1.html"><button>&lt;</button></a><span> — </span><a href="fp_1618_50_3.html"><button>&gt;</button></a></nav>
+         <hr>
       </header>
-      <div class="page-content">
-         <aside>
-            <nav id="horizontal"><a href="fp_1618_50_1.html"> &lt; </a><span> — </span><a href="fp_1618_50_3.html"> &gt; </a></nav>
-            <nav id="siblings">
-               <ul>
-                  <li><a href="fp_1618_50_1.html">1</a></li>
-                  <li>2</li>
-                  <li><a href="fp_1618_50_3.html">3</a></li>
-                  <li><a href="fp_1618_50_4.html">4</a></li>
-                  <li><a href="fp_1618_50_5.html">5</a></li>
-                  <li><a href="fp_1618_50_6.html">6</a></li>
-                  <li><a href="fp_1618_50_7.html">7</a></li>
-                  <li><a href="fp_1618_50_8.html">8</a></li>
-               </ul>
-            </nav>
-         </aside>
-         <main>
-            <article class="letter" id="fp_1618_50_2">
-               
-               <div class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904454" target="_blank">SUUB: 904454</a></div>
-               <h2>
-                  Auß <span class="place">Venedig</span> vom <span class="date" title="1618-12-07">7. Ditto</span>.
-                  				</h2>
+      <aside id="nav">
+         <nav id="siblings">
+            <ul>
+               <li><a href="fp_1618_50_1.html">1. Rom (1. 12.)</a></li>
+               <li>2. Venedig (7. 12.)</li>
+               <li><a href="fp_1618_50_3.html">3. Budweis (2. 12.)</a></li>
+               <li><a href="fp_1618_50_4.html">4. Wien (6. 12.)</a></li>
+               <li><a href="fp_1618_50_5.html">5. Prag (8. 12.)</a></li>
+               <li><a href="fp_1618_50_6.html">6. Den Haag (11. 12.)</a></li>
+               <li><a href="fp_1618_50_7.html">7. Amsterdam (12. 12.)</a></li>
+               <li><a href="fp_1618_50_8.html">8. Köln (18. 12.)</a></li>
+            </ul>
+         </nav>
+      </aside>
+      <main>
+         <section>
+            <article class="correspondence" id="fp_1618_50_2">
+               <span class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904454" target="_blank">SUUB: 904454</a></span><h2>
+                  <span class="lb">1</span>Auß Venedig vom <span class="date" title="1618-12-07">7. Ditto</span>.</h2>
                
                <p>
-                  Man hat bericht/ daß der <span class="aq">Ecc.</span> General Barbarigo mit ſeinen Galeren gegen
-                  					<br>der Jnſel Zante vnnd Zeffalonia/ wider die Corſari auß gefahren/ die Armada der
-                  					<br>gevierdten Vaſellen aber/ welche ſich gegen Capo S. Maria befind/ hettẽ bereit 14.
-                  					<br>Vaſellen von Puglia/ vnd andern orten/ nach Neapoli fahrend/ gefangen/ deßwe-
-                  					<br>gen zu Neapoli das Oel gar theuwer.
-                  				</p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_50_2.html#1" id="1" class="correspondence-milestone">[#1:]</a>
+                  Man hat bericht/ daß der Ecc. General Barbarigo mit ſeinen Galeren gegen
+                  <span class="br"></span><br><span class="lb">2</span>der Jnſel Zante vnnd Zeffalonia/ wider die Corſari auß gefahren/ die Armada der
+                  <span class="br"></span><br><span class="lb">3</span>gevierdten Vaſellen aber/ welche ſich gegen Capo S. Maria befind/ hettẽ bereit 14.
+                  <span class="br"></span><br><span class="lb">4</span>Vaſellen von Puglia/ vnd andern orten/ nach Neapoli fahrend/ gefangen/ deßwe-
+                  <span class="br"></span><br><span class="lb">5</span>gen zu Neapoli das Oel gar theuwer.</p>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_50_2.html#2" id="2" class="correspondence-milestone">[#2:]</a>
                   Auß Londra wird auiſirt/ der Venediſche Amb. Donato were allda ankom̃en/
-                  					<br>vnd hetten ſelbige Kauffleut/ welche den Kauffhandel in Perſia/ vnnd deß groſſen
-                  					<br>Mogors Koͤnigreich angefangen/ <span class="aq">auiſo</span>/ daß derſelbe gluͤcklich fortgehet/ vnd er-
-                  					<br>warten ehiſt ein Schiff von dannen 500000. Cronen reich beladen.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>vnd hetten ſelbige Kauffleut/ welche den Kauffhandel in Perſia/ vnnd deß groſſen
+                  <span class="br"></span><br><span class="lb">3</span>Mogors Koͤnigreich angefangen/ auiſo/ daß derſelbe gluͤcklich fortgehet/ vnd er-
+                  <span class="br"></span><br><span class="lb">4</span>warten ehiſt ein Schiff von dannen 500000. Cronen reich beladen.</p>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_50_2.html#3" id="3" class="correspondence-milestone">[#3:]</a>
                   Von Genua wirdt geſchrieben/ daß zu Vado das auß Meylandt kommende
-                  					<br>Neapolitaniſch Kriegsvolck auff deß Doria Galeren imbarchirt werde/ vnd ſeyen
-                  					<br>im ſelben Porto 6. Niderlaͤndiſche Schiff mit Kauffmanswahren eynkommen/
-                  					<br>Der Engliſche Meerraͤuber Sanſone/ welcher Mahometiſch worden/ vnnd ſich
-                  					<br>Soliman nennet/ hat vnlangſt eine Niderlaͤndiſche Vaſell/ ſo von Malta nach
-                  					<br>Niderlandt gewolt/ neben 2. andern Schiffen auch ein Frantzoͤſiſch/ alles reich be-
-                  					<br>laden/ gefangen/ wirdt zu Goletta erwartet.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>Neapolitaniſch Kriegsvolck auff deß Doria Galeren imbarchirt werde/ vnd ſeyen
+                  <span class="br"></span><br><span class="lb">3</span>im ſelben Porto 6. Niderlaͤndiſche Schiff mit Kauffmanswahren eynkommen/
+                  <span class="br"></span><br><span class="lb">4</span>Der Engliſche Meerraͤuber Sanſone/ welcher Mahometiſch worden/ vnnd ſich
+                  <span class="br"></span><br><span class="lb">5</span>Soliman nennet/ hat vnlangſt eine Niderlaͤndiſche Vaſell/ ſo von Malta nach
+                  <span class="br"></span><br><span class="lb">6</span>Niderlandt gewolt/ neben 2. andern Schiffen auch ein Frantzoͤſiſch/ alles reich be-
+                  <span class="br"></span><br><span class="lb">7</span>laden/ gefangen/ wirdt zu Goletta erwartet.</p>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_50_2.html#4" id="4" class="correspondence-milestone">[#4:]</a>
+                  
                   Meylaͤndiſch Brieffe bringen/ daß ſo wol vom ſelben Gub. als von den Grau-
-                  					<br>puͤnten/ die Commercien gegen einander zu treiben/ ernſtlich verbotten worden/ vnd
-                  					<br>weiln S. Exc. vnterſchiedliche befehl auß Spania empfangẽ/ wirt taͤglich Kriegs-
-                  					<br>rath/ doch alles in hoͤchſter geheim/ gehalten/ die Kriegsoberſten/ welche jr Volck
+                  <span class="br"></span><br><span class="lb">2</span>puͤnten/ die Commercien gegen einander zu treiben/ ernſtlich verbotten worden/ vnd
+                  <span class="br"></span><br><span class="lb">3</span>weiln S. Exc. vnterſchiedliche befehl auß Spania empfangẽ/ wirt taͤglich Kriegs-
+                  <span class="br"></span><br><span class="lb">4</span>rath/ doch alles in hoͤchſter geheim/ gehalten/ die Kriegsoberſten/ welche jr Volck
                   zu
-                  					<br>Schiff geſandt/ befinden ſich noch allda/ nemmen taͤglich mehr Volck an/ vnnd
-                  					<br>ſenden es zugleich fort/ ſonſt hatten ſie/ dz jre F. G. Landgraff Ludwig zu Heſſen/
+                  <span class="br"></span><br><span class="lb">5</span>Schiff geſandt/ befinden ſich noch allda/ nemmen taͤglich mehr Volck an/ vnnd
+                  <span class="br"></span><br><span class="lb">6</span>ſenden es zugleich fort/ ſonſt hatten ſie/ dz jre F. G. Landgraff Ludwig zu Heſſen/
                   ꝛc.
-                  					<br>zu Madril ankom̃en/ beym Koͤnig audiens gehabt/ vnnd ſtattlich gehalten worden.
-                  				</p>
-               
-               <div class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904455" target="_blank">SUUB: 904455</a></div>
+                  <span class="br"></span><br><span class="lb">7</span>zu Madril ankom̃en/ beym Koͤnig audiens gehabt/ vnnd ſtattlich gehalten worden.</p>
+               <span class="page-number"><a href="https://brema.suub.uni-bremen.de/zeitungen17/periodical/zoom/904455" target="_blank">SUUB: 904455</a></span>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_50_2.html#5" id="5" class="correspondence-milestone">[#5:]</a>
                   Von Turino wirdt auiſirt/ derſelbe Hertzog laſſe viel KriegsProuiſion/ vnnd
-                  					<br>Viures nach Nizza/ vnd Villa Franca in Prouenza fuͤhren/ vnd iſt nunmehr der
-                  					<br>heurath zwiſchen dem Prinzen Vittorio von Sauoia/ vñ deß Koͤnigs in Franck-
-                  					<br>reich zweyten Schweſter gantz gewiß.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>Viures nach Nizza/ vnd Villa Franca in Prouenza fuͤhren/ vnd iſt nunmehr der
+                  <span class="br"></span><br><span class="lb">3</span>heurath zwiſchen dem Prinzen Vittorio von Sauoia/ vñ deß Koͤnigs in Franck-
+                  <span class="br"></span><br><span class="lb">4</span>reich zweyten Schweſter gantz gewiß.</p>
                
                <p>
+                  <span class="lb">1</span>
+                  <a href="fp_1618_50_2.html#6" id="6" class="correspondence-milestone">[#6:]</a>
                   Hieſige Herꝛſchafft leſt fuͤr Breſſa/ Bergamo/ vnd andern mit Meyland gren-
-                  					<br>tzenden Orten/ Trenceen vnnd Schantzen machen/ derwegen eine neuwe Rott<span class="supplied">[ur]</span>a
-                  					<br>vermuthet wirdt.
-                  				</p>
+                  <span class="br"></span><br><span class="lb">2</span>tzenden Orten/ Trenceen vnnd Schantzen machen/ derwegen eine neuwe Rott<span class="supplied">[ur]</span>a
+                  <span class="br"></span><br><span class="lb">3</span>vermuthet wirdt.</p>
                </article>
-         </main>
-      </div>
+         </section>
+      </main>
+      <aside id="meta">
+         <section class="metadata"></section>
+      </aside>
       <footer>
-         <div>Hier entsteht ein Footer.</div>
-      </footer><script src="frankfurter_postzeitung.js"></script></body>
+         <hr>
+         <ul>
+            <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>
+         </ul>
+      </footer>
+   </body>
 </html>
