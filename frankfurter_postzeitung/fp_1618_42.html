@@ -8,52 +8,30 @@
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
       <header>
-         <nav class="breadcrumbs">
-            <ul>
-               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
-               <li class="crumb"><a href="fp_1618.html">1618</a></li>
-               <li><a href="fp_1618_42.html" class="active">42</a></li>
-            </ul>
-         </nav>
-         <nav class="horizontal"><a href="fp_1618_41.html"><button>&lt;</button></a><span> — </span><a href="fp_1618_43.html"><button>&gt;</button></a></nav>
+         <div id="home"><a href="index.html">Frankfurter Postzeitung</a></div>
+         <div class="navigation-container">
+            <nav class="crumbs">
+               <ul>
+                  <li><a href="index.html">Index</a></li>
+                  <li><a href="fp_1618.html">1618</a></li>
+                  <li>42</li>
+               </ul>
+            </nav>
+            <nav class="horizontal"><a title="vorherige Seite" href="fp_1618_41.html" class="button"> &lt; </a><a title="nächste Seite" href="fp_1618_43.html" class="button"> &gt; </a></nav>
+         </div>
          <hr>
       </header>
-      <aside id="nav">
-         <nav id="siblings">
-            <ul>
-               <li><a href="fp_1618_4.html">4</a></li>
-               <li><a href="fp_1618_16.html">16</a></li>
-               <li><a href="fp_1618_21.html">21</a></li>
-               <li><a href="fp_1618_22.html">22</a></li>
-               <li><a href="fp_1618_33.html">33</a></li>
-               <li><a href="fp_1618_35.html">35</a></li>
-               <li><a href="fp_1618_36.html">36</a></li>
-               <li><a href="fp_1618_38.html">38</a></li>
-               <li><a href="fp_1618_39.html">39</a></li>
-               <li><a href="fp_1618_40.html">40</a></li>
-               <li><a href="fp_1618_41.html">41</a></li>
-               <li>42</li>
-               <li><a href="fp_1618_43.html">43</a></li>
-               <li><a href="fp_1618_44.html">44</a></li>
-               <li><a href="fp_1618_45.html">45</a></li>
-               <li><a href="fp_1618_46.html">46</a></li>
-               <li><a href="fp_1618_47.html">47</a></li>
-               <li><a href="fp_1618_49.html">49</a></li>
-               <li><a href="fp_1618_50.html">50</a></li>
-               <li><a href="fp_1618_51.html">51</a></li>
-               <li><a href="fp_1618_52.html">52</a></li>
-            </ul>
-         </nav>
-      </aside>
       <main>
-         <h1>Frankfurter Postzeitung, Jahrgang 1618, 42</h1>
-         <section id="map_coresspondence"></section><script>
-                var map = L.map('map_coresspondence').setView([49.54, 5.76], 4);
-                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                }).addTo(map);
-                L.marker([50.11, 8.68]).addTo(map).bindPopup("Frankfurt").bindTooltip("Frankfurt");
+         <header>
+            <h2>Frankfurter Postzeitung, Jahrgang 1618, 42</h2>
+         </header>
+         <div>
+            <section id="coresspondence-map"></section><script>
+                    var map = L.map('coresspondence-map').setView([49.54, 5.76], 4);
+                    L.tileLayer.wms('https://ref.de.dariah.eu/geoserver/ows?service?', {
+                    layers: 'historic:cntry1650', attribution: '© <a href="https://web.archive.org/web/20060630061554/http://library.thinkquest.org/C006628/">ThinkQuest Team C006628</a>'
+                    }).addTo(map);
+                L.circle([50.11, 8.68], {color: 'red', radius: 30000}).addTo(map).bindTooltip("Frankfurt");
                 
                     L.marker([41.893055555556, 12.482777777778]).bindPopup(`<a href="fp_1618_42_1.html" rel="noopener noreferrer">1. Rom (6. 10.)</a>`).bindTooltip("1. Rom (6. 10.)").addTo(map);
                 
@@ -68,70 +46,71 @@
                     L.marker([52.36666666666667, 4.883333333333333]).bindPopup(`<a href="fp_1618_42_6.html" rel="noopener noreferrer">6. Amsterdam (17. 10.)</a>`).bindTooltip("6. Amsterdam (17. 10.)").addTo(map);
                 
                     L.marker([50.942222222222, 6.9577777777778]).bindPopup(`<a href="fp_1618_42_7.html" rel="noopener noreferrer">7. Köln (23. 10.)</a>`).bindTooltip("7. Köln (23. 10.)").addTo(map);
-                </script><section>
-            <ol>
-               <li><a href="fp_1618_42_1.html">
-                     Aus Rohm vom 6. Octob. 1618.</a><ul>
-                     <li><a href="fp_1618_42_1.html#1">
-                           VOn Neapoli wirdt geſchrieben/ [...] </a></li>
-                     <li><a href="fp_1618_42_1.html#2">Von Paris wirdt aviſirt/ [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_42_2.html">
-                     Aus Venedig vom 12. Ditto.</a><ul>
-                     <li><a href="fp_1618_42_2.html#1">Von Meylandt wirdt vom 3. diß geſchrieben/ [...] </a></li>
-                     <li><a href="fp_1618_42_2.html#2">Auß den Graubuͤnden verlaut/ [...] </a></li>
-                     <li><a href="fp_1618_42_2.html#3">Von Conſtantinopel wird ferner auiſirt/ [...] </a></li>
-                     <li><a href="fp_1618_42_2.html#4">Mit den Vaſellen oder Schiffen/ ſo newlich aus Leuante kommen/ vernimpt
-                           man/ [...] </a></li>
-                     <li><a href="fp_1618_42_2.html#5">Allhier zu Venedig ruͤſten [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_42_3.html">
-                     Aus Wien vom 11. Ditto.</a><ul>
-                     <li><a href="fp_1618_42_3.html#1">Vor 8.Tagen iſt [...] </a></li>
-                     <li><a href="fp_1618_42_3.html#2">Sonſten iſt [...] </a></li>
-                     <li><a href="fp_1618_42_3.html#3">Allhier hat [...] </a></li>
-                     <li><a href="fp_1618_42_3.html#4">Die Euangeliſche Landtſtaͤndt allhie haben [...] </a></li>
-                     <li><a href="fp_1618_42_3.html#5">Die Keyſ. vnnd Boͤhmen ſeynd [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_42_4.html">
-                     Auß Prag vom 14. Ditto.</a><ul>
-                     <li><a href="fp_1618_42_4.html#1">Dieſer Tagen ſeynd die Geſandten/ [...] </a></li>
-                     <li><a href="fp_1618_42_4.html#2">
-                           Donnerſtags haben [...] </a></li>
-                     <li><a href="fp_1618_42_4.html#3">Sonſſen iſt [...] </a></li>
-                     <li><a href="fp_1618_42_4.html#4">Jetzt vernimpt man von Pilſen ferꝛner/ [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_42_5.html">
-                     Auß deß Gravenhage vom 16. Ditto.</a><ul>
-                     <li><a href="fp_1618_42_5.html#1">Wir haben auß Frankreich/ [...] </a></li>
-                     <li><a href="fp_1618_42_5.html#2">Der Conte de Lemos deß Jtalianiſchen Rats Praͤſident iſt [...] </a></li>
-                     <li><a href="fp_1618_42_5.html#3">Zu Paris war [...] </a></li>
-                     <li><a href="fp_1618_42_5.html#4">Belangendt vnſere Sachen allhier/ [...] </a></li>
-                     <li><a href="fp_1618_42_5.html#5">Als man dieſe Tagen auß Barnefeldts Garten/ [...] </a></li>
-                     <li><a href="fp_1618_42_5.html#6">Nach deme der Herr Prinz zu Vranien [...] </a></li>
-                     <li><a href="fp_1618_42_5.html#7">So iſt gedachter Prinz [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_42_6.html">
-                     Auß Ambſterdamb vom 17. Ditto.</a><ul>
-                     <li><a href="fp_1618_42_6.html#1">Die Herrn deputirten dieſer Statt ſeynd verſchienen Freytags
-                            [...] </a></li>
-                     <li><a href="fp_1618_42_6.html#2">Auff Dato iſt allhier [...] </a></li>
-                     <li><a href="fp_1618_42_6.html#3">Die Oſt Jndiſche Companien in dieſer Provintzien/ [...] </a></li>
-                     <li><a href="fp_1618_42_6.html#4">Von Utrecht vernemen wir/ [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_42_7.html">
-                     Aus Coͤlln den 23 Ditto.</a><ul>
-                     <li><a href="fp_1618_42_7.html#1">Dieſer Orten iſt wenig ſchrifftliches/ [...] </a></li>
-                  </ul>
-               </li>
-            </ol>
-         </section>
+                </script><section class="coresspondence-list">
+               <ol>
+                  <li><a href="fp_1618_42_1.html">
+                        Aus Rohm vom 6. Octob. 1618.</a><ul>
+                        <li><a href="fp_1618_42_1.html#1">
+                              VOn Neapoli wirdt geſchrieben/ [...] </a></li>
+                        <li><a href="fp_1618_42_1.html#2">Von Paris wirdt aviſirt/ [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_42_2.html">
+                        Aus Venedig vom 12. Ditto.</a><ul>
+                        <li><a href="fp_1618_42_2.html#1">Von Meylandt wirdt vom 3. diß geſchrieben/ [...] </a></li>
+                        <li><a href="fp_1618_42_2.html#2">Auß den Graubuͤnden verlaut/ [...] </a></li>
+                        <li><a href="fp_1618_42_2.html#3">Von Conſtantinopel wird ferner auiſirt/ [...] </a></li>
+                        <li><a href="fp_1618_42_2.html#4">Mit den Vaſellen oder Schiffen/ ſo newlich aus Leuante kommen/ vernimpt
+                              man/ [...] </a></li>
+                        <li><a href="fp_1618_42_2.html#5">Allhier zu Venedig ruͤſten [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_42_3.html">
+                        Aus Wien vom 11. Ditto.</a><ul>
+                        <li><a href="fp_1618_42_3.html#1">Vor 8.Tagen iſt [...] </a></li>
+                        <li><a href="fp_1618_42_3.html#2">Sonſten iſt [...] </a></li>
+                        <li><a href="fp_1618_42_3.html#3">Allhier hat [...] </a></li>
+                        <li><a href="fp_1618_42_3.html#4">Die Euangeliſche Landtſtaͤndt allhie haben [...] </a></li>
+                        <li><a href="fp_1618_42_3.html#5">Die Keyſ. vnnd Boͤhmen ſeynd [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_42_4.html">
+                        Auß Prag vom 14. Ditto.</a><ul>
+                        <li><a href="fp_1618_42_4.html#1">Dieſer Tagen ſeynd die Geſandten/ [...] </a></li>
+                        <li><a href="fp_1618_42_4.html#2">
+                              Donnerſtags haben [...] </a></li>
+                        <li><a href="fp_1618_42_4.html#3">Sonſſen iſt [...] </a></li>
+                        <li><a href="fp_1618_42_4.html#4">Jetzt vernimpt man von Pilſen ferꝛner/ [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_42_5.html">
+                        Auß deß Gravenhage vom 16. Ditto.</a><ul>
+                        <li><a href="fp_1618_42_5.html#1">Wir haben auß Frankreich/ [...] </a></li>
+                        <li><a href="fp_1618_42_5.html#2">Der Conte de Lemos deß Jtalianiſchen Rats Praͤſident iſt [...] </a></li>
+                        <li><a href="fp_1618_42_5.html#3">Zu Paris war [...] </a></li>
+                        <li><a href="fp_1618_42_5.html#4">Belangendt vnſere Sachen allhier/ [...] </a></li>
+                        <li><a href="fp_1618_42_5.html#5">Als man dieſe Tagen auß Barnefeldts Garten/ [...] </a></li>
+                        <li><a href="fp_1618_42_5.html#6">Nach deme der Herr Prinz zu Vranien [...] </a></li>
+                        <li><a href="fp_1618_42_5.html#7">So iſt gedachter Prinz [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_42_6.html">
+                        Auß Ambſterdamb vom 17. Ditto.</a><ul>
+                        <li><a href="fp_1618_42_6.html#1">Die Herrn deputirten dieſer Statt ſeynd verſchienen Freytags
+                               [...] </a></li>
+                        <li><a href="fp_1618_42_6.html#2">Auff Dato iſt allhier [...] </a></li>
+                        <li><a href="fp_1618_42_6.html#3">Die Oſt Jndiſche Companien in dieſer Provintzien/ [...] </a></li>
+                        <li><a href="fp_1618_42_6.html#4">Von Utrecht vernemen wir/ [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_42_7.html">
+                        Aus Coͤlln den 23 Ditto.</a><ul>
+                        <li><a href="fp_1618_42_7.html#1">Dieſer Orten iſt wenig ſchrifftliches/ [...] </a></li>
+                     </ul>
+                  </li>
+               </ol>
+            </section>
+         </div>
       </main>
       <aside id="meta"></aside>
       <footer>

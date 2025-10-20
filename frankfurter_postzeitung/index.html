@@ -8,17 +8,20 @@
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body class="index">
       <header>
-         <nav class="breadcrumbs">
-            <ul>
-               <li><a href="index.html" class="active">Frankfurter Postzeitung</a></li>
-            </ul>
-         </nav>
-         <nav class="horizontal"><span><button>&lt;</button></span><span> — </span><span><button>&gt;</button></span></nav>
+         <div id="home"><a href="index.html">Frankfurter Postzeitung</a></div>
+         <div class="navigation-container">
+            <nav class="crumbs">
+               <ul>
+                  <li>Index</li>
+               </ul>
+            </nav>
+            <nav class="horizontal"><span class="button">&lt;</span><span class="button">&gt;</span></nav>
+         </div>
          <hr>
       </header>
       <main>
          <h1>Frankfurter Postzeitung</h1>
-         <section id="list_all_years">
+         <section class="grid-list">
             <h2>Jahrgänge</h2>
             <ul>
                <li><a href="fp_1615.html">1615</a></li>

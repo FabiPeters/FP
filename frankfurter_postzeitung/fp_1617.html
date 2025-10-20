@@ -8,26 +8,27 @@
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
       <header>
-         <nav class="breadcrumbs">
-            <ul>
-               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
-               <li><a href="fp_1617.html" class="active">1617</a></li>
-            </ul>
-         </nav>
-         <nav class="horizontal"><a href="fp_1615.html"><button>&lt;</button></a><span> — </span><a href="fp_1618.html"><button>&gt;</button></a></nav>
+         <div id="home"><a href="index.html">Frankfurter Postzeitung</a></div>
+         <div class="navigation-container">
+            <nav class="crumbs">
+               <ul>
+                  <li><a href="index.html">Index</a></li>
+                  <li>1617</li>
+               </ul>
+            </nav>
+            <nav class="horizontal"><a title="vorherige Seite" href="fp_1615.html" class="button"> &lt; </a><a title="nächste Seite" href="fp_1618.html" class="button"> &gt; </a></nav>
+         </div>
          <hr>
       </header>
-      <aside id="nav">
-         <nav id="siblings">
-            <ul>
-               <li><a href="fp_1615.html">1615</a></li>
-               <li>1617</li>
-               <li><a href="fp_1618.html">1618</a></li>
-            </ul>
-         </nav>
-      </aside>
       <main>
-         <h1>Frankfurter Postzeitung, Jahrgang 1617</h1>
+         <header>
+            <h2>Frankfurter Postzeitung, Jahrgang 1617</h2>
+         </header>
+         <section class="grid-list">
+            <ul>
+               <li><a href="fp_1617_40.html">40</a></li>
+            </ul>
+         </section>
          <section class="year">
             <section class="calendar">
                <table class="month">
@@ -560,12 +561,7 @@
                         <td class="">2</td>
                      </tr>
                      <tr>
-                        <td class=""><button class="q1085 " popovertarget="1617-09-03">3</button><div class="correspondence-tooltip" popover="" id="1617-09-03"><button popovertarget="1617-09-03" popovertargetaction="hide">x</button><h4>3. 9. 1617</h4>
-                              <ul>
-                                 <li class="correspondence-link"><a href="fp_1617_40_6.html" title="Artikel aus Prag in Ausgabe 6">Ausgabe 40 – Prag</a></li>
-                              </ul>
-                           </div>
-                        </td>
+                        <td class=""><button class="q1085" popovertarget="1617-09-03">3</button></td>
                         <td class="">4</td>
                         <td class="">5</td>
                         <td class="">6</td>
@@ -584,46 +580,21 @@
                      </tr>
                      <tr>
                         <td class="">17</td>
-                        <td class=""><button class="q6596 " popovertarget="1617-09-18">18</button><div class="correspondence-tooltip" popover="" id="1617-09-18"><button popovertarget="1617-09-18" popovertargetaction="hide">x</button><h4>18. 9. 1617</h4>
-                              <ul>
-                                 <li class="correspondence-link"><a href="fp_1617_40_1.html" title="Artikel aus Gorizia in Ausgabe 1">Ausgabe 40 – Gorizia</a></li>
-                              </ul>
-                           </div>
-                        </td>
+                        <td class=""><button class="q6596" popovertarget="1617-09-18">18</button></td>
                         <td class="">19</td>
                         <td class="">20</td>
                         <td class="">21</td>
                         <td class="">22</td>
-                        <td class=""><button class="q220 " popovertarget="1617-09-23">23</button><div class="correspondence-tooltip" popover="" id="1617-09-23"><button popovertarget="1617-09-23" popovertargetaction="hide">x</button><h4>23. 9. 1617</h4>
-                              <ul>
-                                 <li class="correspondence-link"><a href="fp_1617_40_3.html" title="Artikel aus Rom in Ausgabe 3">Ausgabe 40 – Rom</a></li>
-                              </ul>
-                           </div>
-                        </td>
+                        <td class=""><button class="q220" popovertarget="1617-09-23">23</button></td>
                      </tr>
                      <tr>
-                        <td class=""><button class="q456 " popovertarget="1617-09-24">24</button><div class="correspondence-tooltip" popover="" id="1617-09-24"><button popovertarget="1617-09-24" popovertargetaction="hide">x</button><h4>24. 9. 1617</h4>
-                              <ul>
-                                 <li class="correspondence-link"><a href="fp_1617_40_4.html" title="Artikel aus Lyon in Ausgabe 4">Ausgabe 40 – Lyon</a></li>
-                              </ul>
-                           </div>
-                        </td>
+                        <td class=""><button class="q456" popovertarget="1617-09-24">24</button></td>
                         <td class="">25</td>
                         <td class="">26</td>
-                        <td class=""><button class="q1741 " popovertarget="1617-09-27">27</button><div class="correspondence-tooltip" popover="" id="1617-09-27"><button popovertarget="1617-09-27" popovertargetaction="hide">x</button><h4>27. 9. 1617</h4>
-                              <ul>
-                                 <li class="correspondence-link"><a href="fp_1617_40_2.html" title="Artikel aus Wien in Ausgabe 2">Ausgabe 40 – Wien</a></li>
-                              </ul>
-                           </div>
-                        </td>
+                        <td class=""><button class="q1741" popovertarget="1617-09-27">27</button></td>
                         <td class="">28</td>
                         <td class="">29</td>
-                        <td class=""><button class="q641 " popovertarget="1617-09-30">30</button><div class="correspondence-tooltip" popover="" id="1617-09-30"><button popovertarget="1617-09-30" popovertargetaction="hide">x</button><h4>30. 9. 1617</h4>
-                              <ul>
-                                 <li class="correspondence-link"><a href="fp_1617_40_5.html" title="Artikel aus Venedig in Ausgabe 5">Ausgabe 40 – Venedig</a></li>
-                              </ul>
-                           </div>
-                        </td>
+                        <td class=""><button class="q641" popovertarget="1617-09-30">30</button></td>
                      </tr>
                   </tbody>
                </table>
@@ -646,12 +617,7 @@
                         <td class="">2</td>
                         <td class="">3</td>
                         <td class="">4</td>
-                        <td class=""><button class="q36600 " popovertarget="1617-10-05">5</button><div class="correspondence-tooltip" popover="" id="1617-10-05"><button popovertarget="1617-10-05" popovertargetaction="hide">x</button><h4>5. 10. 1617</h4>
-                              <ul>
-                                 <li class="correspondence-link"><a href="fp_1617_40_7.html" title="Artikel aus Den Haag in Ausgabe 7">Ausgabe 40 – Den Haag</a></li>
-                              </ul>
-                           </div>
-                        </td>
+                        <td class=""><button class="q36600" popovertarget="1617-10-05">5</button></td>
                         <td class="">6</td>
                         <td class="">7</td>
                      </tr>
@@ -660,13 +626,7 @@
                         <td class="">9</td>
                         <td class="">10</td>
                         <td class="">11</td>
-                        <td class="issue-date"><button class="q365 " popovertarget="1617-10-12">12</button><div class="correspondence-tooltip" popover="" id="1617-10-12"><button popovertarget="1617-10-12" popovertargetaction="hide">x</button><h4>12. 10. 1617</h4>
-                              <ul>
-                                 <li><a href="fp_1617_40.html">Ausgabe 40</a></li>
-                                 <li class="correspondence-link"><a href="fp_1617_40_8.html" title="Artikel aus Köln in Ausgabe 8">Ausgabe 40 – Köln</a></li>
-                              </ul>
-                           </div>
-                        </td>
+                        <td class="issue-date"><button class="q365" popovertarget="1617-10-12">12</button></td>
                         <td class="">13</td>
                         <td class="">14</td>
                      </tr>
@@ -831,15 +791,1844 @@
                   </tbody>
                </table>
             </section>
+            <div>
+               <div class="date-popover" popover="auto" id="1615-10-08">
+                  <header><button popovertarget="1615-10-08" popovertargetaction="hide">x</button><h2>8. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_39_1.html">Köln</a></li>
+                        <li><a href="fp_1615_42_5.html">Leipzig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-09-20">
+                  <header><button popovertarget="1615-09-20" popovertargetaction="hide">x</button><h2>20. 9. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_39_2.html">Breslau</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-09-28">
+                  <header><button popovertarget="1615-09-28" popovertargetaction="hide">x</button><h2>28. 9. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_39_3.html">Braunschweig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-09-29">
+                  <header><button popovertarget="1615-09-29" popovertargetaction="hide">x</button><h2>29. 9. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_39_4.html">Magdeburg</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-02">
+                  <header><button popovertarget="1615-10-02" popovertargetaction="hide">x</button><h2>2. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_39_5.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-26">
+                  <header><button popovertarget="1615-10-26" popovertargetaction="hide">x</button><h2>26. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1615_39.html">Ausgabe 39</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_39_6.html">Wien</a></li>
+                        <li><a href="fp_1615_43_1.html">Den Haag</a></li>
+                        <li><a href="fp_1615_43_5.html">Leipzig</a></li>
+                        <li><a href="fp_1615_43_8.html">Wolfenbüttel</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-19">
+                  <header><button popovertarget="1615-10-19" popovertargetaction="hide">x</button><h2>19. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_42_1.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-29">
+                  <header><button popovertarget="1615-10-29" popovertargetaction="hide">x</button><h2>29. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1615_42.html">Ausgabe 42</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_42_2.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-10">
+                  <header><button popovertarget="1615-10-10" popovertargetaction="hide">x</button><h2>10. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_42_3.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-16">
+                  <header><button popovertarget="1615-10-16" popovertargetaction="hide">x</button><h2>16. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_42_4.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-09-19">
+                  <header><button popovertarget="1615-09-19" popovertargetaction="hide">x</button><h2>19. 9. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_42_6.html">Paris</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-11">
+                  <header><button popovertarget="1615-10-11" popovertargetaction="hide">x</button><h2>11. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_42_7.html">Hamburg</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-05">
+                  <header><button popovertarget="1615-11-05" popovertargetaction="hide">x</button><h2>5. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1615_43.html">Ausgabe 43</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_43_2.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-17">
+                  <header><button popovertarget="1615-10-17" popovertargetaction="hide">x</button><h2>17. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_43_3.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-23">
+                  <header><button popovertarget="1615-10-23" popovertargetaction="hide">x</button><h2>23. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_43_4.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-24">
+                  <header><button popovertarget="1615-10-24" popovertargetaction="hide">x</button><h2>24. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_43_6.html">Hamburg</a></li>
+                        <li><a href="fp_1615_43_7.html">Braunschweiger Land</a></li>
+                        <li><a href="fp_1615_43_9.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-23">
+                  <header><button popovertarget="1615-11-23" popovertargetaction="hide">x</button><h2>23. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1615_46.html">Ausgabe 46</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_46_1.html">Köln</a></li>
+                        <li><a href="fp_1615_47_1.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-07">
+                  <header><button popovertarget="1615-11-07" popovertargetaction="hide">x</button><h2>7. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_46_2.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-13">
+                  <header><button popovertarget="1615-11-13" popovertargetaction="hide">x</button><h2>13. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_46_3.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-15">
+                  <header><button popovertarget="1615-11-15" popovertargetaction="hide">x</button><h2>15. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_46_4.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-28">
+                  <header><button popovertarget="1615-11-28" popovertargetaction="hide">x</button><h2>28. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_47_2.html">Düsseldorf</a></li>
+                        <li><a href="fp_1615_48_5.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-29">
+                  <header><button popovertarget="1615-11-29" popovertargetaction="hide">x</button><h2>29. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1615_47.html">Ausgabe 47</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_47_3.html">Köln</a></li>
+                        <li><a href="fp_1615_49_5.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-03">
+                  <header><button popovertarget="1615-10-03" popovertargetaction="hide">x</button><h2>3. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_47_4.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-14">
+                  <header><button popovertarget="1615-10-14" popovertargetaction="hide">x</button><h2>14. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_47_5.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-10-20">
+                  <header><button popovertarget="1615-10-20" popovertargetaction="hide">x</button><h2>20. 10. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_47_6.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-09">
+                  <header><button popovertarget="1615-11-09" popovertargetaction="hide">x</button><h2>9. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_47_7.html">Győr</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-19">
+                  <header><button popovertarget="1615-11-19" popovertargetaction="hide">x</button><h2>19. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_47_8.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-21">
+                  <header><button popovertarget="1615-11-21" popovertargetaction="hide">x</button><h2>21. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_47_9.html">Prag</a></li>
+                        <li><a href="fp_1615_48_3.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-30">
+                  <header><button popovertarget="1615-11-30" popovertargetaction="hide">x</button><h2>30. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_48_1.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-12-10">
+                  <header><button popovertarget="1615-12-10" popovertargetaction="hide">x</button><h2>10. 12. 1615</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1615_48.html">Ausgabe 48</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_48_2.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-27">
+                  <header><button popovertarget="1615-11-27" popovertargetaction="hide">x</button><h2>27. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_48_4.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-12-08">
+                  <header><button popovertarget="1615-12-08" popovertargetaction="hide">x</button><h2>8. 12. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_49_1.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-12-17">
+                  <header><button popovertarget="1615-12-17" popovertargetaction="hide">x</button><h2>17. 12. 1615</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1615_49.html">Ausgabe 49</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_49_2.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-11-20">
+                  <header><button popovertarget="1615-11-20" popovertargetaction="hide">x</button><h2>20. 11. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_49_3.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1615-12-04">
+                  <header><button popovertarget="1615-12-04" popovertargetaction="hide">x</button><h2>4. 12. 1615</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1615_49_4.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1617-09-18">
+                  <header><button popovertarget="1617-09-18" popovertargetaction="hide">x</button><h2>18. 9. 1617</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1617_40_1.html">Gorizia</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1617-09-27">
+                  <header><button popovertarget="1617-09-27" popovertargetaction="hide">x</button><h2>27. 9. 1617</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1617_40_2.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1617-09-23">
+                  <header><button popovertarget="1617-09-23" popovertargetaction="hide">x</button><h2>23. 9. 1617</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1617_40_3.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1617-09-24">
+                  <header><button popovertarget="1617-09-24" popovertargetaction="hide">x</button><h2>24. 9. 1617</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1617_40_4.html">Lyon</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1617-09-30">
+                  <header><button popovertarget="1617-09-30" popovertargetaction="hide">x</button><h2>30. 9. 1617</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1617_40_5.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1617-09-03">
+                  <header><button popovertarget="1617-09-03" popovertargetaction="hide">x</button><h2>3. 9. 1617</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1617_40_6.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1617-10-05">
+                  <header><button popovertarget="1617-10-05" popovertargetaction="hide">x</button><h2>5. 10. 1617</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1617_40_7.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1617-10-12">
+                  <header><button popovertarget="1617-10-12" popovertargetaction="hide">x</button><h2>12. 10. 1617</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1617_40.html">Ausgabe 40</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1617_40_8.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-01-08">
+                  <header><button popovertarget="1618-01-08" popovertargetaction="hide">x</button><h2>8. 1. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_4_1.html">Košice</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-01-17">
+                  <header><button popovertarget="1618-01-17" popovertargetaction="hide">x</button><h2>17. 1. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_4_2.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-01-23">
+                  <header><button popovertarget="1618-01-23" popovertargetaction="hide">x</button><h2>23. 1. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_4_3.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-01-13">
+                  <header><button popovertarget="1618-01-13" popovertargetaction="hide">x</button><h2>13. 1. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_4_4.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-01-19">
+                  <header><button popovertarget="1618-01-19" popovertargetaction="hide">x</button><h2>19. 1. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_4_5.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-01-25">
+                  <header><button popovertarget="1618-01-25" popovertargetaction="hide">x</button><h2>25. 1. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_4_6.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-02-01">
+                  <header><button popovertarget="1618-02-01" popovertargetaction="hide">x</button><h2>1. 2. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_4.html">Ausgabe 4</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_4_7.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-04-06">
+                  <header><button popovertarget="1618-04-06" popovertargetaction="hide">x</button><h2>6. 4. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_16_1.html">Stockholm</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-04-08">
+                  <header><button popovertarget="1618-04-08" popovertargetaction="hide">x</button><h2>8. 4. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_16_2.html">Schweiz</a></li>
+                        <li><a href="fp_1618_16_5.html">Bratislava</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-04-07">
+                  <header><button popovertarget="1618-04-07" popovertargetaction="hide">x</button><h2>7. 4. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_16_3.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-04-17">
+                  <header><button popovertarget="1618-04-17" popovertargetaction="hide">x</button><h2>17. 4. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_16_4.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-04-12">
+                  <header><button popovertarget="1618-04-12" popovertargetaction="hide">x</button><h2>12. 4. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_16_6.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-04-16">
+                  <header><button popovertarget="1618-04-16" popovertargetaction="hide">x</button><h2>16. 4. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_16_7.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-04-19">
+                  <header><button popovertarget="1618-04-19" popovertargetaction="hide">x</button><h2>19. 4. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_16_8.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-04-26">
+                  <header><button popovertarget="1618-04-26" popovertargetaction="hide">x</button><h2>26. 4. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_16.html">Ausgabe 16</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_16_9.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-12">
+                  <header><button popovertarget="1618-05-12" popovertargetaction="hide">x</button><h2>12. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_21_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-18">
+                  <header><button popovertarget="1618-05-18" popovertargetaction="hide">x</button><h2>18. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_21_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-13">
+                  <header><button popovertarget="1618-05-13" popovertargetaction="hide">x</button><h2>13. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_21_3.html">Lyon</a></li>
+                        <li><a href="fp_1618_21_5.html">Bratislava</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-21">
+                  <header><button popovertarget="1618-05-21" popovertargetaction="hide">x</button><h2>21. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_21_4.html">Regensburg</a></li>
+                        <li><a href="fp_1618_21_7.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-16">
+                  <header><button popovertarget="1618-05-16" popovertargetaction="hide">x</button><h2>16. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_21_6.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-24">
+                  <header><button popovertarget="1618-05-24" popovertargetaction="hide">x</button><h2>24. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_21_8.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-30">
+                  <header><button popovertarget="1618-05-30" popovertargetaction="hide">x</button><h2>30. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_21.html">Ausgabe 21</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_21_9.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-19">
+                  <header><button popovertarget="1618-05-19" popovertargetaction="hide">x</button><h2>19. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_22_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-25">
+                  <header><button popovertarget="1618-05-25" popovertargetaction="hide">x</button><h2>25. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_22_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-23">
+                  <header><button popovertarget="1618-05-23" popovertargetaction="hide">x</button><h2>23. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_22_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-05-29">
+                  <header><button popovertarget="1618-05-29" popovertargetaction="hide">x</button><h2>29. 5. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_22_4.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-06-01">
+                  <header><button popovertarget="1618-06-01" popovertargetaction="hide">x</button><h2>1. 6. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_22_5.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-06-06">
+                  <header><button popovertarget="1618-06-06" popovertargetaction="hide">x</button><h2>6. 6. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_22.html">Ausgabe 22</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_22_6.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-04">
+                  <header><button popovertarget="1618-08-04" popovertargetaction="hide">x</button><h2>4. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_33_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-11">
+                  <header><button popovertarget="1618-08-11" popovertargetaction="hide">x</button><h2>11. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_33_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-09">
+                  <header><button popovertarget="1618-08-09" popovertargetaction="hide">x</button><h2>9. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_33_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-17">
+                  <header><button popovertarget="1618-08-17" popovertargetaction="hide">x</button><h2>17. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_33_4.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-14">
+                  <header><button popovertarget="1618-08-14" popovertargetaction="hide">x</button><h2>14. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_33_5.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-21">
+                  <header><button popovertarget="1618-08-21" popovertargetaction="hide">x</button><h2>21. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_33.html">Ausgabe 33</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_33_6.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-18">
+                  <header><button popovertarget="1618-08-18" popovertargetaction="hide">x</button><h2>18. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_35_1.html">Rom</a></li>
+                        <li><a href="fp_1618_35_3.html">Pfaffenschlag bei Waidhofen an der Thaya</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-24">
+                  <header><button popovertarget="1618-08-24" popovertargetaction="hide">x</button><h2>24. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_35_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-22">
+                  <header><button popovertarget="1618-08-22" popovertargetaction="hide">x</button><h2>22. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_35_4.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-27">
+                  <header><button popovertarget="1618-08-27" popovertargetaction="hide">x</button><h2>27. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_35_5.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-30">
+                  <header><button popovertarget="1618-08-30" popovertargetaction="hide">x</button><h2>30. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_35_6.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-31">
+                  <header><button popovertarget="1618-08-31" popovertargetaction="hide">x</button><h2>31. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_35_7.html">Amsterdam</a></li>
+                        <li><a href="fp_1618_36_3.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-04">
+                  <header><button popovertarget="1618-09-04" popovertargetaction="hide">x</button><h2>4. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_35.html">Ausgabe 35</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_35_8.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-16">
+                  <header><button popovertarget="1618-08-16" popovertargetaction="hide">x</button><h2>16. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_36_1.html">Krakau</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-25">
+                  <header><button popovertarget="1618-08-25" popovertargetaction="hide">x</button><h2>25. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_36_2.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-08-29">
+                  <header><button popovertarget="1618-08-29" popovertargetaction="hide">x</button><h2>29. 8. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_36_4.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-02">
+                  <header><button popovertarget="1618-09-02" popovertargetaction="hide">x</button><h2>2. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_36_5.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-05">
+                  <header><button popovertarget="1618-09-05" popovertargetaction="hide">x</button><h2>5. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_36_6.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-06">
+                  <header><button popovertarget="1618-09-06" popovertargetaction="hide">x</button><h2>6. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_36_7.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-09">
+                  <header><button popovertarget="1618-09-09" popovertargetaction="hide">x</button><h2>9. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_36.html">Ausgabe 36</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_36_8.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-08">
+                  <header><button popovertarget="1618-09-08" popovertargetaction="hide">x</button><h2>8. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_38_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-14">
+                  <header><button popovertarget="1618-09-14" popovertargetaction="hide">x</button><h2>14. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_38_2.html">Venedig</a></li>
+                        <li><a href="fp_1618_38_4.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-13">
+                  <header><button popovertarget="1618-09-13" popovertargetaction="hide">x</button><h2>13. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_38_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-16">
+                  <header><button popovertarget="1618-09-16" popovertargetaction="hide">x</button><h2>16. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_38_5.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-18">
+                  <header><button popovertarget="1618-09-18" popovertargetaction="hide">x</button><h2>18. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_38_6.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-19">
+                  <header><button popovertarget="1618-09-19" popovertargetaction="hide">x</button><h2>19. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_38_7.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-26">
+                  <header><button popovertarget="1618-09-26" popovertargetaction="hide">x</button><h2>26. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_38.html">Ausgabe 38</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_38_8.html">Köln</a></li>
+                        <li><a href="fp_1618_39_5.html">Den Haag</a></li>
+                        <li><a href="fp_1618_40_4.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-15">
+                  <header><button popovertarget="1618-09-15" popovertargetaction="hide">x</button><h2>15. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_39_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-21">
+                  <header><button popovertarget="1618-09-21" popovertargetaction="hide">x</button><h2>21. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_39_2.html">Venedig</a></li>
+                        <li><a href="fp_1618_40_3.html">Kaiserl. Lager</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-20">
+                  <header><button popovertarget="1618-09-20" popovertargetaction="hide">x</button><h2>20. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_39_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-22">
+                  <header><button popovertarget="1618-09-22" popovertargetaction="hide">x</button><h2>22. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_39_4.html">Prag</a></li>
+                        <li><a href="fp_1618_40_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-27">
+                  <header><button popovertarget="1618-09-27" popovertargetaction="hide">x</button><h2>27. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_39_6.html">Amsterdam</a></li>
+                        <li><a href="fp_1618_40_5.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-02">
+                  <header><button popovertarget="1618-10-02" popovertargetaction="hide">x</button><h2>2. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_39.html">Ausgabe 39</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_39_7.html">Köln</a></li>
+                        <li><a href="fp_1618_40_7.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-28">
+                  <header><button popovertarget="1618-09-28" popovertargetaction="hide">x</button><h2>28. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_40_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-30">
+                  <header><button popovertarget="1618-09-30" popovertargetaction="hide">x</button><h2>30. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_40_6.html">Kaiserl. Lager</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-03">
+                  <header><button popovertarget="1618-10-03" popovertargetaction="hide">x</button><h2>3. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_40_8.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-09">
+                  <header><button popovertarget="1618-10-09" popovertargetaction="hide">x</button><h2>9. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_40.html">Ausgabe 40</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_40_9.html">Köln</a></li>
+                        <li><a href="fp_1618_41_5.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-09-29">
+                  <header><button popovertarget="1618-09-29" popovertargetaction="hide">x</button><h2>29. 9. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_41_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-05">
+                  <header><button popovertarget="1618-10-05" popovertargetaction="hide">x</button><h2>5. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_41_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-04">
+                  <header><button popovertarget="1618-10-04" popovertargetaction="hide">x</button><h2>4. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_41_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-07">
+                  <header><button popovertarget="1618-10-07" popovertargetaction="hide">x</button><h2>7. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_41_4.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-10">
+                  <header><button popovertarget="1618-10-10" popovertargetaction="hide">x</button><h2>10. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_41_6.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-16">
+                  <header><button popovertarget="1618-10-16" popovertargetaction="hide">x</button><h2>16. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_41.html">Ausgabe 41</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_41_7.html">Köln</a></li>
+                        <li><a href="fp_1618_42_5.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-06">
+                  <header><button popovertarget="1618-10-06" popovertargetaction="hide">x</button><h2>6. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_42_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-12">
+                  <header><button popovertarget="1618-10-12" popovertargetaction="hide">x</button><h2>12. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_42_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-11">
+                  <header><button popovertarget="1618-10-11" popovertargetaction="hide">x</button><h2>11. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_42_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-14">
+                  <header><button popovertarget="1618-10-14" popovertargetaction="hide">x</button><h2>14. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_42_4.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-17">
+                  <header><button popovertarget="1618-10-17" popovertargetaction="hide">x</button><h2>17. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_42_6.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-23">
+                  <header><button popovertarget="1618-10-23" popovertargetaction="hide">x</button><h2>23. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_42.html">Ausgabe 42</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_42_7.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-13">
+                  <header><button popovertarget="1618-10-13" popovertargetaction="hide">x</button><h2>13. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_43_1.html">Rom</a></li>
+                        <li><a href="fp_1618_45_8.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-19">
+                  <header><button popovertarget="1618-10-19" popovertargetaction="hide">x</button><h2>19. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_43_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-08">
+                  <header><button popovertarget="1618-10-08" popovertargetaction="hide">x</button><h2>8. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_43_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-20">
+                  <header><button popovertarget="1618-10-20" popovertargetaction="hide">x</button><h2>20. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_43_4.html">Prag</a></li>
+                        <li><a href="fp_1618_44_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-24">
+                  <header><button popovertarget="1618-10-24" popovertargetaction="hide">x</button><h2>24. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_43_5.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-25">
+                  <header><button popovertarget="1618-10-25" popovertargetaction="hide">x</button><h2>25. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_43_6.html">Amsterdam</a></li>
+                        <li><a href="fp_1618_44_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-30">
+                  <header><button popovertarget="1618-10-30" popovertargetaction="hide">x</button><h2>30. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_43.html">Ausgabe 43</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_43_7.html">Köln</a></li>
+                        <li><a href="fp_1618_44_5.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-26">
+                  <header><button popovertarget="1618-10-26" popovertargetaction="hide">x</button><h2>26. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_44_2.html">Venedig</a></li>
+                        <li><a href="fp_1618_45_1.html">Paris</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-28">
+                  <header><button popovertarget="1618-10-28" popovertargetaction="hide">x</button><h2>28. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_44_4.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-31">
+                  <header><button popovertarget="1618-10-31" popovertargetaction="hide">x</button><h2>31. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_44_6.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-06">
+                  <header><button popovertarget="1618-11-06" popovertargetaction="hide">x</button><h2>6. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_44.html">Ausgabe 44</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_44_7.html">Köln</a></li>
+                        <li><a href="fp_1618_45_6.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-10-27">
+                  <header><button popovertarget="1618-10-27" popovertargetaction="hide">x</button><h2>27. 10. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_45_2.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-02">
+                  <header><button popovertarget="1618-11-02" popovertargetaction="hide">x</button><h2>2. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_45_3.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-01">
+                  <header><button popovertarget="1618-11-01" popovertargetaction="hide">x</button><h2>1. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_45_4.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-04">
+                  <header><button popovertarget="1618-11-04" popovertargetaction="hide">x</button><h2>4. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_45_5.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-07">
+                  <header><button popovertarget="1618-11-07" popovertargetaction="hide">x</button><h2>7. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_45.html">Ausgabe 45</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_45_7.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-03">
+                  <header><button popovertarget="1618-11-03" popovertargetaction="hide">x</button><h2>3. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_46_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-09">
+                  <header><button popovertarget="1618-11-09" popovertargetaction="hide">x</button><h2>9. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_46_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-08">
+                  <header><button popovertarget="1618-11-08" popovertargetaction="hide">x</button><h2>8. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_46_3.html">Wien</a></li>
+                        <li><a href="fp_1618_46_4.html">Pilsen</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-10">
+                  <header><button popovertarget="1618-11-10" popovertargetaction="hide">x</button><h2>10. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_46_5.html">Prag</a></li>
+                        <li><a href="fp_1618_47_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-13">
+                  <header><button popovertarget="1618-11-13" popovertargetaction="hide">x</button><h2>13. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_46_6.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-14">
+                  <header><button popovertarget="1618-11-14" popovertargetaction="hide">x</button><h2>14. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_46_7.html">Amsterdam</a></li>
+                        <li><a href="fp_1618_47_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-20">
+                  <header><button popovertarget="1618-11-20" popovertargetaction="hide">x</button><h2>20. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_46.html">Ausgabe 46</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_46_8.html">Köln</a></li>
+                        <li><a href="fp_1618_47_5.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-16">
+                  <header><button popovertarget="1618-11-16" popovertargetaction="hide">x</button><h2>16. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_47_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-18">
+                  <header><button popovertarget="1618-11-18" popovertargetaction="hide">x</button><h2>18. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_47_4.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-21">
+                  <header><button popovertarget="1618-11-21" popovertargetaction="hide">x</button><h2>21. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_47_6.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-27">
+                  <header><button popovertarget="1618-11-27" popovertargetaction="hide">x</button><h2>27. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_47.html">Ausgabe 47</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_47_7.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-24">
+                  <header><button popovertarget="1618-11-24" popovertargetaction="hide">x</button><h2>24. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_49_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-30">
+                  <header><button popovertarget="1618-11-30" popovertargetaction="hide">x</button><h2>30. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_49_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-29">
+                  <header><button popovertarget="1618-11-29" popovertargetaction="hide">x</button><h2>29. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_49_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-11-28">
+                  <header><button popovertarget="1618-11-28" popovertargetaction="hide">x</button><h2>28. 11. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_49_4.html">Rudolfov</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-02">
+                  <header><button popovertarget="1618-12-02" popovertargetaction="hide">x</button><h2>2. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_49_5.html">Prag</a></li>
+                        <li><a href="fp_1618_50_3.html">Budweis</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-11">
+                  <header><button popovertarget="1618-12-11" popovertargetaction="hide">x</button><h2>11. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_49.html">Ausgabe 49</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_49_6.html">Köln</a></li>
+                        <li><a href="fp_1618_50_6.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-01">
+                  <header><button popovertarget="1618-12-01" popovertargetaction="hide">x</button><h2>1. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_50_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-07">
+                  <header><button popovertarget="1618-12-07" popovertargetaction="hide">x</button><h2>7. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_50_2.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-06">
+                  <header><button popovertarget="1618-12-06" popovertargetaction="hide">x</button><h2>6. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_50_4.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-08">
+                  <header><button popovertarget="1618-12-08" popovertargetaction="hide">x</button><h2>8. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_50_5.html">Prag</a></li>
+                        <li><a href="fp_1618_51_1.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-12">
+                  <header><button popovertarget="1618-12-12" popovertargetaction="hide">x</button><h2>12. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_50_7.html">Amsterdam</a></li>
+                        <li><a href="fp_1618_52_2.html">Lyon</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-18">
+                  <header><button popovertarget="1618-12-18" popovertargetaction="hide">x</button><h2>18. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_50.html">Ausgabe 50</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_50_8.html">Köln</a></li>
+                        <li><a href="fp_1618_51_5.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-14">
+                  <header><button popovertarget="1618-12-14" popovertargetaction="hide">x</button><h2>14. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_51_2.html">Venedig</a></li>
+                        <li><a href="fp_1618_51_3.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-16">
+                  <header><button popovertarget="1618-12-16" popovertargetaction="hide">x</button><h2>16. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_51_4.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-19">
+                  <header><button popovertarget="1618-12-19" popovertargetaction="hide">x</button><h2>19. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_51_6.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-25">
+                  <header><button popovertarget="1618-12-25" popovertargetaction="hide">x</button><h2>25. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_51.html">Ausgabe 51</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_51_7.html">Köln</a></li>
+                        <li><a href="fp_1618_52_8.html">Amsterdam</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-10">
+                  <header><button popovertarget="1618-12-10" popovertargetaction="hide">x</button><h2>10. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_52_1.html">Kanton Graubünden</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-15">
+                  <header><button popovertarget="1618-12-15" popovertargetaction="hide">x</button><h2>15. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_52_3.html">Rom</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-21">
+                  <header><button popovertarget="1618-12-21" popovertargetaction="hide">x</button><h2>21. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_52_4.html">Venedig</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-20">
+                  <header><button popovertarget="1618-12-20" popovertargetaction="hide">x</button><h2>20. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_52_5.html">Wien</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-23">
+                  <header><button popovertarget="1618-12-23" popovertargetaction="hide">x</button><h2>23. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_52_6.html">Prag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-24">
+                  <header><button popovertarget="1618-12-24" popovertargetaction="hide">x</button><h2>24. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_52_7.html">Den Haag</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="date-popover" popover="auto" id="1618-12-31">
+                  <header><button popovertarget="1618-12-31" popovertargetaction="hide">x</button><h2>31. 12. 1618</h2>
+                  </header>
+                  <div>
+                     <h3><a href="fp_1618_52.html">Ausgabe 52</a></h3>
+                  </div>
+                  <div>
+                     <h3>Korrespondenzen</h3>
+                     <ul>
+                        <li><a href="fp_1618_52_9.html">Köln</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
          </section>
       </main>
       <aside id="meta">
          <form>
-            <fieldset>
-               <legend>Korrespondenzorte auswählen, um sie im Kalender hervorzuheben</legend><input id="toggle_q6596" type="checkbox"><label for="toggle_q6596" class="Q6596">Gorizia</label><br><input id="toggle_q1741" type="checkbox"><label for="toggle_q1741" class="Q1741">Wien</label><br><input id="toggle_q220" type="checkbox"><label for="toggle_q220" class="Q220">Rom</label><br><input id="toggle_q456" type="checkbox"><label for="toggle_q456" class="Q456">Lyon</label><br><input id="toggle_q641" type="checkbox"><label for="toggle_q641" class="Q641">Venedig</label><br><input id="toggle_q1085" type="checkbox"><label for="toggle_q1085" class="Q1085">Prag</label><br><input id="toggle_q36600" type="checkbox"><label for="toggle_q36600" class="Q36600">Den Haag</label><br><input id="toggle_q365" type="checkbox"><label for="toggle_q365" class="Q365">Köln</label><br></fieldset>
+            <fieldset class="correspondence-places">
+               <legend>Korrespondenzorte auswählen, um sie im Kalender hervorzuheben</legend><label class="Q6596">Gorizia<input id="toggle_q6596" type="checkbox"></label><br><label class="Q1741">Wien<input id="toggle_q1741" type="checkbox"></label><br><label class="Q220">Rom<input id="toggle_q220" type="checkbox"></label><br><label class="Q456">Lyon<input id="toggle_q456" type="checkbox"></label><br><label class="Q641">Venedig<input id="toggle_q641" type="checkbox"></label><br><label class="Q1085">Prag<input id="toggle_q1085" type="checkbox"></label><br><label class="Q36600">Den Haag<input id="toggle_q36600" type="checkbox"></label><br><label class="Q365">Köln<input id="toggle_q365" type="checkbox"></label><br></fieldset>
          </form>
-      </aside>
-      <footer>
+      </aside><script src="frankfurter_postzeitung.js"></script><footer>
          <hr>
          <ul>
             <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>

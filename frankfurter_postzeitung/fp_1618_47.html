@@ -8,52 +8,30 @@
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
       <header>
-         <nav class="breadcrumbs">
-            <ul>
-               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
-               <li class="crumb"><a href="fp_1618.html">1618</a></li>
-               <li><a href="fp_1618_47.html" class="active">47</a></li>
-            </ul>
-         </nav>
-         <nav class="horizontal"><a href="fp_1618_46.html"><button>&lt;</button></a><span> — </span><a href="fp_1618_49.html"><button>&gt;</button></a></nav>
+         <div id="home"><a href="index.html">Frankfurter Postzeitung</a></div>
+         <div class="navigation-container">
+            <nav class="crumbs">
+               <ul>
+                  <li><a href="index.html">Index</a></li>
+                  <li><a href="fp_1618.html">1618</a></li>
+                  <li>47</li>
+               </ul>
+            </nav>
+            <nav class="horizontal"><a title="vorherige Seite" href="fp_1618_46.html" class="button"> &lt; </a><a title="nächste Seite" href="fp_1618_49.html" class="button"> &gt; </a></nav>
+         </div>
          <hr>
       </header>
-      <aside id="nav">
-         <nav id="siblings">
-            <ul>
-               <li><a href="fp_1618_4.html">4</a></li>
-               <li><a href="fp_1618_16.html">16</a></li>
-               <li><a href="fp_1618_21.html">21</a></li>
-               <li><a href="fp_1618_22.html">22</a></li>
-               <li><a href="fp_1618_33.html">33</a></li>
-               <li><a href="fp_1618_35.html">35</a></li>
-               <li><a href="fp_1618_36.html">36</a></li>
-               <li><a href="fp_1618_38.html">38</a></li>
-               <li><a href="fp_1618_39.html">39</a></li>
-               <li><a href="fp_1618_40.html">40</a></li>
-               <li><a href="fp_1618_41.html">41</a></li>
-               <li><a href="fp_1618_42.html">42</a></li>
-               <li><a href="fp_1618_43.html">43</a></li>
-               <li><a href="fp_1618_44.html">44</a></li>
-               <li><a href="fp_1618_45.html">45</a></li>
-               <li><a href="fp_1618_46.html">46</a></li>
-               <li>47</li>
-               <li><a href="fp_1618_49.html">49</a></li>
-               <li><a href="fp_1618_50.html">50</a></li>
-               <li><a href="fp_1618_51.html">51</a></li>
-               <li><a href="fp_1618_52.html">52</a></li>
-            </ul>
-         </nav>
-      </aside>
       <main>
-         <h1>Frankfurter Postzeitung, Jahrgang 1618, 47</h1>
-         <section id="map_coresspondence"></section><script>
-                var map = L.map('map_coresspondence').setView([49.54, 5.76], 4);
-                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                }).addTo(map);
-                L.marker([50.11, 8.68]).addTo(map).bindPopup("Frankfurt").bindTooltip("Frankfurt");
+         <header>
+            <h2>Frankfurter Postzeitung, Jahrgang 1618, 47</h2>
+         </header>
+         <div>
+            <section id="coresspondence-map"></section><script>
+                    var map = L.map('coresspondence-map').setView([49.54, 5.76], 4);
+                    L.tileLayer.wms('https://ref.de.dariah.eu/geoserver/ows?service?', {
+                    layers: 'historic:cntry1650', attribution: '© <a href="https://web.archive.org/web/20060630061554/http://library.thinkquest.org/C006628/">ThinkQuest Team C006628</a>'
+                    }).addTo(map);
+                L.circle([50.11, 8.68], {color: 'red', radius: 30000}).addTo(map).bindTooltip("Frankfurt");
                 
                     L.marker([41.893055555556, 12.482777777778]).bindPopup(`<a href="fp_1618_47_1.html" rel="noopener noreferrer">1. Rom (10. 11.)</a>`).bindTooltip("1. Rom (10. 11.)").addTo(map);
                 
@@ -68,64 +46,65 @@
                     L.marker([52.36666666666667, 4.883333333333333]).bindPopup(`<a href="fp_1618_47_6.html" rel="noopener noreferrer">6. Amsterdam (21. 11.)</a>`).bindTooltip("6. Amsterdam (21. 11.)").addTo(map);
                 
                     L.marker([50.942222222222, 6.9577777777778]).bindPopup(`<a href="fp_1618_47_7.html" rel="noopener noreferrer">7. Köln (27. 11.)</a>`).bindTooltip("7. Köln (27. 11.)").addTo(map);
-                </script><section>
-            <ol>
-               <li><a href="fp_1618_47_1.html">
-                     Auß Rohm vom 10. Nouemb. 1618.</a><ul>
-                     <li><a href="fp_1618_47_1.html#1">
-                           VOn Neapoli hat man/ [...] </a></li>
-                     <li><a href="fp_1618_47_1.html#2">Von Mantua wirdt bericht/ [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_47_2.html">
-                     Auß Venedig vom 16. Ditto.</a><ul>
-                     <li><a href="fp_1618_47_2.html#1">Genueſiſche Brieffe bringen/ [...] </a></li>
-                     <li><a href="fp_1618_47_2.html#2">Von Meylandt wirdt auiſirt/ [...] </a></li>
-                     <li><a href="fp_1618_47_2.html#3">Jn den Graubuͤnten continuiren [...] </a></li>
-                     <li><a href="fp_1618_47_2.html#4">Man vernimpt/ dz [...] </a></li>
-                     <li><a href="fp_1618_47_2.html#5">
-                           Mitwochen ſpat ſeindt [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_47_3.html">
-                     Auß Wien vom 14. Ditto.</a><ul>
-                     <li><a href="fp_1618_47_3.html#1">Man vermuthet allhie [...] </a></li>
-                     <li><a href="fp_1618_47_3.html#2">Die Maͤhreriſche Staͤnde ſeindt [...] </a></li>
-                     <li><a href="fp_1618_47_3.html#3">
-                           Geſtern iſt [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_47_4.html">
-                     Auß Prag vom 18. Ditto.</a><ul>
-                     <li><a href="fp_1618_47_4.html#1">Nechſt iſt [...] </a></li>
-                     <li><a href="fp_1618_47_4.html#2">Vber voriges kompt [...] </a></li>
-                     <li><a href="fp_1618_47_4.html#3">Die Commiſſarien/ ſo [...] </a></li>
-                     <li><a href="fp_1618_47_4.html#4">Die Herꝛn Directores wollen [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_47_5.html">
-                     Auß deß Gravenhage vom 20. Nouemb.</a><ul>
-                     <li><a href="fp_1618_47_5.html#1">Weiln ſeither juͤngſten [...] </a></li>
-                     <li><a href="fp_1618_47_5.html#2">Mitler weil haben [...] </a></li>
-                     <li><a href="fp_1618_47_5.html#3">So haben auch [...] </a></li>
-                     <li><a href="fp_1618_47_5.html#4">Es haben die Herꝛn Commiſſarien nun [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_47_6.html">
-                     Auß Ambſterdamb vom 21. Ditto.</a><ul>
-                     <li><a href="fp_1618_47_6.html#1">Der Synodus zu Dortrecht hat [...] </a></li>
-                     <li><a href="fp_1618_47_6.html#2">Es ſeind etliche/ [...] </a></li>
-                     <li><a href="fp_1618_47_6.html#3">Die Kriegsſchiff/ vnnd [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1618_47_7.html">
-                     Auß Coͤlln vom 27. Ditto.</a><ul>
-                     <li><a href="fp_1618_47_7.html#1">Verſchiene Wochen ſeindt [...] </a></li>
-                     <li><a href="fp_1618_47_7.html#2">Der H. Churfuͤrſt võ Brandenburg hat ſich [...] </a></li>
-                  </ul>
-               </li>
-            </ol>
-         </section>
+                </script><section class="coresspondence-list">
+               <ol>
+                  <li><a href="fp_1618_47_1.html">
+                        Auß Rohm vom 10. Nouemb. 1618.</a><ul>
+                        <li><a href="fp_1618_47_1.html#1">
+                              VOn Neapoli hat man/ [...] </a></li>
+                        <li><a href="fp_1618_47_1.html#2">Von Mantua wirdt bericht/ [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_47_2.html">
+                        Auß Venedig vom 16. Ditto.</a><ul>
+                        <li><a href="fp_1618_47_2.html#1">Genueſiſche Brieffe bringen/ [...] </a></li>
+                        <li><a href="fp_1618_47_2.html#2">Von Meylandt wirdt auiſirt/ [...] </a></li>
+                        <li><a href="fp_1618_47_2.html#3">Jn den Graubuͤnten continuiren [...] </a></li>
+                        <li><a href="fp_1618_47_2.html#4">Man vernimpt/ dz [...] </a></li>
+                        <li><a href="fp_1618_47_2.html#5">
+                              Mitwochen ſpat ſeindt [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_47_3.html">
+                        Auß Wien vom 14. Ditto.</a><ul>
+                        <li><a href="fp_1618_47_3.html#1">Man vermuthet allhie [...] </a></li>
+                        <li><a href="fp_1618_47_3.html#2">Die Maͤhreriſche Staͤnde ſeindt [...] </a></li>
+                        <li><a href="fp_1618_47_3.html#3">
+                              Geſtern iſt [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_47_4.html">
+                        Auß Prag vom 18. Ditto.</a><ul>
+                        <li><a href="fp_1618_47_4.html#1">Nechſt iſt [...] </a></li>
+                        <li><a href="fp_1618_47_4.html#2">Vber voriges kompt [...] </a></li>
+                        <li><a href="fp_1618_47_4.html#3">Die Commiſſarien/ ſo [...] </a></li>
+                        <li><a href="fp_1618_47_4.html#4">Die Herꝛn Directores wollen [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_47_5.html">
+                        Auß deß Gravenhage vom 20. Nouemb.</a><ul>
+                        <li><a href="fp_1618_47_5.html#1">Weiln ſeither juͤngſten [...] </a></li>
+                        <li><a href="fp_1618_47_5.html#2">Mitler weil haben [...] </a></li>
+                        <li><a href="fp_1618_47_5.html#3">So haben auch [...] </a></li>
+                        <li><a href="fp_1618_47_5.html#4">Es haben die Herꝛn Commiſſarien nun [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_47_6.html">
+                        Auß Ambſterdamb vom 21. Ditto.</a><ul>
+                        <li><a href="fp_1618_47_6.html#1">Der Synodus zu Dortrecht hat [...] </a></li>
+                        <li><a href="fp_1618_47_6.html#2">Es ſeind etliche/ [...] </a></li>
+                        <li><a href="fp_1618_47_6.html#3">Die Kriegsſchiff/ vnnd [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1618_47_7.html">
+                        Auß Coͤlln vom 27. Ditto.</a><ul>
+                        <li><a href="fp_1618_47_7.html#1">Verſchiene Wochen ſeindt [...] </a></li>
+                        <li><a href="fp_1618_47_7.html#2">Der H. Churfuͤrſt võ Brandenburg hat ſich [...] </a></li>
+                     </ul>
+                  </li>
+               </ol>
+            </section>
+         </div>
       </main>
       <aside id="meta"></aside>
       <footer>

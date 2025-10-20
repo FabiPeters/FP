@@ -8,38 +8,30 @@
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
    <body>
       <header>
-         <nav class="breadcrumbs">
-            <ul>
-               <li class="crumb"><a href="index.html">Frankfurter Postzeitung</a></li>
-               <li class="crumb"><a href="fp_1615.html">1615</a></li>
-               <li><a href="fp_1615_46.html" class="active">46</a></li>
-            </ul>
-         </nav>
-         <nav class="horizontal"><a href="fp_1615_43.html"><button>&lt;</button></a><span> — </span><a href="fp_1615_47.html"><button>&gt;</button></a></nav>
+         <div id="home"><a href="index.html">Frankfurter Postzeitung</a></div>
+         <div class="navigation-container">
+            <nav class="crumbs">
+               <ul>
+                  <li><a href="index.html">Index</a></li>
+                  <li><a href="fp_1615.html">1615</a></li>
+                  <li>46</li>
+               </ul>
+            </nav>
+            <nav class="horizontal"><a title="vorherige Seite" href="fp_1615_43.html" class="button"> &lt; </a><a title="nächste Seite" href="fp_1615_47.html" class="button"> &gt; </a></nav>
+         </div>
          <hr>
       </header>
-      <aside id="nav">
-         <nav id="siblings">
-            <ul>
-               <li><a href="fp_1615_39.html">39</a></li>
-               <li><a href="fp_1615_42.html">42</a></li>
-               <li><a href="fp_1615_43.html">43</a></li>
-               <li>46</li>
-               <li><a href="fp_1615_47.html">47</a></li>
-               <li><a href="fp_1615_48.html">48</a></li>
-               <li><a href="fp_1615_49.html">49</a></li>
-            </ul>
-         </nav>
-      </aside>
       <main>
-         <h1>Frankfurter Postzeitung, Jahrgang 1615, 46</h1>
-         <section id="map_coresspondence"></section><script>
-                var map = L.map('map_coresspondence').setView([49.54, 5.76], 4);
-                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                }).addTo(map);
-                L.marker([50.11, 8.68]).addTo(map).bindPopup("Frankfurt").bindTooltip("Frankfurt");
+         <header>
+            <h2>Frankfurter Postzeitung, Jahrgang 1615, 46</h2>
+         </header>
+         <div>
+            <section id="coresspondence-map"></section><script>
+                    var map = L.map('coresspondence-map').setView([49.54, 5.76], 4);
+                    L.tileLayer.wms('https://ref.de.dariah.eu/geoserver/ows?service?', {
+                    layers: 'historic:cntry1650', attribution: '© <a href="https://web.archive.org/web/20060630061554/http://library.thinkquest.org/C006628/">ThinkQuest Team C006628</a>'
+                    }).addTo(map);
+                L.circle([50.11, 8.68], {color: 'red', radius: 30000}).addTo(map).bindTooltip("Frankfurt");
                 
                     L.marker([50.942222222222, 6.9577777777778]).bindPopup(`<a href="fp_1615_46_1.html" rel="noopener noreferrer">1. Köln (23. 11.)</a>`).bindTooltip("1. Köln (23. 11.)").addTo(map);
                 
@@ -48,55 +40,56 @@
                     L.marker([45.439722222222, 12.331944444444]).bindPopup(`<a href="fp_1615_46_3.html" rel="noopener noreferrer">3. Venedig (13. 11.)</a>`).bindTooltip("3. Venedig (13. 11.)").addTo(map);
                 
                     L.marker([50.0875, 14.421388888888888]).bindPopup(`<a href="fp_1615_46_4.html" rel="noopener noreferrer">4. Prag (15. 11.)</a>`).bindTooltip("4. Prag (15. 11.)").addTo(map);
-                </script><section>
-            <ol>
-               <li><a href="fp_1615_46_1.html">
-                     Auß Coͤlln vom 23. Novembris Anno 1615.</a><ul>
-                     <li><a href="fp_1615_46_1.html#1">
-                           NEwes dieſer Orten wenig/ [...] </a></li>
-                     <li><a href="fp_1615_46_1.html#2">Man hat allhie Auiſo daß die Stadiſchen/ [...] </a></li>
-                     <li><a href="fp_1615_46_1.html#3">Von Hildeßheimb wird geſchrieben/ [...] </a></li>
-                     <li><a href="fp_1615_46_1.html#4">Verzeichnus was fuͤr Obriſte dem Hertzogen vor Braunſchweig vmbkom-
-                           men/ vnd beſchedigt worden. [...] </a></li>
-                     <li><a href="fp_1615_46_1.html#5">Von Pariß wird vom 14. diß geſchrieben/ [...] </a></li>
-                     <li><a href="fp_1615_46_1.html#6">Von Bruͤſſel wird geſchrieben/ [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1615_46_2.html">
-                     Aus Rom vom 7. Novemb.
-                     </a><ul>
-                     <li><a href="fp_1615_46_2.html#1">Der Giaponiſche Amb. hat [...] </a></li>
-                     <li><a href="fp_1615_46_2.html#2">Allhie iſt von allen Obriſten eines jedweden Ordens eine Congregation
-                           gehalten/ [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1615_46_3.html">
-                     Auß Venedig vom 13. Dito.
-                     </a><ul>
-                     <li><a href="fp_1615_46_3.html#1">Von Genua hat man/ [...] </a></li>
-                     <li><a href="fp_1615_46_3.html#2">Auß Dalmatia wird bericht/ [...] </a></li>
-                     <li><a href="fp_1615_46_3.html#3">Aus Levante wird aviſirt/ [...] </a></li>
-                  </ul>
-               </li>
-               <li><a href="fp_1615_46_4.html">
-                     Aus Prag/ vom 15. dito.
-                     </a><ul>
-                     <li><a href="fp_1615_46_4.html#1">Mann vernimbt daß Jhr Keyßl. Maytt. auff der Jagt ſich ſehr luſtig erzeigen/ [...] </a></li>
-                     <li><a href="fp_1615_46_4.html#2">Der Conte di Buquoy iſt/ [...] </a></li>
-                     <li><a href="fp_1615_46_4.html#3">Demnach dem Churfuͤrſt von Sachſen wegen Seiner Guͤlchiſchen Prætenſion eini-
-                           ge verlaͤßliche Reſolution bey Hoff noch nicht erfolgen will/ [...] </a></li>
-                     <li><a href="fp_1615_46_4.html#4">Es verlaut/ [...] </a></li>
-                     <li><a href="fp_1615_46_4.html#5">An ſtatt deß Herrn von Dhona
-                           
-                            [...] </a></li>
-                     <li><a href="fp_1615_46_4.html#6">Die nun lang allhier anweſende Sibenbuͤrgiſche Geſandten [...] </a></li>
-                     <li><a href="fp_1615_46_4.html#7">Von Graitz haben wir Nachrichtung/ [...] </a></li>
-                     <li><a href="fp_1615_46_4.html#8">Herr Biſchoff Cloͤſel
-                            [...] </a></li>
-                  </ul>
-               </li>
-            </ol>
-         </section>
+                </script><section class="coresspondence-list">
+               <ol>
+                  <li><a href="fp_1615_46_1.html">
+                        Auß Coͤlln vom 23. Novembris Anno 1615.</a><ul>
+                        <li><a href="fp_1615_46_1.html#1">
+                              NEwes dieſer Orten wenig/ [...] </a></li>
+                        <li><a href="fp_1615_46_1.html#2">Man hat allhie Auiſo daß die Stadiſchen/ [...] </a></li>
+                        <li><a href="fp_1615_46_1.html#3">Von Hildeßheimb wird geſchrieben/ [...] </a></li>
+                        <li><a href="fp_1615_46_1.html#4">Verzeichnus was fuͤr Obriſte dem Hertzogen vor Braunſchweig vmbkom-
+                              men/ vnd beſchedigt worden. [...] </a></li>
+                        <li><a href="fp_1615_46_1.html#5">Von Pariß wird vom 14. diß geſchrieben/ [...] </a></li>
+                        <li><a href="fp_1615_46_1.html#6">Von Bruͤſſel wird geſchrieben/ [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1615_46_2.html">
+                        Aus Rom vom 7. Novemb.
+                        </a><ul>
+                        <li><a href="fp_1615_46_2.html#1">Der Giaponiſche Amb. hat [...] </a></li>
+                        <li><a href="fp_1615_46_2.html#2">Allhie iſt von allen Obriſten eines jedweden Ordens eine Congregation
+                              gehalten/ [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1615_46_3.html">
+                        Auß Venedig vom 13. Dito.
+                        </a><ul>
+                        <li><a href="fp_1615_46_3.html#1">Von Genua hat man/ [...] </a></li>
+                        <li><a href="fp_1615_46_3.html#2">Auß Dalmatia wird bericht/ [...] </a></li>
+                        <li><a href="fp_1615_46_3.html#3">Aus Levante wird aviſirt/ [...] </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="fp_1615_46_4.html">
+                        Aus Prag/ vom 15. dito.
+                        </a><ul>
+                        <li><a href="fp_1615_46_4.html#1">Mann vernimbt daß Jhr Keyßl. Maytt. auff der Jagt ſich ſehr luſtig erzeigen/ [...] </a></li>
+                        <li><a href="fp_1615_46_4.html#2">Der Conte di Buquoy iſt/ [...] </a></li>
+                        <li><a href="fp_1615_46_4.html#3">Demnach dem Churfuͤrſt von Sachſen wegen Seiner Guͤlchiſchen Prætenſion eini-
+                              ge verlaͤßliche Reſolution bey Hoff noch nicht erfolgen will/ [...] </a></li>
+                        <li><a href="fp_1615_46_4.html#4">Es verlaut/ [...] </a></li>
+                        <li><a href="fp_1615_46_4.html#5">An ſtatt deß Herrn von Dhona
+                              
+                               [...] </a></li>
+                        <li><a href="fp_1615_46_4.html#6">Die nun lang allhier anweſende Sibenbuͤrgiſche Geſandten [...] </a></li>
+                        <li><a href="fp_1615_46_4.html#7">Von Graitz haben wir Nachrichtung/ [...] </a></li>
+                        <li><a href="fp_1615_46_4.html#8">Herr Biſchoff Cloͤſel
+                               [...] </a></li>
+                     </ul>
+                  </li>
+               </ol>
+            </section>
+         </div>
       </main>
       <aside id="meta"></aside>
       <footer>
