@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --month-container-height: 18rem;
+            /* visual block for each month */
+            --thead-height: 2.5rem;
+            --row-height: 2rem;
+            /* fixed row height for consistent rows across months */
+        }
+
+        body {
+            background-color: whitesmoke;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+
+            header {
+                font-size: x-small;
+                text-align: center;
+            }
+        }
+
+        /* Kalendereinstellung */
+        #year-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            /* increase spacing between controls */
+            margin: 0.75rem auto;
+            /* small vertical spacing for breathing room */
+
+            button {
+                font-size: 1.2rem;
+                min-width: 3rem;
+                min-height: 3rem;
+                border-radius: 0.5rem;
+                border: 1px solid #888;
+                background: #fff;
+                cursor: pointer;
+            }
+
+            #current-year {
+                font-size: 1.2rem;
+                text-align: center;
+
+                padding: 0.5rem 0.5rem;
+                width: 120px;
+                border-radius: 0.4rem;
+                border: 1px solid #ccc;
+            }
+        }
+
+        /* Kalenderdisplay */
+        .year {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+
+            height: 80vh;
+            overflow-y: scroll;
+            scroll-snap-type: y proximity;
+
+            .month {
+                scroll-snap-align: start;
+
+                box-sizing: border-box;
+                min-height: var(--month-container-height);
+
+                display: flex;
+                justify-content: center;
+                align-items: start;
+
+                background: rgba(255, 255, 255, 0.6);
+                border-radius: 6px;
+
+                table {
+                    height: auto;
+                    width: auto;
+                    text-align: center;
+
+                    caption {
+                        font-weight: 700;
+                        margin-top: 0.5rem;
+                    }
+
+                    th {
+                        height: var(--thead-height);
+                        padding: 0.15rem 0.35rem;
+                    }
+
+                    tr {
+                        height: var(--row-height);
+                    }
+
+                    td {
+                        width: 2rem;
+                        vertical-align: middle;
+                        padding: 0.15rem;
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Gregorianischer Kalender</h1>
+    </header>
+    <hr>
+    <main>
+        <form id="year-form">
+            <div>
+                <button id="prev-year" type="button">◀</button>
+            </div>
+            <div>
+                <input id="current-year" type="number" inputmode="numeric" aria-label="Year" />
+            </div>
+            <div>
+                <button id="next-year" type="button">▶</button>
+            </div>
+        </form>
+        <section class="calendar">
+            <div class="year">
+                <div class="month" id="m1"></div>
+                <div class="month" id="m2"></div>
+                <div class="month" id="m3"></div>
+                <div class="month" id="m4"></div>
+                <div class="month" id="m5"></div>
+                <div class="month" id="m6"></div>
+                <div class="month" id="m7"></div>
+                <div class="month" id="m8"></div>
+                <div class="month" id="m9"></div>
+                <div class="month" id="m10"></div>
+                <div class="month" id="m11"></div>
+                <div class="month" id="m12"></div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <a href="https://github.com/FabiPeters/historical-calendar">GitHub-Repo</a>    
+    </footer>
+
+    <script>
+        // Simple calendar renderer
+        (function () {
+            const monthNames = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+            const weekdays = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+
+            const calendarEl = document.querySelector('.calendar'); // container for heading
+            const yearContainer = document.querySelector('.calendar .year'); // where month tables go
+            const yearInput = document.getElementById('current-year');
+            const prevBtn = document.getElementById('prev-year');
+            const nextBtn = document.getElementById('next-year');
+            const form = document.getElementById('year-form');
+            // year bounds (Gregorian era start + limit to 4-digit max)
+            const MIN_YEAR = 1;
+            const MAX_YEAR = 9999;
+
+            function daysInMonth(y, m) {
+                return new Date(y, m + 1, 0).getDate();
+            }
+
+            function clearCalendar() {
+                const monthDivs = yearContainer.querySelectorAll('.month');
+                monthDivs.forEach(d => d.innerHTML = '');
+            }
+
+            function renderMonthTable(year, monthIndex) {
+                const table = document.createElement('table');
+                const caption = document.createElement('caption');
+                caption.textContent = monthNames[monthIndex];
+                table.appendChild(caption);
+
+                const thead = document.createElement('thead');
+                const headRow = document.createElement('tr');
+                weekdays.forEach(w => {
+                    const th = document.createElement('th');
+                    th.textContent = w;
+                    headRow.appendChild(th);
+                });
+                thead.appendChild(headRow);
+                table.appendChild(thead);
+
+                const tbody = document.createElement('tbody');
+                const firstDay = new Date(year, monthIndex, 1).getDay(); // 0 = Sun ... 6 = Sat
+                const totalDays = daysInMonth(year, monthIndex);
+
+                let row = document.createElement('tr');
+
+                // leading empty cells
+                for (let i = 0; i < firstDay; i++) {
+                    row.appendChild(document.createElement('td'));
+                }
+
+                for (let d = 1; d <= totalDays; d++) {
+                    const cell = document.createElement('td');
+                    cell.textContent = d;
+                    row.appendChild(cell);
+
+                    // end the week explicitly when we hit Saturday
+                    // compute weekday index for this day: (firstDay + d - 1) % 7
+                    if (((firstDay + d - 1) % 7) === 6) {
+                        tbody.appendChild(row);
+                        row = document.createElement('tr');
+                    }
+                }
+
+                // trailing empty cells (if necessary)
+                if (row.children.length) {
+                    while (row.children.length < 7) {
+                        row.appendChild(document.createElement('td'));
+                    }
+                    tbody.appendChild(row);
+                }
+
+                table.appendChild(tbody);
+                return table;
+            }
+
+            function renderYear(year) {
+                // preserve existing heading logic
+                const heading = calendarEl.querySelector('h2');
+                if (heading) heading.textContent = String(year);
+
+                // populate the prepared .month div placeholders with tables
+                const monthDivs = Array.from(yearContainer.querySelectorAll('.month'));
+                monthDivs.forEach((div, m) => {
+                    div.innerHTML = '';
+                    const monthTable = renderMonthTable(year, m);
+                    div.appendChild(monthTable);
+                });
+            }
+
+            // init
+            const nowYear = new Date().getFullYear();
+            function clampYear(v) {
+                const n = Number(v) || MIN_YEAR;
+                return Math.max(MIN_YEAR, Math.min(MAX_YEAR, Math.floor(n)));
+            }
+            // set attributes and initial clamped value
+            yearInput.setAttribute('min', String(MIN_YEAR));
+            yearInput.setAttribute('max', String(MAX_YEAR));
+            let initYear = clampYear(nowYear);
+            yearInput.value = initYear;
+            renderYear(initYear);
+
+            // prevent actual form submit (page reload)
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+            });
+
+            // handlers
+            function setYear(newYear) {
+                const n = clampYear(newYear);
+                yearInput.value = n;
+                renderYear(n);
+            }
+
+            // continuous press logic (pointer-friendly + keyboard support)
+            let repeatTimer = null;
+            let repeatInterval = null;
+            let suppressClick = false;
+            function adjustYear(delta) {
+                const current = clampYear(yearInput.value);
+                setYear(current + delta);
+            }
+
+            function startHolding(delta) {
+                // immediate step
+                adjustYear(delta);
+                suppressClick = true;
+                // after short delay begin repeating
+                repeatTimer = setTimeout(() => {
+                    repeatInterval = setInterval(() => adjustYear(delta), 80);
+                }, 350);
+            }
+            function stopHolding() {
+                clearTimeout(repeatTimer);
+                clearInterval(repeatInterval);
+                repeatTimer = repeatInterval = null;
+                // let the next click behave as expected
+                setTimeout(() => (suppressClick = false), 0);
+            }
+
+            // pointer events (covers mouse & touch)
+            prevBtn.addEventListener('pointerdown', (e) => { e.preventDefault(); startHolding(-1); });
+            prevBtn.addEventListener('pointerup', stopHolding);
+            prevBtn.addEventListener('pointercancel', stopHolding);
+            prevBtn.addEventListener('pointerleave', stopHolding);
+
+            nextBtn.addEventListener('pointerdown', (e) => { e.preventDefault(); startHolding(+1); });
+            nextBtn.addEventListener('pointerup', stopHolding);
+            nextBtn.addEventListener('pointercancel', stopHolding);
+            nextBtn.addEventListener('pointerleave', stopHolding);
+
+            // click handlers: avoid double-apply when pointerdown already did the first step
+            prevBtn.addEventListener('click', (e) => {
+                if (suppressClick) { e.preventDefault(); suppressClick = false; return; }
+                adjustYear(-1);
+            });
+            nextBtn.addEventListener('click', (e) => {
+                if (suppressClick) { e.preventDefault(); suppressClick = false; return; }
+                adjustYear(+1);
+            });
+
+            // keyboard support (space / enter)
+            [prevBtn, nextBtn].forEach(btn => {
+                btn.addEventListener('keydown', (e) => {
+                    if (e.key === ' ' || e.key === 'Enter') {
+                        e.preventDefault();
+                        const delta = (btn === nextBtn) ? 1 : -1;
+                        adjustYear(delta);
+                    }
+                });
+            });
+
+            // keep input changes clamped
+            yearInput.addEventListener('change', () => setYear(yearInput.value));
+            yearInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    setYear(yearInput.value);
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
