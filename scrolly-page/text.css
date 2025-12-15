@@ -64,6 +64,16 @@ main { flex: 1 1 auto; min-height: 0; /* allow children to handle internal scrol
 	background: rgba(255,255,255,0.6);
 	border: 1px solid rgba(0,0,0,0.06);
 	white-space: nowrap;
+
+    position: relative;
+    h4 {
+        margin: 0;
+    }
+    button {
+        position: absolute;
+        top: 0.5em;
+        right: 0.5em;
+    }
 }
 
 .bottom-wrapper > section {
@@ -85,7 +95,7 @@ main { flex: 1 1 auto; min-height: 0; /* allow children to handle internal scrol
 /* enable proximity scroll snapping horizontally for the wrapper rows */
 .top-wrapper,
 .bottom-wrapper {
-	scroll-snap-type: x proximity;
+	scroll-snap-type: x mandatory;
 }
 
 /* snap alignment for items */
@@ -188,3 +198,6 @@ nav { display:flex; align-items:center; justify-content:space-between; gap: 1rem
 	.top-wrapper > section { flex: 0 0 100%; min-width: 0; }
 }
 
+.fit-picture {
+    max-width: 100%;
+}
