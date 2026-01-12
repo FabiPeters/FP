@@ -201,3 +201,15 @@ nav { display:flex; align-items:center; justify-content:space-between; gap: 1rem
 .fit-picture {
     max-width: 100%;
 }
+
+.li-label {
+	font-weight: bold;
+}
+
+.red {
+	color: red;
+}
+
+.entity {
+	text-decoration: dotted underline;
+	}
