@@ -1,0 +1,124 @@
+body {
+    --margin-width: 1rem;
+
+    margin: 0;
+
+
+    height: 100dvh;
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer";
+    grid-auto-rows: auto auto 1fr auto;
+
+    @media (max-width: 720px) {
+        grid-template-areas: "header" "main" "nav" "footer";
+        grid-auto-rows: auto auto 1fr auto;
+    }
+
+    header {
+        margin: var(--margin-width);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        grid-area: header;
+
+        nav>ul {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 1rem;
+        }
+    }
+
+    nav.main {
+        margin: var(--margin-width);
+        grid-area: nav;
+
+        nav#breadcrumbs {
+            ul {
+                padding: 0;
+                display: flex;
+                list-style: none;
+                gap: 1rem;
+            }
+        }
+        /* nav#horizontal {} */
+    }
+
+
+
+    main {
+        margin: var(--margin-width);
+        overflow-y: hidden;
+        grid-area: main;
+
+
+        h2 {
+            font-size:medium;
+        }
+
+    }
+
+    section#transcription {
+        p, h2{
+            margin: 0.5rem 0;
+        }
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .main-content {
+        height: 100%;
+        /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr; */
+        display: flex;
+        /* flex-direction: row; */
+        scroll-snap-type: x mandatory;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .main-content-item {
+        overflow-y: scroll;
+        flex: 0 0 50%;
+        scroll-snap-align: start;
+    }
+
+    @media (max-width: 1280px) {
+        .main-content-item {
+            flex: 0 0 50%;
+            min-width: 0;
+        }
+    }
+
+    @media (max-width: 720px) {
+        .main-content-item {
+            flex: 0 0 100%;
+            min-width: 0;
+        }
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+section#transcription {
+    background-color: whitesmoke;
+
+    article {
+        @media (min-width: 720px) {
+            padding: 1rem;
+        }
+
+    }
+}
+
+img.facsimile {
+    width: 100%;
+    height: auto;
+
+}

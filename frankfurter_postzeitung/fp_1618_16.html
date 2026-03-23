@@ -3,131 +3,112 @@
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Frankfurter Postzeitung, Jahrgang 1618, 16</title>
+      <title></title>
       <link rel="stylesheet" href="frankfurter_postzeitung.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
+      <link rel="stylesheet" href="frank_post.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
    <body>
       <header>
-         <div id="home"><a href="index.html">Frankfurter Postzeitung</a></div>
-         <div class="navigation-container">
-            <nav class="crumbs">
-               <ul>
-                  <li><a href="index.html">Index</a></li>
-                  <li><a href="fp_1618.html">1618</a></li>
-                  <li>16</li>
-               </ul>
-            </nav>
-            <nav class="horizontal"><a title="vorherige Seite" href="fp_1618_4.html" class="button"> &lt; </a><a title="nächste Seite" href="fp_1618_21.html" class="button"> &gt; </a></nav>
-         </div>
-         <hr>
+         <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
-      <main>
-         <header>
-            <h2>Frankfurter Postzeitung, Jahrgang 1618, 16</h2>
-         </header>
-         <div>
-            <section id="coresspondence-map"></section><script>
-                    var map = L.map('coresspondence-map').setView([49.54, 5.76], 4);
-                    L.tileLayer.wms('https://ref.de.dariah.eu/geoserver/ows?service?', {
-                    layers: 'historic:cntry1650', attribution: '© <a href="https://web.archive.org/web/20060630061554/http://library.thinkquest.org/C006628/">ThinkQuest Team C006628</a>'
-                    }).addTo(map);
-                L.circle([50.11, 8.68], {color: 'red', radius: 30000}).addTo(map).bindTooltip("Frankfurt");
-                
-                    L.marker([59.329444444444, 18.068611111111]).bindPopup(`<a href="fp_1618_16_1.html" rel="noopener noreferrer">1. Stockholm (6. 4.)</a>`).bindTooltip("1. Stockholm (6. 4.)").addTo(map);
-                
-                    L.marker([46.798562, 8.231973]).bindPopup(`<a href="fp_1618_16_2.html" rel="noopener noreferrer">2. Schweiz (8. 4.)</a>`).bindTooltip("2. Schweiz (8. 4.)").addTo(map);
-                
-                    L.marker([41.893055555556, 12.482777777778]).bindPopup(`<a href="fp_1618_16_3.html" rel="noopener noreferrer">3. Rom (7. 4.)</a>`).bindTooltip("3. Rom (7. 4.)").addTo(map);
-                
-                    L.marker([45.439722222222, 12.331944444444]).bindPopup(`<a href="fp_1618_16_4.html" rel="noopener noreferrer">4. Venedig (17. 4.)</a>`).bindTooltip("4. Venedig (17. 4.)").addTo(map);
-                
-                    L.marker([48.144722222222, 17.112777777778]).bindPopup(`<a href="fp_1618_16_5.html" rel="noopener noreferrer">5. Bratislava (8. 4.)</a>`).bindTooltip("5. Bratislava (8. 4.)").addTo(map);
-                
-                    L.marker([48.208333333333336, 16.3725]).bindPopup(`<a href="fp_1618_16_6.html" rel="noopener noreferrer">6. Wien (12. 4.)</a>`).bindTooltip("6. Wien (12. 4.)").addTo(map);
-                
-                    L.marker([50.0875, 14.421388888888888]).bindPopup(`<a href="fp_1618_16_7.html" rel="noopener noreferrer">7. Prag (16. 4.)</a>`).bindTooltip("7. Prag (16. 4.)").addTo(map);
-                
-                    L.marker([52.36666666666667, 4.883333333333333]).bindPopup(`<a href="fp_1618_16_8.html" rel="noopener noreferrer">8. Amsterdam (19. 4.)</a>`).bindTooltip("8. Amsterdam (19. 4.)").addTo(map);
-                
-                    L.marker([50.942222222222, 6.9577777777778]).bindPopup(`<a href="fp_1618_16_9.html" rel="noopener noreferrer">9. Köln (26. 4.)</a>`).bindTooltip("9. Köln (26. 4.)").addTo(map);
-                </script><section class="coresspondence-list">
-               <ol>
-                  <li><a href="fp_1618_16_1.html">
+      <hr>
+      <nav class="main">
+         <nav id="breadcrumbs">
+            <ul>
+               <li>
+                  / <a href="index.html">Index</a></li>
+               <li>
+                  / <a href="fp_1618.html">1618</a></li>
+               <li>/ 16</li>
+            </ul>
+         </nav>
+         <nav id="horizontal"><a rel="prev" href="fp_1618_4.html">&lt;</a>
+            -
+            <a rel="next" href="fp_1618_21.html">&gt;</a></nav>
+      </nav>
+      <main>fp_1618_16
+         <div class="main-content">
+            <section id="map" class="main-content-item"> map </section>
+            <section id="correspondence-list" class="main-content-item">
+               <ul>
+                  <li><a href="fp_1618_16-1.html">
                         Auß Stockholm den 6. Aprilis.</a><ul>
-                        <li><a href="fp_1618_16_1.html#1">
-                              DEn 15. Martij iſt [...] </a></li>
-                        <li><a href="fp_1618_16_1.html#2">So ſind auch dieſe Tagen [...] </a></li>
-                        <li><a href="fp_1618_16_1.html#3">Der Schwediſche Geſandte Herꝛ Johan Skytte iſt [...] </a></li>
-                        <li><a href="fp_1618_16_1.html#4">Auß Liefflandt wirdt geſchrieben/ [...] </a></li>
+                        <li><a href="fp_1618_16-1.html#1">
+                              DEn 15. Martij iſt</a></li>
+                        <li><a href="fp_1618_16-1.html#2">So ſind auch dieſe Tagen</a></li>
+                        <li><a href="fp_1618_16-1.html#3">
+                              Der Schwediſche Geſandte Herꝛ Johan Skytte iſt</a></li>
+                        <li><a href="fp_1618_16-1.html#4">Auß Liefflandt wirdt geſchrieben/</a></li>
                      </ul>
                   </li>
-                  <li><a href="fp_1618_16_2.html">
+                  <li><a href="fp_1618_16-2.html">
                         Auß Schweitz vom 8. Ditto.</a><ul>
-                        <li><a href="fp_1618_16_2.html#1">Das ganze Newburgiſche Geſchaͤfft beruhet [...] </a></li>
+                        <li><a href="fp_1618_16-2.html#1">Das ganze Newburgiſche Geſchaͤfft beruhet</a></li>
                      </ul>
                   </li>
-                  <li><a href="fp_1618_16_3.html">
+                  <li><a href="fp_1618_16-3.html">
                         Auß Rohm vom 7. Ditto.</a><ul>
-                        <li><a href="fp_1618_16_3.html#1">Von Neapoli ſchreibet man/ [...] </a></li>
-                        <li><a href="fp_1618_16_3.html#2">Auß Spania wirdt auiſirt/ [...] </a></li>
+                        <li><a href="fp_1618_16-3.html#1">Von Neapoli ſchreibet man/</a></li>
+                        <li><a href="fp_1618_16-3.html#2">Auß Spania wirdt auiſirt/</a></li>
                      </ul>
                   </li>
-                  <li><a href="fp_1618_16_4.html">
+                  <li><a href="fp_1618_16-4.html">
                         Auß Venedig vom 17. Ditto.</a><ul>
-                        <li><a href="fp_1618_16_4.html#1">
-                              Genueſiſche Brieff bringen/ [...] </a></li>
-                        <li><a href="fp_1618_16_4.html#2">Montag Morgens iſt [...] </a></li>
-                        <li><a href="fp_1618_16_4.html#3">Von vnſer Armada koͤmpt bericht/ [...] </a></li>
-                        <li><a href="fp_1618_16_4.html#4">Dienſtags iſt [...] </a></li>
-                        <li><a href="fp_1618_16_4.html#5">Die Venediſche Commiſſarien in Jſtria ſind [...] </a></li>
-                        <li><a href="fp_1618_16_4.html#6"> Auß dem Laͤger hat man/ [...] </a></li>
-                        <li><a href="fp_1618_16_4.html#7">Vber Lion wirdt gemelt/ [...] </a></li>
+                        <li><a href="fp_1618_16-4.html#1">
+                              Genueſiſche Brieff bringen/ Montag Morgens iſt Von vnſer Armada koͤmpt bericht/</a></li>
+                        <li><a href="fp_1618_16-4.html#2">Montag Morgens iſt Von vnſer Armada koͤmpt bericht/</a></li>
+                        <li><a href="fp_1618_16-4.html#3">Von vnſer Armada koͤmpt bericht/</a></li>
+                        <li><a href="fp_1618_16-4.html#4">Dienſtags iſt Die Venediſche Commiſſarien in Jſtria ſind  Auß dem Laͤger hat man/</a></li>
+                        <li><a href="fp_1618_16-4.html#5">Die Venediſche Commiſſarien in Jſtria ſind  Auß dem Laͤger hat man/</a></li>
+                        <li><a href="fp_1618_16-4.html#6"> Auß dem Laͤger hat man/</a></li>
+                        <li><a href="fp_1618_16-4.html#7">Vber Lion wirdt gemelt/</a></li>
                      </ul>
                   </li>
-                  <li><a href="fp_1618_16_5.html">
+                  <li><a href="fp_1618_16-5.html">
                         Auß Preßburg vom 8. Ditto.</a><ul>
-                        <li><a href="fp_1618_16_5.html#1">Mit dem Succeſſion Werck/ [...] </a></li>
+                        <li><a href="fp_1618_16-5.html#1">Mit dem Succeſſion Werck/</a></li>
                      </ul>
                   </li>
-                  <li><a href="fp_1618_16_6.html">
+                  <li><a href="fp_1618_16-6.html">
                         Auß Wien vom 12. Ditto.</a><ul>
-                        <li><a href="fp_1618_16_6.html#1">
-                              Jhre Keyſ. May. befinden ſich [...] </a></li>
+                        <li><a href="fp_1618_16-6.html#1">
+                              Jhre Keyſ. May. befinden ſich</a></li>
                      </ul>
                   </li>
-                  <li><a href="fp_1618_16_7.html">
+                  <li><a href="fp_1618_16-7.html">
                         Auß Prag vom 16. Ditto.</a><ul>
-                        <li><a href="fp_1618_16_7.html#1">Auß Polen hat man/ [...] </a></li>
+                        <li><a href="fp_1618_16-7.html#1">Auß Polen hat man/</a></li>
                      </ul>
                   </li>
-                  <li><a href="fp_1618_16_8.html">
+                  <li><a href="fp_1618_16-8.html">
                         Auß Ambſterdamb vom 19. Ditto.</a><ul>
-                        <li><a href="fp_1618_16_8.html#1">Fuͤr dißmal wenig newes/ [...] </a></li>
-                        <li><a href="fp_1618_16_8.html#2">S. Exc. Geſandten ſind [...] </a></li>
-                        <li><a href="fp_1618_16_8.html#3">Jn dem Haag hat [...] </a></li>
-                        <li><a href="fp_1618_16_8.html#4">Die Herꝛn Staden werden [...] </a></li>
-                        <li><a href="fp_1618_16_8.html#5">Jmmittelſt hat [...] </a></li>
-                        <li><a href="fp_1618_16_8.html#6">Es ſind allhie nunmehr [...] </a></li>
-                        <li><a href="fp_1618_16_8.html#7">Jn Engellandt hat [...] </a></li>
-                        <li><a href="fp_1618_16_8.html#8">Vor 4. Tagen iſt [...] </a></li>
+                        <li><a href="fp_1618_16-8.html#1">Fuͤr dißmal wenig newes/ S. Exc. Geſandten ſind Jn dem Haag hat Die Herꝛn Staden werden
+                              Jmmittelſt hat Es ſind allhie nunmehr</a></li>
+                        <li><a href="fp_1618_16-8.html#2">S. Exc. Geſandten ſind Jn dem Haag hat Die Herꝛn Staden werden Jmmittelſt hat Es ſind
+                              allhie nunmehr</a></li>
+                        <li><a href="fp_1618_16-8.html#3">Jn dem Haag hat Die Herꝛn Staden werden Jmmittelſt hat Es ſind allhie nunmehr</a></li>
+                        <li><a href="fp_1618_16-8.html#4">Die Herꝛn Staden werden Jmmittelſt hat Es ſind allhie nunmehr</a></li>
+                        <li><a href="fp_1618_16-8.html#5">Jmmittelſt hat Es ſind allhie nunmehr</a></li>
+                        <li><a href="fp_1618_16-8.html#6">Es ſind allhie nunmehr</a></li>
+                        <li><a href="fp_1618_16-8.html#7">Jn Engellandt hat</a></li>
+                        <li><a href="fp_1618_16-8.html#8">Vor 4. Tagen iſt</a></li>
                      </ul>
                   </li>
-                  <li><a href="fp_1618_16_9.html">
+                  <li><a href="fp_1618_16-9.html">
                         Auß Coͤlln vom 26. Ditto.</a><ul>
-                        <li><a href="fp_1618_16_9.html#1">Vor etlichen Tagen haben [...] </a></li>
-                        <li><a href="fp_1618_16_9.html#2">Zu Stralen/ [...] </a></li>
-                        <li><a href="fp_1618_16_9.html#3">Vber voriges hat man von Ambſterdamb/ [...] </a></li>
-                        <li><a href="fp_1618_16_9.html#4">Nachfolgende Waaren hat das Schiff der Pomerantzen Baum genant/ [...] </a></li>
-                        <li><a href="fp_1618_16_9.html#5">Jch verhoffe [...] </a></li>
+                        <li><a href="fp_1618_16-9.html#1">Vor etlichen Tagen haben</a></li>
+                        <li><a href="fp_1618_16-9.html#2">Zu Stralen/</a></li>
+                        <li><a href="fp_1618_16-9.html#3">Vber voriges hat man von Ambſterdamb/</a></li>
+                        <li><a href="fp_1618_16-9.html#4">Nachfolgende Waaren hat das Schiff der Pomerantzen Baum genant/</a></li>
+                        <li><a href="fp_1618_16-9.html#5">Jch verhoffe</a></li>
                      </ul>
                   </li>
-               </ol>
+               </ul>
             </section>
          </div>
       </main>
-      <aside id="meta"></aside>
+      <hr>
       <footer>
-         <hr>
          <ul>
             <li><a href="https://github.com/FabiPeters/frankfurter_postzeitung">GitHub-Datenrepo</a></li>
          </ul>
