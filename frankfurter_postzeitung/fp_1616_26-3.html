@@ -4,50 +4,49 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1616.html">1616</a></li>
-               <li>
-                  / <a href="fp_1616_26.html">26</a></li>
-               <li>/ 3</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1616.html">1616</a></li>
+               <li><a href="fp_1616_26.html">26</a></li>
+               <li aria-current="page">3</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1616_26-2.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1616_26-4.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_26-2.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">2</span></a><a rel="next" href="fp_1616_26-4.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">4</span></a></nav>
       </nav>
-      <main>fp_1616_26-3
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904331/full/max/0/default.jpg" alt="S. 71 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1616_26-3">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Rohm/ vom <span class="date" title="1616-06-18">18. Junii/ 1616</span>.</h2>
-                  
-                  <p>
-                     Von Palarmo hat man/ der
-                     <span class="br"></span><br>Duca di Oſona were nach Tragami verruckt/ daſelbſten 6. wolarmirter Gal-
-                     <span class="br"></span><br>leren mit 2000. Perſonen/ vnnd u2. Stück Geſchütz wider die Türckiſche Ar-
-                     <span class="br"></span><br>mada/ ſo in 30. Galleren ſtarck außgefahren/ ſelbige zuverhindern/ abzuordnen/
-                     <span class="br"></span><br>ſo haben die Taſiniſche Gatten a cruante 2. Galleren gefangen/ in Nigro-
-                     <span class="br"></span><br>vonte ein beuch vor 200000. Cronen erobert/ 450. Sclauen erlediget/ von wel-
-                     <span class="br"></span><br>chen 73. allhero kommen/ wider in der Proceſſion die 7. Kirchen beſucht/ denen
-                     <span class="br"></span><br>der Pabſt Amonte Caualo die Benediction ertheilt/ vnd jedem ein Cron ver-
-                     <span class="br"></span><br>ehren laſſen.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1616_26-3</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904331/full/max/0/default.jpg" alt="S. 71 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1616_26-3">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Rohm/ vom <span class="date" title="1616-06-18">18. Junii/ 1616</span>.</h2>
+                     
+                     <p>
+                        Von Palarmo hat man/ der
+                        <span class="br"></span><br>Duca di Oſona were nach Tragami verruckt/ daſelbſten 6. wolarmirter Gal-
+                        <span class="br"></span><br>leren mit 2000. Perſonen/ vnnd u2. Stück Geſchütz wider die Türckiſche Ar-
+                        <span class="br"></span><br>mada/ ſo in 30. Galleren ſtarck außgefahren/ ſelbige zuverhindern/ abzuordnen/
+                        <span class="br"></span><br>ſo haben die Taſiniſche Gatten a cruante 2. Galleren gefangen/ in Nigro-
+                        <span class="br"></span><br>vonte ein beuch vor 200000. Cronen erobert/ 450. Sclauen erlediget/ von wel-
+                        <span class="br"></span><br>chen 73. allhero kommen/ wider in der Proceſſion die 7. Kirchen beſucht/ denen
+                        <span class="br"></span><br>der Pabſt Amonte Caualo die Benediction ertheilt/ vnd jedem ein Cron ver-
+                        <span class="br"></span><br>ehren laſſen.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

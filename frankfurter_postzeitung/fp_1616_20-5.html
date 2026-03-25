@@ -4,65 +4,64 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1616.html">1616</a></li>
-               <li>
-                  / <a href="fp_1616_20.html">20</a></li>
-               <li>/ 5</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1616.html">1616</a></li>
+               <li><a href="fp_1616_20.html">20</a></li>
+               <li aria-current="page">5</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1616_20-4.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1616_20-6.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_20-4.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">4</span></a><a rel="next" href="fp_1616_20-6.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">6</span></a></nav>
       </nav>
-      <main>fp_1616_20-5
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904307/full/max/0/default.jpg" alt="S. 48 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1616_20-5">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Wien vom <span class="date" title="1616-05-15">15. May</span>.</h2>
-                  
-                  <p>
-                     Ertzhertzog Maximilian ſoll erſt 14. Tag nach Pfingſten allhero kommen vnnd
-                     <span class="br"></span><br>ein Hofſtatt mit 400. Perſonen anrichten/ derentwegen Herr Cardmal Clöſel noch
-                     <span class="br"></span><br>allhier/ der hat den 4. dis ſein Panckerſtattlich vollendet/ darauff Herꝛ Cardinal
-                     von
-                     <span class="br"></span><br>Dieterichſtein noch ſelbige Nacht vmb 10. Vhr mider von hinnen nach Hauß verreiſt.</p>
-                  
-                  <p>
-                     Den 5. diß Abends gegen neun Vhrn hat es allhie einen erſchrecklichen Don-
-                     <span class="br"></span><br>nerſtreich vnd Blitzen gethan/ daß man nicht anders vermeynt/ s wolte gleich alles
-                     zu
-                     <span class="br"></span><br>Boden ſchlagen vnnd anzünden/ wie es dann im S. Sieffans Thurn oben bey der
-                     <span class="br"></span><br>Wacht eingeſchlagen/ das Fewer angangen vnd faſt bey einer Siundt gebronnen/
-                     <span class="br"></span><br>doch ohne ſondern Schaden wider gelöſcht worden/ vnd weilen ſonſt auff dem Landt
-                     <span class="br"></span><br>allenthalben groſſe Fewerbrunſten entſtehen/ hat man in allen Flecken gute Wacht zu
-                     <span class="br"></span><br>halten gebetten.</p>
-                  
-                  <p>
-                     Sontags iſt der jenige Türck ſo von hinnen nach Offen zum Ali Baſſa die Frie-
-                     <span class="br"></span><br>dens Conſtemation hin auß zu bringen/ geſchickt worden/ wider allhero kommen iſt nur
-                     <span class="br"></span><br>6 Tag vnder Weg geweſen/ vnd acht Stundtlang ſich auffgehalten/ der ſoll gedachte
-                     <span class="br"></span><br>Confirmation mit gebracht haben/ vnd weil nun alle Sachen richtig/ alſo wird vnſere
-                     <span class="br"></span><br>mit der Türckiſchen Bottſchafft abgefertigt werden/ ſonſt wird ſich vnſer Landtag
-                     den
-                     <span class="br"></span><br>23. Junif allhier anfangen.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1616_20-5</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904307/full/max/0/default.jpg" alt="S. 48 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1616_20-5">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Wien vom <span class="date" title="1616-05-15">15. May</span>.</h2>
+                     
+                     <p>
+                        Ertzhertzog Maximilian ſoll erſt 14. Tag nach Pfingſten allhero kommen vnnd
+                        <span class="br"></span><br>ein Hofſtatt mit 400. Perſonen anrichten/ derentwegen Herr Cardmal Clöſel noch
+                        <span class="br"></span><br>allhier/ der hat den 4. dis ſein Panckerſtattlich vollendet/ darauff Herꝛ Cardinal
+                        von
+                        <span class="br"></span><br>Dieterichſtein noch ſelbige Nacht vmb 10. Vhr mider von hinnen nach Hauß verreiſt.</p>
+                     
+                     <p>
+                        Den 5. diß Abends gegen neun Vhrn hat es allhie einen erſchrecklichen Don-
+                        <span class="br"></span><br>nerſtreich vnd Blitzen gethan/ daß man nicht anders vermeynt/ s wolte gleich alles
+                        zu
+                        <span class="br"></span><br>Boden ſchlagen vnnd anzünden/ wie es dann im S. Sieffans Thurn oben bey der
+                        <span class="br"></span><br>Wacht eingeſchlagen/ das Fewer angangen vnd faſt bey einer Siundt gebronnen/
+                        <span class="br"></span><br>doch ohne ſondern Schaden wider gelöſcht worden/ vnd weilen ſonſt auff dem Landt
+                        <span class="br"></span><br>allenthalben groſſe Fewerbrunſten entſtehen/ hat man in allen Flecken gute Wacht zu
+                        <span class="br"></span><br>halten gebetten.</p>
+                     
+                     <p>
+                        Sontags iſt der jenige Türck ſo von hinnen nach Offen zum Ali Baſſa die Frie-
+                        <span class="br"></span><br>dens Conſtemation hin auß zu bringen/ geſchickt worden/ wider allhero kommen iſt nur
+                        <span class="br"></span><br>6 Tag vnder Weg geweſen/ vnd acht Stundtlang ſich auffgehalten/ der ſoll gedachte
+                        <span class="br"></span><br>Confirmation mit gebracht haben/ vnd weil nun alle Sachen richtig/ alſo wird vnſere
+                        <span class="br"></span><br>mit der Türckiſchen Bottſchafft abgefertigt werden/ ſonſt wird ſich vnſer Landtag
+                        den
+                        <span class="br"></span><br>23. Junif allhier anfangen.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

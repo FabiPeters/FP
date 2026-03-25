@@ -4,66 +4,65 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1620.html">1620</a></li>
-               <li>
-                  / <a href="fp_1620_63.html">63</a></li>
-               <li>/ 3</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1620.html">1620</a></li>
+               <li><a href="fp_1620_63.html">63</a></li>
+               <li aria-current="page">3</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1620_63-2.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1620_63-4.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1620_63-2.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">2</span></a><a rel="next" href="fp_1620_63-4.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">4</span></a></nav>
       </nav>
-      <main>fp_1620_63-3
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00137/full/max/0/default.jpg" alt="S. 137 des Jahrgangs" class="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00138/full/max/0/default.jpg" alt="S. 138 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1620_63-3">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß des Gravenhag vom <span class="date" title="1620-11-17">17. Ditto</span>.</h2>
-                  
-                  <p>
-                     Freytag abends iſt herꝛ Pfaltzgraff Ludwig/ des Koͤnigs in Boͤhmen Bruder/ mit
-                     <span class="br"></span><br>ſeinem Hoffgeſindt vber Vtrecht/ Rotterdam/ vnd Delfft anhero gelangt/ vnd von S.
-                     <span class="br"></span><br>Excel. ſampt vilen andern vornehmen Herꝛn vnnd Kutſchen ſtatlich rencontriet em-
-                     <span class="br"></span><br>gfangen/ vnd ins Loſament begleitet worden/ wirt bey Jhrer Exc. mit allen den ſeinigen</p>
-                  
-                  <section class="catchword">
-                     zu hoſen</section>
-                  <span class="page-number"><span>[Seitenanfang]</span></span>
-                  
-                  <p>
-                     iu hofe/ vnd Coſtfrey gehalten/ vnd deroſelben ſonderliche Ehr/ vnd Courreſia erzeigt
-                     <span class="br"></span><br>der Junge Printz aber bleibt zu Hofe bey Herꝛn Graf Ernſt Caſimir von Naſſaul-
-                     <span class="br"></span><br>Frießlandt/ ſolle hernacher in Engellandt ziehen.</p>
-                  
-                  <p>
-                     Der Obriſte Cicil wirt erſt tags mit etlichen ſtatlichen Cauallieren nach Engelland
-                     <span class="br"></span><br>ſeglen/ vmb/ wie verlaut vber des Koͤnigs Kriegsheer General zu ſein/ vnd verlaut
-                     dar
-                     <span class="br"></span><br>in Engellandt das Parlament/ in kuͤnfftigen Februarij ſich gewiß verſamblen/ vñ vber
-                     <span class="br"></span><br>alles ſich Reſoluiren ſolle.</p>
-                  
-                  <p>
-                     Jn diſen Landen werden auffs new vil Kriegs. vnd andere Schiff zugeruͤſt/ den me-
-                     <span class="br"></span><br>auff den Som̃er eine mechtige Armada in See bringen wirt/ entweder nach WeſtJn-
-                     <span class="br"></span><br>dien/ oder andern Spaniſchen orthen.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1620_63-3</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00137/full/max/0/default.jpg" alt="S. 137 des Jahrgangs" class="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00138/full/max/0/default.jpg" alt="S. 138 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1620_63-3">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß des Gravenhag vom <span class="date" title="1620-11-17">17. Ditto</span>.</h2>
+                     
+                     <p>
+                        Freytag abends iſt herꝛ Pfaltzgraff Ludwig/ des Koͤnigs in Boͤhmen Bruder/ mit
+                        <span class="br"></span><br>ſeinem Hoffgeſindt vber Vtrecht/ Rotterdam/ vnd Delfft anhero gelangt/ vnd von S.
+                        <span class="br"></span><br>Excel. ſampt vilen andern vornehmen Herꝛn vnnd Kutſchen ſtatlich rencontriet em-
+                        <span class="br"></span><br>gfangen/ vnd ins Loſament begleitet worden/ wirt bey Jhrer Exc. mit allen den ſeinigen</p>
+                     
+                     <section class="catchword">
+                        zu hoſen</section>
+                     <span class="page-number"><span>[Seitenanfang]</span></span>
+                     
+                     <p>
+                        iu hofe/ vnd Coſtfrey gehalten/ vnd deroſelben ſonderliche Ehr/ vnd Courreſia erzeigt
+                        <span class="br"></span><br>der Junge Printz aber bleibt zu Hofe bey Herꝛn Graf Ernſt Caſimir von Naſſaul-
+                        <span class="br"></span><br>Frießlandt/ ſolle hernacher in Engellandt ziehen.</p>
+                     
+                     <p>
+                        Der Obriſte Cicil wirt erſt tags mit etlichen ſtatlichen Cauallieren nach Engelland
+                        <span class="br"></span><br>ſeglen/ vmb/ wie verlaut vber des Koͤnigs Kriegsheer General zu ſein/ vnd verlaut
+                        dar
+                        <span class="br"></span><br>in Engellandt das Parlament/ in kuͤnfftigen Februarij ſich gewiß verſamblen/ vñ vber
+                        <span class="br"></span><br>alles ſich Reſoluiren ſolle.</p>
+                     
+                     <p>
+                        Jn diſen Landen werden auffs new vil Kriegs. vnd andere Schiff zugeruͤſt/ den me-
+                        <span class="br"></span><br>auff den Som̃er eine mechtige Armada in See bringen wirt/ entweder nach WeſtJn-
+                        <span class="br"></span><br>dien/ oder andern Spaniſchen orthen.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

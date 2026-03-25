@@ -4,58 +4,57 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1619.html">1619</a></li>
-               <li>
-                  / <a href="fp_1619_42.html">42</a></li>
-               <li>/ 1</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1619.html">1619</a></li>
+               <li><a href="fp_1619_42.html">42</a></li>
+               <li aria-current="page">1</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1619_38-9.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1619_42-2.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1619_38-9.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">9</span></a><a rel="next" href="fp_1619_42-2.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">2</span></a></nav>
       </nav>
-      <main>fp_1619_42-1
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936935/full/max/0/default.jpg" alt="S. 133 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1619_42-1">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Rom vom <span class="date" title="1619-10-05">5. Octobris/ Anno 1619</span>.</h2>
-                  
-                  W
-                  
-                  
-                  <p>
-                     Egen der jetzigen vnruh in Teutſchland/ iſt vom Bapſt befohlen worden/ in
-                     <span class="br"></span><br>der Kirchen die Litaney/ vnd andere Gebett/ vmb Gott zu bitten/ daß ſein
-                     <span class="br"></span><br>heylige Kirch/ vnd die Vnion der Chriſtlichen Fürſten vermehret werde/
-                     <span class="br"></span><br>zu ſingen angeſtellt worden.</p>
-                  
-                  <p>
-                     Dinſtag iſt ein extra ordinari von Meßina vom Principe Philiberto am Cartual Bor-
-                     <span class="br"></span><br>
-                     gia anhero arriuirt, mit Bericht/ daß die Spaniſche Armada im ſelbigen Porto ohne
-                     ver-
-                     <span class="br"></span><br>richtung einiger impreſſa zu ruck kommen/ vnd were auch ein Königlich fregata (welche
-                     <span class="br"></span><br>zu Zante verblieben) zu Meßina angelangt/ mit welcher man bericht daß ſelbiger Or-
-                     <span class="br"></span><br>ten die Ottomaniſche Armada in 70. Segel ſtarck/ ſampt zweyen groſſen Gallionen ge-
-                     <span class="br"></span><br>ſehen worden were.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1619_42-1</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936935/full/max/0/default.jpg" alt="S. 133 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1619_42-1">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Rom vom <span class="date" title="1619-10-05">5. Octobris/ Anno 1619</span>.</h2>
+                     
+                     W
+                     
+                     
+                     <p>
+                        Egen der jetzigen vnruh in Teutſchland/ iſt vom Bapſt befohlen worden/ in
+                        <span class="br"></span><br>der Kirchen die Litaney/ vnd andere Gebett/ vmb Gott zu bitten/ daß ſein
+                        <span class="br"></span><br>heylige Kirch/ vnd die Vnion der Chriſtlichen Fürſten vermehret werde/
+                        <span class="br"></span><br>zu ſingen angeſtellt worden.</p>
+                     
+                     <p>
+                        Dinſtag iſt ein extra ordinari von Meßina vom Principe Philiberto am Cartual Bor-
+                        <span class="br"></span><br>
+                        gia anhero arriuirt, mit Bericht/ daß die Spaniſche Armada im ſelbigen Porto ohne
+                        ver-
+                        <span class="br"></span><br>richtung einiger impreſſa zu ruck kommen/ vnd were auch ein Königlich fregata (welche
+                        <span class="br"></span><br>zu Zante verblieben) zu Meßina angelangt/ mit welcher man bericht daß ſelbiger Or-
+                        <span class="br"></span><br>ten die Ottomaniſche Armada in 70. Segel ſtarck/ ſampt zweyen groſſen Gallionen ge-
+                        <span class="br"></span><br>ſehen worden were.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

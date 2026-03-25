@@ -4,67 +4,66 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1619.html">1619</a></li>
-               <li>
-                  / <a href="fp_1619_45.html">45</a></li>
-               <li>/ 1</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1619.html">1619</a></li>
+               <li><a href="fp_1619_45.html">45</a></li>
+               <li aria-current="page">1</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1619_43-10.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1619_45-2.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1619_43-10.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">10</span></a><a rel="next" href="fp_1619_45-2.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">2</span></a></nav>
       </nav>
-      <main>fp_1619_45-1
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936943/full/max/0/default.jpg" alt="S. 141 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1619_45-1">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Rom vom <span class="date" title="1619-10-26">26. Octobris/ Anno 1619</span>.</h2>
-                  
-                  S
-                  
-                  
-                  <p>
-                     Ontags iſt ein Currir von Genua vom Spaniſchen Amb. zum Vice Re zu Nea-
-                     <span class="br"></span><br>poli ſpedirt worden/ mit Kön. Befelch Schreiben/ daß er noch mehr Fußvolk
-                     <span class="br"></span><br>werben/ vñ nach Vado der Kay. May zu Dienſten ſchicken ſolle/ ſelbigẽ tags
-                     <span class="br"></span><br>iſt der Poſtmeiſter allhie Marcheſe Don Anthonio de Taſſis, ſeines alters 88.
-                     <span class="br"></span><br>Jahr/ Todt verblichen.</p>
-                  
-                  <p>
-                     <span class="br"></span><br>Dinſtags iſt der Freyherr von Trautmanßdorff/ extraordinari Keys. Amb. von Flo-
-                     <span class="br"></span><br>rentz allher kommen/ hat beym Bapſt etlich mal audientz gehabt/ vnd aſſiſtentz gegen
-                     jrer
-                     <span class="br"></span><br>May. Rebellen geſucht/ darauff auch 110000. Cronen als 60000. zu dem Kriegsheer/
-                     <span class="br"></span><br>welches der Hertzog in Beyrn im Namen der Liga werben ſoll/ vnd dann 50000. Cro-
-                     <span class="br"></span><br>nen zu dem Keys. Läger/ erhalten/ mit dieſer Zuſag/ wofern dieſe Rumor ſich nicht
+      <main>
+         <div>fp_1619_45-1</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936943/full/max/0/default.jpg" alt="S. 141 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1619_45-1">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Rom vom <span class="date" title="1619-10-26">26. Octobris/ Anno 1619</span>.</h2>
                      
-                     <span class="br"></span><br>ſtillen würde/ wolte S. Bäpſtl. Heyl. jhrer May. gegen dem Früling 8000. Mann zu
-                     <span class="br"></span><br>Fuß zuſenden vnd vnderhalten.</p>
-                  
-                  <p>
-                     Zu Genua iſt der Don Ottauio d'Aragona auß Spania ankommen/ welcher dem Du-
-                     <span class="br"></span><br>ca d'Oſſana die confirmation auff 3. Jahr in ſelbigem Guberno mit bracht/ er aber
-                     ſoll vber
-                     <span class="br"></span><br>die Neapolitaniſche Galeren das commando haben/ ſo lang biß jr General di Leiua auß
-                     <span class="br"></span><br>Spania wider kompt.</p>
-                  </article>
-            </section>
+                     S
+                     
+                     
+                     <p>
+                        Ontags iſt ein Currir von Genua vom Spaniſchen Amb. zum Vice Re zu Nea-
+                        <span class="br"></span><br>poli ſpedirt worden/ mit Kön. Befelch Schreiben/ daß er noch mehr Fußvolk
+                        <span class="br"></span><br>werben/ vñ nach Vado der Kay. May zu Dienſten ſchicken ſolle/ ſelbigẽ tags
+                        <span class="br"></span><br>iſt der Poſtmeiſter allhie Marcheſe Don Anthonio de Taſſis, ſeines alters 88.
+                        <span class="br"></span><br>Jahr/ Todt verblichen.</p>
+                     
+                     <p>
+                        <span class="br"></span><br>Dinſtags iſt der Freyherr von Trautmanßdorff/ extraordinari Keys. Amb. von Flo-
+                        <span class="br"></span><br>rentz allher kommen/ hat beym Bapſt etlich mal audientz gehabt/ vnd aſſiſtentz gegen
+                        jrer
+                        <span class="br"></span><br>May. Rebellen geſucht/ darauff auch 110000. Cronen als 60000. zu dem Kriegsheer/
+                        <span class="br"></span><br>welches der Hertzog in Beyrn im Namen der Liga werben ſoll/ vnd dann 50000. Cro-
+                        <span class="br"></span><br>nen zu dem Keys. Läger/ erhalten/ mit dieſer Zuſag/ wofern dieſe Rumor ſich nicht
+                        
+                        <span class="br"></span><br>ſtillen würde/ wolte S. Bäpſtl. Heyl. jhrer May. gegen dem Früling 8000. Mann zu
+                        <span class="br"></span><br>Fuß zuſenden vnd vnderhalten.</p>
+                     
+                     <p>
+                        Zu Genua iſt der Don Ottauio d'Aragona auß Spania ankommen/ welcher dem Du-
+                        <span class="br"></span><br>ca d'Oſſana die confirmation auff 3. Jahr in ſelbigem Guberno mit bracht/ er aber
+                        ſoll vber
+                        <span class="br"></span><br>die Neapolitaniſche Galeren das commando haben/ ſo lang biß jr General di Leiua auß
+                        <span class="br"></span><br>Spania wider kompt.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

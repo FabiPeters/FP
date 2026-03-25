@@ -4,60 +4,59 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1616.html">1616</a></li>
-               <li>
-                  / <a href="fp_1616_29.html">29</a></li>
-               <li>/ 5</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1616.html">1616</a></li>
+               <li><a href="fp_1616_29.html">29</a></li>
+               <li aria-current="page">5</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1616_29-4.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1616_29-6.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_29-4.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">4</span></a><a rel="next" href="fp_1616_29-6.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">6</span></a></nav>
       </nav>
-      <main>fp_1616_29-5
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904345/full/max/0/default.jpg" alt="S. 84 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1616_29-5">
-                  <span class="page-number"><span>[Seitenanfang]</span></span>
-                  
-                  <h2>
-                     Auß Lyon/ vom <span class="date" title="1616-07-10">10. Julio/ 1616</span>.</h2>
-                  
-                  <p>
-                     Demnach der Marcheſe de Anore ſo in der Paſtilia zu Pariß wohnei/
-                     <span class="br"></span><br>ſeinem Wachtmeiſter befohlen/ niemandt zur Pforten außzulaſſen/ als er aber
-                     <span class="br"></span><br>ſelbſt hinauß gewolt/ hat der Wachtmeiſter Jme ſolches abgeſchlagen/ darvber
-                     <span class="br"></span><br>Er jhne baſtoniren laſſen/ wie der gemein Pöbel diß erfahren/ haben ſie ſich auff
-                     <span class="br"></span><br>2000. Mann/ ſolches zu rechen vnd ſein Loſament mit allem was darinn zuver-
-                     <span class="br"></span><br>brennen/ verſamblet/ ſo doch durchden König verhindert/ vnd Jnen Iuſtitia zu-
-                     <span class="br"></span><br>ertheilen worden/ verſprochen/ hiezwiſchen macht man Articul/ den Marcheſe
-                     <span class="br"></span><br>zuverklagen. Der Printz von Conte iſt noch in Berry welches Hertzog-
-                     <span class="br"></span><br>thumb Jme von Jhre Maytt. vermög der Friedens Articul zur verſicherung
-                     <span class="br"></span><br>eingeraumbt worden/ auff den 24. paſſato hat er in Bourges ſein einzug gehal-
-                     <span class="br"></span><br>ten/ vnnd an ſtatt der alten Guarniſon/ ſeine Soldaten in groſſen Thurn allda
-                     <span class="br"></span><br>loſirt. Der Conte di Ouernia ſo ſeither deß Mareſchals di Biron Todt
-                     <span class="br"></span><br>zu Pariß gefangen gelegen/ iſt den 26. paſſato ledig worden/ Der Duca de
-                     <span class="br"></span><br>Eſpernon iſt ſeither der Frieden beſchloſſen worden/ nicht nach Hoff kommen
-                     <span class="br"></span><br>thut ſich in ſeinem Gubernament vffhalten/ vnnd mit Kriegsvolck ſtärcken/ zu
-                     <span class="br"></span><br>Pariß hat man die fraw/ ſo Jmewegen deß entleibten Königs todt anklagt/ wie-
-                     <span class="br"></span><br>der wie auch ein andere Perſon die 9. Monatgefangen gelegen/ verehrt.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1616_29-5</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904345/full/max/0/default.jpg" alt="S. 84 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1616_29-5">
+                     <span class="page-number"><span>[Seitenanfang]</span></span>
+                     
+                     <h2>
+                        Auß Lyon/ vom <span class="date" title="1616-07-10">10. Julio/ 1616</span>.</h2>
+                     
+                     <p>
+                        Demnach der Marcheſe de Anore ſo in der Paſtilia zu Pariß wohnei/
+                        <span class="br"></span><br>ſeinem Wachtmeiſter befohlen/ niemandt zur Pforten außzulaſſen/ als er aber
+                        <span class="br"></span><br>ſelbſt hinauß gewolt/ hat der Wachtmeiſter Jme ſolches abgeſchlagen/ darvber
+                        <span class="br"></span><br>Er jhne baſtoniren laſſen/ wie der gemein Pöbel diß erfahren/ haben ſie ſich auff
+                        <span class="br"></span><br>2000. Mann/ ſolches zu rechen vnd ſein Loſament mit allem was darinn zuver-
+                        <span class="br"></span><br>brennen/ verſamblet/ ſo doch durchden König verhindert/ vnd Jnen Iuſtitia zu-
+                        <span class="br"></span><br>ertheilen worden/ verſprochen/ hiezwiſchen macht man Articul/ den Marcheſe
+                        <span class="br"></span><br>zuverklagen. Der Printz von Conte iſt noch in Berry welches Hertzog-
+                        <span class="br"></span><br>thumb Jme von Jhre Maytt. vermög der Friedens Articul zur verſicherung
+                        <span class="br"></span><br>eingeraumbt worden/ auff den 24. paſſato hat er in Bourges ſein einzug gehal-
+                        <span class="br"></span><br>ten/ vnnd an ſtatt der alten Guarniſon/ ſeine Soldaten in groſſen Thurn allda
+                        <span class="br"></span><br>loſirt. Der Conte di Ouernia ſo ſeither deß Mareſchals di Biron Todt
+                        <span class="br"></span><br>zu Pariß gefangen gelegen/ iſt den 26. paſſato ledig worden/ Der Duca de
+                        <span class="br"></span><br>Eſpernon iſt ſeither der Frieden beſchloſſen worden/ nicht nach Hoff kommen
+                        <span class="br"></span><br>thut ſich in ſeinem Gubernament vffhalten/ vnnd mit Kriegsvolck ſtärcken/ zu
+                        <span class="br"></span><br>Pariß hat man die fraw/ ſo Jmewegen deß entleibten Königs todt anklagt/ wie-
+                        <span class="br"></span><br>der wie auch ein andere Perſon die 9. Monatgefangen gelegen/ verehrt.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

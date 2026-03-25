@@ -4,58 +4,57 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1616.html">1616</a></li>
-               <li>
-                  / <a href="fp_1616_21.html">21</a></li>
-               <li>/ 6</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1616.html">1616</a></li>
+               <li><a href="fp_1616_21.html">21</a></li>
+               <li aria-current="page">6</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1616_21-5.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1616_22-1.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_21-5.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">5</span></a><a rel="next" href="fp_1616_22-1.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">1</span></a></nav>
       </nav>
-      <main>fp_1616_21-6
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904310/full/max/0/default.jpg" alt="S. 52 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1616_21-6">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Groͤtz vom <span class="date" title="1616-05-16">16. diß</span>.</h2>
-                  
-                  <p>
-                     Freytags iſt Ertzhertzog Leopolt gar ſtattlich allhier ankommen/ ſonſten gehet das
-                     <span class="br"></span><br>Kriegsweſen auff beyden Theilen ſeltzam zu/ ſie rauben vnd brennen alles hinweg/ ha-
-                     <span class="br"></span><br>ben die Vnſern erſt newlich Parenza vnd Albona ſpolirt/ in Brannt geſteckt vnnd viel
-                     <span class="br"></span><br>Kauffleut gefangen/ ſo ſparens die Venediger den vnſern auch nicht.</p>
-                  
-                  <p>
-                     Von Duͤſſeldorff wird geſchrieben daß zwiſchen jhnen vnd der Statt Neuß der
-                     <span class="br"></span><br>vor dieſem vorgefallene Streit wegen einer Wieſen widerumb angefangen/ haben alſo
-                     <span class="br"></span><br>die Duͤſſeldörffer etliche Neuſer Bürger wie auch etliche Pferdt gefangen genommen/
-                     <span class="br"></span><br>vnd nach Duͤſſeldorff geführt/ dagegen die Neuſer Jhr beſtes auch gethan/ vnnd viel
-                     <span class="br"></span><br>Duͤſſeldörffer gefangen/ als die Duͤſſeldörffer ſolches geſehen/ haben ſie die Pferdt
-                     wi-
-                     <span class="br"></span><br>der geſchickt/ vnd die gefangene Buͤrger theils in die Herberg theils zum Pro-
-                     <span class="br"></span><br>uoſen gelegt/ deßgleichen die Neuſer auch gethan/ was endlich
-                     <span class="br"></span><br>hierauß folgen wird/ gibt die Zeit.</p>
-                  
-                  ENDE.
-                  </article>
-            </section>
+      <main>
+         <div>fp_1616_21-6</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904310/full/max/0/default.jpg" alt="S. 52 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1616_21-6">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Groͤtz vom <span class="date" title="1616-05-16">16. diß</span>.</h2>
+                     
+                     <p>
+                        Freytags iſt Ertzhertzog Leopolt gar ſtattlich allhier ankommen/ ſonſten gehet das
+                        <span class="br"></span><br>Kriegsweſen auff beyden Theilen ſeltzam zu/ ſie rauben vnd brennen alles hinweg/ ha-
+                        <span class="br"></span><br>ben die Vnſern erſt newlich Parenza vnd Albona ſpolirt/ in Brannt geſteckt vnnd viel
+                        <span class="br"></span><br>Kauffleut gefangen/ ſo ſparens die Venediger den vnſern auch nicht.</p>
+                     
+                     <p>
+                        Von Duͤſſeldorff wird geſchrieben daß zwiſchen jhnen vnd der Statt Neuß der
+                        <span class="br"></span><br>vor dieſem vorgefallene Streit wegen einer Wieſen widerumb angefangen/ haben alſo
+                        <span class="br"></span><br>die Duͤſſeldörffer etliche Neuſer Bürger wie auch etliche Pferdt gefangen genommen/
+                        <span class="br"></span><br>vnd nach Duͤſſeldorff geführt/ dagegen die Neuſer Jhr beſtes auch gethan/ vnnd viel
+                        <span class="br"></span><br>Duͤſſeldörffer gefangen/ als die Duͤſſeldörffer ſolches geſehen/ haben ſie die Pferdt
+                        wi-
+                        <span class="br"></span><br>der geſchickt/ vnd die gefangene Buͤrger theils in die Herberg theils zum Pro-
+                        <span class="br"></span><br>uoſen gelegt/ deßgleichen die Neuſer auch gethan/ was endlich
+                        <span class="br"></span><br>hierauß folgen wird/ gibt die Zeit.</p>
+                     
+                     ENDE.
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

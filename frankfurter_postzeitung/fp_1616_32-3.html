@@ -4,58 +4,57 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1616.html">1616</a></li>
-               <li>
-                  / <a href="fp_1616_32.html">32</a></li>
-               <li>/ 3</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1616.html">1616</a></li>
+               <li><a href="fp_1616_32.html">32</a></li>
+               <li aria-current="page">3</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1616_32-2.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1616_32-4.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_32-2.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">2</span></a><a rel="next" href="fp_1616_32-4.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">4</span></a></nav>
       </nav>
-      <main>fp_1616_32-3
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904356/full/max/0/default.jpg" alt="S. 95 des Jahrgangs" class="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904357/full/max/0/default.jpg" alt="S. 96 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1616_32-3">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Venedig vom <span class="date" title="1616-08-05">5. Auguſti</span>.</h2>
-                  
-                  <p>
-                     Zu Meylandt iſt dem Frantzöſiſchen Geſandten Monſ. di Bettuni
-                     <span class="br"></span><br>die Antwort ſchrifftlich vbergeben worden/ nemblich der König in Spanien
-                     <span class="br"></span><br>were nicht mehr willensden getroffenen Accorto vnder Aſti Hand zuhaben/
-                     <span class="br"></span><br>weilen der Savoyer vff viel Weg darwider gehandelt/ in dem Er die Waffen
-                     <span class="br"></span><br>nicht nieder gelegt/ in dem Er alle weil die Frantzoſen vnd andere bey ſich be-
-                     <span class="br"></span><br>halten/ bevorab auch den Lauff deß Waſſers Montferat geſperꝛt/ vnnd nicht
-                     <span class="br"></span><br>allein deß Mantuaners Vnderthanen/ ſondern auch deß Königs Güter ange-
-                     <span class="br"></span><br>griffen vnd eingenommen/ deßgleichen den Different mit Mantua Keyſerl.
-                     <span class="br"></span><br>Mayeſt. nicht heimgeſtellt/ auch mit Außländiſchen Fürſten vnd den Vene-
-                     <span class="br"></span><br>digern ſich in Bündnuß eingelaſſen. Allda zu Meplandt iſt man 10. Fähr-</p>
-                  <span class="page-number"><span>[Seitenanfang]</span></span>
-                  
-                  <p>
-                     hin Friecht auß Spnien per Mars gewärtig eſt hat der Bubernator 16000
-                     <span class="br"></span><br>ronen nach Grätz geſandt/ Kriegsvolck zuwerben/ ſolches nach Friaul zu-
-                     <span class="br"></span><br>ſenden/ derſelbe Ertzhertzog hat 2000. Mußquetirer gegen den Venediſchen
-                     <span class="br"></span><br>Gräntzen geſchickt.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1616_32-3</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904356/full/max/0/default.jpg" alt="S. 95 des Jahrgangs" class="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904357/full/max/0/default.jpg" alt="S. 96 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1616_32-3">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Venedig vom <span class="date" title="1616-08-05">5. Auguſti</span>.</h2>
+                     
+                     <p>
+                        Zu Meylandt iſt dem Frantzöſiſchen Geſandten Monſ. di Bettuni
+                        <span class="br"></span><br>die Antwort ſchrifftlich vbergeben worden/ nemblich der König in Spanien
+                        <span class="br"></span><br>were nicht mehr willensden getroffenen Accorto vnder Aſti Hand zuhaben/
+                        <span class="br"></span><br>weilen der Savoyer vff viel Weg darwider gehandelt/ in dem Er die Waffen
+                        <span class="br"></span><br>nicht nieder gelegt/ in dem Er alle weil die Frantzoſen vnd andere bey ſich be-
+                        <span class="br"></span><br>halten/ bevorab auch den Lauff deß Waſſers Montferat geſperꝛt/ vnnd nicht
+                        <span class="br"></span><br>allein deß Mantuaners Vnderthanen/ ſondern auch deß Königs Güter ange-
+                        <span class="br"></span><br>griffen vnd eingenommen/ deßgleichen den Different mit Mantua Keyſerl.
+                        <span class="br"></span><br>Mayeſt. nicht heimgeſtellt/ auch mit Außländiſchen Fürſten vnd den Vene-
+                        <span class="br"></span><br>digern ſich in Bündnuß eingelaſſen. Allda zu Meplandt iſt man 10. Fähr-</p>
+                     <span class="page-number"><span>[Seitenanfang]</span></span>
+                     
+                     <p>
+                        hin Friecht auß Spnien per Mars gewärtig eſt hat der Bubernator 16000
+                        <span class="br"></span><br>ronen nach Grätz geſandt/ Kriegsvolck zuwerben/ ſolches nach Friaul zu-
+                        <span class="br"></span><br>ſenden/ derſelbe Ertzhertzog hat 2000. Mußquetirer gegen den Venediſchen
+                        <span class="br"></span><br>Gräntzen geſchickt.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

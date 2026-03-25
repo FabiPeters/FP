@@ -4,55 +4,54 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1620.html">1620</a></li>
-               <li>
-                  / <a href="fp_1620_73.html">73</a></li>
-               <li>/ 8</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1620.html">1620</a></li>
+               <li><a href="fp_1620_73.html">73</a></li>
+               <li aria-current="page">8</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1620_73-7.html">&lt;</a>
-            -
-            <span>&gt;</span></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1620_73-7.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">7</span></a><span class="nav-link next-link nav-link-disabled"><span class="nav-label">→</span></span></nav>
       </nav>
-      <main>fp_1620_73-8
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00179/full/max/0/default.jpg" alt="S. 179 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1620_73-8">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Lintz vom <span class="date" title="1620-12-17">17. Ditto</span>.</h2>
-                  
-                  <p>
-                     Hieſige Landſtaͤnd ſind noch beyſamen/ zuberathſchlagen/ wie der vberauß groſſe
-                     <span class="br"></span><br>ſchuldenlaſt/ in diſen Landen/ ſo ſich auff 38. thonen golds belaufft/ ſampt die ſo
-                     in diſen
-                     <span class="br"></span><br>Landen einquartierten Baͤyeriſchen Kriegsvolck/ ſo mã auch bey 200000 fl. ſchuldig
-                     <span class="br"></span><br>neben andern gravaminibus mehr/ abgeſchafft werden moͤchte/ Seither wenig tagẽ iſt
-                     <span class="br"></span><br>auch 82000 fl. nach vnd nach auff das Landvolck/ vnd nicht die auff dem Land ligende
-                     <span class="br"></span><br>Guarniſon zuuerſtehen/ daran alßbald 16000. fl. zuerlegen erbottẽ/ daruͤber der Statt-
-                     <span class="br"></span><br>halter vbel zu friden/ mit bedraͤwung/ nit allein die verordnete Herꝛn auffm Schloß
-                     zu
-                     <span class="br"></span><br>Arreſtiren/ ſondern auch die Breißmachung/ vnd das ins kuͤnfftig ein jeder Soldat
-                     <span class="br"></span><br>ſich zu ſeinem Wirth zu tiſch ſetzen/ vnd ſelbſten herꝛn im Hauß ſein ſoll/ werden
-                     auch
-                     <span class="br"></span><br>ſonſt in allen Aembtern die Evangeliſchen abgeſetzt/ vnnd hingegen Catholiſche einge-
-                     <span class="br"></span><br>ſetzt.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1620_73-8</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00179/full/max/0/default.jpg" alt="S. 179 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1620_73-8">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Lintz vom <span class="date" title="1620-12-17">17. Ditto</span>.</h2>
+                     
+                     <p>
+                        Hieſige Landſtaͤnd ſind noch beyſamen/ zuberathſchlagen/ wie der vberauß groſſe
+                        <span class="br"></span><br>ſchuldenlaſt/ in diſen Landen/ ſo ſich auff 38. thonen golds belaufft/ ſampt die ſo
+                        in diſen
+                        <span class="br"></span><br>Landen einquartierten Baͤyeriſchen Kriegsvolck/ ſo mã auch bey 200000 fl. ſchuldig
+                        <span class="br"></span><br>neben andern gravaminibus mehr/ abgeſchafft werden moͤchte/ Seither wenig tagẽ iſt
+                        <span class="br"></span><br>auch 82000 fl. nach vnd nach auff das Landvolck/ vnd nicht die auff dem Land ligende
+                        <span class="br"></span><br>Guarniſon zuuerſtehen/ daran alßbald 16000. fl. zuerlegen erbottẽ/ daruͤber der Statt-
+                        <span class="br"></span><br>halter vbel zu friden/ mit bedraͤwung/ nit allein die verordnete Herꝛn auffm Schloß
+                        zu
+                        <span class="br"></span><br>Arreſtiren/ ſondern auch die Breißmachung/ vnd das ins kuͤnfftig ein jeder Soldat
+                        <span class="br"></span><br>ſich zu ſeinem Wirth zu tiſch ſetzen/ vnd ſelbſten herꝛn im Hauß ſein ſoll/ werden
+                        auch
+                        <span class="br"></span><br>ſonſt in allen Aembtern die Evangeliſchen abgeſetzt/ vnnd hingegen Catholiſche einge-
+                        <span class="br"></span><br>ſetzt.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

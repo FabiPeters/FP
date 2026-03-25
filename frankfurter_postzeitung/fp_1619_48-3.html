@@ -4,63 +4,62 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1619.html">1619</a></li>
-               <li>
-                  / <a href="fp_1619_48.html">48</a></li>
-               <li>/ 3</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1619.html">1619</a></li>
+               <li><a href="fp_1619_48.html">48</a></li>
+               <li aria-current="page">3</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1619_48-2.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1619_48-4.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1619_48-2.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">2</span></a><a rel="next" href="fp_1619_48-4.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">4</span></a></nav>
       </nav>
-      <main>fp_1619_48-3
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936952/full/max/0/default.jpg" alt="S. 150 des Jahrgangs" class="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936953/full/max/0/default.jpg" alt="S. 151 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1619_48-3">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Preßlau vom <span class="date" title="1619-11-13">13. Dito</span>.</h2>
-                  
-                  <p>
-                     Von newem anderſt nichts/ als das man allhie wider 100. Soldaten auffgenommen/
-                     <span class="br"></span><br>vnd bewert/ bey vnſerer hieſigen Cantzley wirt keine veränderung geſchehen/ biß jre
-                     Kö.
-                     <span class="br"></span><br>May. alher kom̃en/ vnd ſollen etliche 100. Soldaten biß in Laußnitz dem König entge-
-                     <span class="br"></span><br>gen geſchickt werden/ ſo richt man die Ehrenporten allhie auch zu/ vnnd wirdt das
-                     gantze
-                     <span class="br"></span><br>Land mit jhrer ſchönen Reuterey/ ein jedes Fürſtenthumb abſonderlich ſich ſehen laſ-
-                     <span class="br"></span><br>ſen.</p>
-                  
-                  <p>
-                     Den auffgebottenen 20. Mann im Land zu Roß/ vnd fuß/ bewerth man in allen 4.
-                     <span class="br"></span><br>vierteln/ im fahl der noth ſolche zugebrauchen/ ſo haben wir geſtern auß Polen böſe
-                     zei-
-                     <span class="br"></span><br>tung bekommen/ daß der junge Printz/ Biſchoff zur Neuß/ vnd Humanay, neben andern
-                     <span class="br"></span><br>nicht weit von Cracaw in die 30000. Man beyſamen/ vnd wie man heut außgibt/ ſollen
-                     <span class="br"></span><br>bereit 18000. derſelben an der Teſchiſchen Grentzen eingefallẽ ſeyn/ deſhalben die
-                     Für-</p>
-                  <span class="page-number"><span>[Seitenanfang]</span></span>
-                  
-                  <p>
-                     ſten vnd Stend in eil alhero kommen/ vmb auch den 10. Mann auffzubieten/ vnd wider-
-                     <span class="br"></span><br>ſtand zuthun</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1619_48-3</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936952/full/max/0/default.jpg" alt="S. 150 des Jahrgangs" class="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936953/full/max/0/default.jpg" alt="S. 151 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1619_48-3">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Preßlau vom <span class="date" title="1619-11-13">13. Dito</span>.</h2>
+                     
+                     <p>
+                        Von newem anderſt nichts/ als das man allhie wider 100. Soldaten auffgenommen/
+                        <span class="br"></span><br>vnd bewert/ bey vnſerer hieſigen Cantzley wirt keine veränderung geſchehen/ biß jre
+                        Kö.
+                        <span class="br"></span><br>May. alher kom̃en/ vnd ſollen etliche 100. Soldaten biß in Laußnitz dem König entge-
+                        <span class="br"></span><br>gen geſchickt werden/ ſo richt man die Ehrenporten allhie auch zu/ vnnd wirdt das
+                        gantze
+                        <span class="br"></span><br>Land mit jhrer ſchönen Reuterey/ ein jedes Fürſtenthumb abſonderlich ſich ſehen laſ-
+                        <span class="br"></span><br>ſen.</p>
+                     
+                     <p>
+                        Den auffgebottenen 20. Mann im Land zu Roß/ vnd fuß/ bewerth man in allen 4.
+                        <span class="br"></span><br>vierteln/ im fahl der noth ſolche zugebrauchen/ ſo haben wir geſtern auß Polen böſe
+                        zei-
+                        <span class="br"></span><br>tung bekommen/ daß der junge Printz/ Biſchoff zur Neuß/ vnd Humanay, neben andern
+                        <span class="br"></span><br>nicht weit von Cracaw in die 30000. Man beyſamen/ vnd wie man heut außgibt/ ſollen
+                        <span class="br"></span><br>bereit 18000. derſelben an der Teſchiſchen Grentzen eingefallẽ ſeyn/ deſhalben die
+                        Für-</p>
+                     <span class="page-number"><span>[Seitenanfang]</span></span>
+                     
+                     <p>
+                        ſten vnd Stend in eil alhero kommen/ vmb auch den 10. Mann auffzubieten/ vnd wider-
+                        <span class="br"></span><br>ſtand zuthun</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

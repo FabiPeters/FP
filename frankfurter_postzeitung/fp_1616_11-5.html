@@ -4,51 +4,50 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1616.html">1616</a></li>
-               <li>
-                  / <a href="fp_1616_11.html">11</a></li>
-               <li>/ 5</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1616.html">1616</a></li>
+               <li><a href="fp_1616_11.html">11</a></li>
+               <li aria-current="page">5</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1616_11-4.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1616_12-1.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_11-4.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">4</span></a><a rel="next" href="fp_1616_12-1.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">1</span></a></nav>
       </nav>
-      <main>fp_1616_11-5
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904283/full/max/0/default.jpg" alt="S. 24 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1616_11-5">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Cracau vom <span class="date" title="1616-02-26">26. Februarij</span>.</h2>
-                  
-                  <p>
-                     Dißmal wenig Newes/ dieweilen der Königliche Princeſſin Kindtauff
-                     <span class="br"></span><br>zu Warſchau ſtattlich vollendet worden. Vnnd Jhre Fürſtlich Durchl. Ertz-
-                     <span class="br"></span><br>hertzog Carl Biſchoff von Neus/ allda bey gewohut haben/ deſſen verhofft man
-                     <span class="br"></span><br>Heut oder Morgen allbero.</p>
-                  
-                  <p>
-                     Jn Warſchaw befinden ſich die Türcken vnd Tartariſche Bottſchaff-
-                     <span class="br"></span><br>ten/ weichegen Polen den Frieden gantz auffſagen/ vnd ſich als Feind zum Krieg.
-                     <span class="br"></span><br>begeben wellens/ weilen die Caſſaggen/ ſo groſſen Schaden gethan.
-                     <span class="br"></span><br>haben ſollen.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1616_11-5</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904283/full/max/0/default.jpg" alt="S. 24 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1616_11-5">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Cracau vom <span class="date" title="1616-02-26">26. Februarij</span>.</h2>
+                     
+                     <p>
+                        Dißmal wenig Newes/ dieweilen der Königliche Princeſſin Kindtauff
+                        <span class="br"></span><br>zu Warſchau ſtattlich vollendet worden. Vnnd Jhre Fürſtlich Durchl. Ertz-
+                        <span class="br"></span><br>hertzog Carl Biſchoff von Neus/ allda bey gewohut haben/ deſſen verhofft man
+                        <span class="br"></span><br>Heut oder Morgen allbero.</p>
+                     
+                     <p>
+                        Jn Warſchaw befinden ſich die Türcken vnd Tartariſche Bottſchaff-
+                        <span class="br"></span><br>ten/ weichegen Polen den Frieden gantz auffſagen/ vnd ſich als Feind zum Krieg.
+                        <span class="br"></span><br>begeben wellens/ weilen die Caſſaggen/ ſo groſſen Schaden gethan.
+                        <span class="br"></span><br>haben ſollen.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

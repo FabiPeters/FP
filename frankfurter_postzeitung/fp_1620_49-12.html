@@ -4,60 +4,59 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1620.html">1620</a></li>
-               <li>
-                  / <a href="fp_1620_49.html">49</a></li>
-               <li>/ 12</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1620.html">1620</a></li>
+               <li><a href="fp_1620_49.html">49</a></li>
+               <li aria-current="page">12</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1620_49-11.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1620_50-1.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1620_49-11.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">11</span></a><a rel="next" href="fp_1620_50-1.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">1</span></a></nav>
       </nav>
-      <main>fp_1620_49-12
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00096/full/max/0/default.jpg" alt="S. 96 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1620_49-12">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Prag vom <span class="date" title="1620-10-07">7. Ditto</span>.</h2>
-                  
-                  <p>
-                     Hentſela von dem Manafelgiſchen volck 7. faͤholein Rnecht berein kommen/ die wenden
-                     auf
-                     <span class="br"></span><br>der kleinen Seiten/ vnnd Reiſchin ein Quartirt.</p>
-                  
-                  <p>
-                     Gonſten ſtebnet vill volck jhee ſachen herein/ dan der feind biß aufs oder2 meil herein
-                     ſtreiffte
-                     <span class="br"></span><br>hat auch die Statt Pragaditz Gontags eingenommen/ vnd meiſt darin Vieder gehaut auß
-                     vr-
-                     <span class="br"></span><br>ſach weila ſie ſich dapffer gewehrt vnd dem feind im ein lauff groſſen ſchaden/ vnd
-                     Niederlag ge-
-                     <span class="br"></span><br>an/ dann weiln Herꝛ Graff von Mansfeld ſich mit ſeinem volck (ſo vberal groſſen Schaden
-                     <span class="br"></span><br>tbut/ Mwieder auff Pilſen gewendet interim der contra ſeind an allenorten ſeinen willen
-                     zimb-
-                     <span class="br"></span><br>lich volbringct vnd kan man nicht vberal ſein der Bucquoi befindt ſich zu Merobitz
-                     verſucht alle
-                     <span class="br"></span><br>zutel/ die voſern ſo jetzo zu Rlingenberg zuuerfuͤhren/ vnd alſo dan ſeinen weg nach
-                     Prag nenitt
-                     <span class="br"></span><br>werden alſoe iſt auffeinander ſtoſſen/ vnd treffen maͤſſen.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1620_49-12</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00096/full/max/0/default.jpg" alt="S. 96 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1620_49-12">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Prag vom <span class="date" title="1620-10-07">7. Ditto</span>.</h2>
+                     
+                     <p>
+                        Hentſela von dem Manafelgiſchen volck 7. faͤholein Rnecht berein kommen/ die wenden
+                        auf
+                        <span class="br"></span><br>der kleinen Seiten/ vnnd Reiſchin ein Quartirt.</p>
+                     
+                     <p>
+                        Gonſten ſtebnet vill volck jhee ſachen herein/ dan der feind biß aufs oder2 meil herein
+                        ſtreiffte
+                        <span class="br"></span><br>hat auch die Statt Pragaditz Gontags eingenommen/ vnd meiſt darin Vieder gehaut auß
+                        vr-
+                        <span class="br"></span><br>ſach weila ſie ſich dapffer gewehrt vnd dem feind im ein lauff groſſen ſchaden/ vnd
+                        Niederlag ge-
+                        <span class="br"></span><br>an/ dann weiln Herꝛ Graff von Mansfeld ſich mit ſeinem volck (ſo vberal groſſen Schaden
+                        <span class="br"></span><br>tbut/ Mwieder auff Pilſen gewendet interim der contra ſeind an allenorten ſeinen willen
+                        zimb-
+                        <span class="br"></span><br>lich volbringct vnd kan man nicht vberal ſein der Bucquoi befindt ſich zu Merobitz
+                        verſucht alle
+                        <span class="br"></span><br>zutel/ die voſern ſo jetzo zu Rlingenberg zuuerfuͤhren/ vnd alſo dan ſeinen weg nach
+                        Prag nenitt
+                        <span class="br"></span><br>werden alſoe iſt auffeinander ſtoſſen/ vnd treffen maͤſſen.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

@@ -4,46 +4,45 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1616.html">1616</a></li>
-               <li>
-                  / <a href="fp_1616_17.html">17</a></li>
-               <li>/ 3</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1616.html">1616</a></li>
+               <li><a href="fp_1616_17.html">17</a></li>
+               <li aria-current="page">3</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1616_17-2.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1616_17-4.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_17-2.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">2</span></a><a rel="next" href="fp_1616_17-4.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">4</span></a></nav>
       </nav>
-      <main>fp_1616_17-3
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904294/full/max/0/default.jpg" alt="S. 35 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1616_17-3">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Dantzig vom <span class="date" title="1616-04-12">12. Aprilis</span>.</h2>
-                  
-                  <p>
-                     Geſtern iſt man allhier wegen der Elbinger wider zu Rath gangen/ vnnd weiß
-                     <span class="br"></span><br>man noch nicht/ wie es ablauffen wird/ etliche haben Schreiben/ der König wolle ſol-
-                     <span class="br"></span><br>ches nicht confirmiren/ man gebe dann den Jeſuittern Jährlich 6000. Thaler ſampt
-                     <span class="br"></span><br>den verſprochenen Kirchen in der Vorſtatt/ welches jhnen aber nicht eingewilliget
-                     <span class="br"></span><br>werd/ dann einmahl beſchloſſen/ nemblich bey 1000. Talern bleiben zu laſſen.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1616_17-3</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904294/full/max/0/default.jpg" alt="S. 35 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1616_17-3">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Dantzig vom <span class="date" title="1616-04-12">12. Aprilis</span>.</h2>
+                     
+                     <p>
+                        Geſtern iſt man allhier wegen der Elbinger wider zu Rath gangen/ vnnd weiß
+                        <span class="br"></span><br>man noch nicht/ wie es ablauffen wird/ etliche haben Schreiben/ der König wolle ſol-
+                        <span class="br"></span><br>ches nicht confirmiren/ man gebe dann den Jeſuittern Jährlich 6000. Thaler ſampt
+                        <span class="br"></span><br>den verſprochenen Kirchen in der Vorſtatt/ welches jhnen aber nicht eingewilliget
+                        <span class="br"></span><br>werd/ dann einmahl beſchloſſen/ nemblich bey 1000. Talern bleiben zu laſſen.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

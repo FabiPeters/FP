@@ -4,54 +4,53 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1616.html">1616</a></li>
-               <li>
-                  / <a href="fp_1616_14.html">14</a></li>
-               <li>/ 7</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1616.html">1616</a></li>
+               <li><a href="fp_1616_14.html">14</a></li>
+               <li aria-current="page">7</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1616_14-6.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1616_17-1.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_14-6.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">6</span></a><a rel="next" href="fp_1616_17-1.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">1</span></a></nav>
       </nav>
-      <main>fp_1616_14-7
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904291/full/max/0/default.jpg" alt="S. 32 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1616_14-7">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Wien vom <span class="date" title="1616-03-30">30. Martij</span>.</h2>
-                  
-                  <p>
-                     Der Don Balthaſar iſt nunmehr mit ſeinen 500. Kühriſern allhie vnd andern
-                     <span class="br"></span><br>Orthen auffkommen/ der befind ſich jetzt allhier/ vnd ſolle noch 500. leichte Pferdt
-                     auff-
-                     <span class="br"></span><br>werben/ deßgleichen wird mit offenem Trommelſchlagen/ vnder einem Graffen von
-                     <span class="br"></span><br>Thurn noch 6. Fähnlein Knecht vff Hiſpaniſche Bezahlung geworben/ die ſollen Heut
-                     <span class="br"></span><br>oder Morgen nach der Steyermarck vffden Muſterplatz geführet werden/ vnd
-                     <span class="br"></span><br>nur noch dieſe/ wie auch der Prager vnd anderer Hülffen zeitlich genugkomen/ hofft
-                     <span class="br"></span><br>man es werde mit dem Venediſchen Krieg (ob man zwar hat fürgeben/ Gradiſca ſolle
-                     <span class="br"></span><br>von jhnen eingenommen ſeyn) dann die Venediger in 3. Tagen in 4000. Schüß hinein
-                     <span class="br"></span><br>gethan/ vnd nach Palwam vmb mehr Stück Geſchütz geſchickt/ dann die in Gradiſca
-                     <span class="br"></span><br>ſich vff den Bolwercken in der Statt/ wie auch hinder den Schantzkörben nie-
-                     <span class="br"></span><br>de dörfft ſehen laſſen ) ein Vergleich getroffen werde/ vnd das meiſte
-                     <span class="br"></span><br>Volck wider zu rück in Oeſterreich kommen möchte.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1616_14-7</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904291/full/max/0/default.jpg" alt="S. 32 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1616_14-7">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Wien vom <span class="date" title="1616-03-30">30. Martij</span>.</h2>
+                     
+                     <p>
+                        Der Don Balthaſar iſt nunmehr mit ſeinen 500. Kühriſern allhie vnd andern
+                        <span class="br"></span><br>Orthen auffkommen/ der befind ſich jetzt allhier/ vnd ſolle noch 500. leichte Pferdt
+                        auff-
+                        <span class="br"></span><br>werben/ deßgleichen wird mit offenem Trommelſchlagen/ vnder einem Graffen von
+                        <span class="br"></span><br>Thurn noch 6. Fähnlein Knecht vff Hiſpaniſche Bezahlung geworben/ die ſollen Heut
+                        <span class="br"></span><br>oder Morgen nach der Steyermarck vffden Muſterplatz geführet werden/ vnd
+                        <span class="br"></span><br>nur noch dieſe/ wie auch der Prager vnd anderer Hülffen zeitlich genugkomen/ hofft
+                        <span class="br"></span><br>man es werde mit dem Venediſchen Krieg (ob man zwar hat fürgeben/ Gradiſca ſolle
+                        <span class="br"></span><br>von jhnen eingenommen ſeyn) dann die Venediger in 3. Tagen in 4000. Schüß hinein
+                        <span class="br"></span><br>gethan/ vnd nach Palwam vmb mehr Stück Geſchütz geſchickt/ dann die in Gradiſca
+                        <span class="br"></span><br>ſich vff den Bolwercken in der Statt/ wie auch hinder den Schantzkörben nie-
+                        <span class="br"></span><br>de dörfft ſehen laſſen ) ein Vergleich getroffen werde/ vnd das meiſte
+                        <span class="br"></span><br>Volck wider zu rück in Oeſterreich kommen möchte.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

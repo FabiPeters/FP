@@ -4,61 +4,60 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1620.html">1620</a></li>
-               <li>
-                  / <a href="fp_1620_69.html">69</a></li>
-               <li>/ 7</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1620.html">1620</a></li>
+               <li><a href="fp_1620_69.html">69</a></li>
+               <li aria-current="page">7</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1620_69-6.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1620_69-8.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1620_69-6.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">6</span></a><a rel="next" href="fp_1620_69-8.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">8</span></a></nav>
       </nav>
-      <main>fp_1620_69-7
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00163/full/max/0/default.jpg" alt="S. 163 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1620_69-7">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Prag vom <span class="date" title="1620-11-28">28. Novemb</span>.</h2>
-                  
-                  <p>
-                     Es confimirt/ daß die Koͤnigliche Cron/ ſampt den darzu gehoͤrigen Kleinodien
-                     <span class="br"></span><br>vnd Lands Priuilegien/ in acht Truhen/ vff einem Leyter Wagen/ von etlichen herꝛen
-                     <span class="br"></span><br>begleitet/ auß der Alten Statt wider ins Schloß gefuͤhrt/ vnd vom herꝛn Graffen von
-                     <span class="br"></span><br>Boucquoy/ vnd herꝛn Obriſten von Liechtenſtein angenomen worden.</p>
-                  
-                  <p>
-                     Donnerſtag ſind wider mehr ſtuͤck Geſchuͤtz/ vnd ſeithero das meiſte Volck von hier
-                     <span class="br"></span><br>ab/ vnd zur Impreſſa fuͤr Thabor gefuͤrth worden/ auch bereith 2. ſturm daruor verloh-
-                     <span class="br"></span><br>ren/ was ſie ſonſtẽ verrichten hat man/ weiln die paß nit offen/ keine mnachrichtung/
-                     es be-
-                     <span class="br"></span><br>finden ſich allhie/ neben etlich wenig fahnen Weiſchen vnd Frantzoͤſen/ ſo auch ſehr
-                     hin-
-                     <span class="br"></span><br>weg ſterben/ allein das Teutſche Regiment/ welches anfangs in Oeſt erreich gedient/
-                     võ
-                     <span class="br"></span><br>denen das Schloß/ Schantz vnd andere orth der Statt bewacht werden/ vnd fengt mã-
-                     <span class="br"></span><br>an vff dem Weiſſenberg zu ſchantzen.</p>
-                  
-                  <p>
-                     Vor 4 tagen ſind die Jeſuiter vom Altſtaͤtter Raht/ wider ſolenuiter in jhr Colle-
-                     <span class="br"></span><br>gium introducirt worden.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1620_69-7</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00163/full/max/0/default.jpg" alt="S. 163 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1620_69-7">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Prag vom <span class="date" title="1620-11-28">28. Novemb</span>.</h2>
+                     
+                     <p>
+                        Es confimirt/ daß die Koͤnigliche Cron/ ſampt den darzu gehoͤrigen Kleinodien
+                        <span class="br"></span><br>vnd Lands Priuilegien/ in acht Truhen/ vff einem Leyter Wagen/ von etlichen herꝛen
+                        <span class="br"></span><br>begleitet/ auß der Alten Statt wider ins Schloß gefuͤhrt/ vnd vom herꝛn Graffen von
+                        <span class="br"></span><br>Boucquoy/ vnd herꝛn Obriſten von Liechtenſtein angenomen worden.</p>
+                     
+                     <p>
+                        Donnerſtag ſind wider mehr ſtuͤck Geſchuͤtz/ vnd ſeithero das meiſte Volck von hier
+                        <span class="br"></span><br>ab/ vnd zur Impreſſa fuͤr Thabor gefuͤrth worden/ auch bereith 2. ſturm daruor verloh-
+                        <span class="br"></span><br>ren/ was ſie ſonſtẽ verrichten hat man/ weiln die paß nit offen/ keine mnachrichtung/
+                        es be-
+                        <span class="br"></span><br>finden ſich allhie/ neben etlich wenig fahnen Weiſchen vnd Frantzoͤſen/ ſo auch ſehr
+                        hin-
+                        <span class="br"></span><br>weg ſterben/ allein das Teutſche Regiment/ welches anfangs in Oeſt erreich gedient/
+                        võ
+                        <span class="br"></span><br>denen das Schloß/ Schantz vnd andere orth der Statt bewacht werden/ vnd fengt mã-
+                        <span class="br"></span><br>an vff dem Weiſſenberg zu ſchantzen.</p>
+                     
+                     <p>
+                        Vor 4 tagen ſind die Jeſuiter vom Altſtaͤtter Raht/ wider ſolenuiter in jhr Colle-
+                        <span class="br"></span><br>gium introducirt worden.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

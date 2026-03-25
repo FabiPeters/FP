@@ -4,64 +4,63 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1619.html">1619</a></li>
-               <li>
-                  / <a href="fp_1619_42.html">42</a></li>
-               <li>/ 3</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1619.html">1619</a></li>
+               <li><a href="fp_1619_42.html">42</a></li>
+               <li aria-current="page">3</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1619_42-2.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1619_42-4.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1619_42-2.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">2</span></a><a rel="next" href="fp_1619_42-4.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">4</span></a></nav>
       </nav>
-      <main>fp_1619_42-3
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936935/full/max/0/default.jpg" alt="S. 133 des Jahrgangs" class="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936936/full/max/0/default.jpg" alt="S. 134 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1619_42-3">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Kay. May. etc. Feldläger vor Schwartz vom <span class="date" title="1619-10-03">3. Dito</span>.</h2>
-                  
-                  <p>
-                     Die Beſatzung in Roſenberg hat vnſer General auff den 24. paſſato, mit ihrer Sei-
-                     <span class="br"></span><br>tenwehr/ Sack vnd Pack/ was jeder tragen mögen/ abziehen laſſen die Fähnlein aber
-                     <span class="br"></span><br>in vnſer Läger gebracht worden Wir ſind den 26. paſſato auff Weytrach vnd Gmünt/
-                     <span class="br"></span><br>ſo auff dem Oeſterr: Boden einquartirt/ auch der General mit dem vor Roſenberg ge-
-                     <span class="br"></span><br>legenen Volck/ wider zu vns im Läger ankommen/ vnd daſelbſt ein Fähnlein Knecht in
-                     <span class="br"></span><br>Beſatzung gelaſſen.</p>
-                  
-                  <p>
-                     Geſtern ſeynd wir auff Schwartz/ ein meil von Weithofen/ ſo ein groſſes Dorff/
-                     <span class="br"></span><br>gelegt/ vnd iſt der General mit etlich zu Roß/ vnd 2000. Knechten/ ſampt 10. Stück/
-                     <span class="br"></span><br>auff ein Anſchlag außgezogen/ wohin iſt vnbewuſt/ doch verlaut/ es ſey auff Horn/
-                     fünff
-                     <span class="br"></span><br>meil von hier/ angeſehen/ allda die Ständt vber 1000. Soldaten ligen haben.</p>
-                  
-                  <p>
-                     Wir haben auis, daß die Böheim das Städtlein Wechingen/ ſo wir den 13. Au-</p>
-                  <span class="page-number"><span>[Seitenanfang]</span></span>
-                  
-                  <p>
-                     guſti erobert/ wider einbekommen/ das Schloß aber ſo auff einem Felſen ligt/ halte
-                     noch
-                     <span class="br"></span><br>darinn Hauptmann Augſperger ligt. Gleichfals ſollen ſie Thein/ ſo wir den 5. Augu-
-                     <span class="br"></span><br>ſti erobert/ auch eingenommen haben.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1619_42-3</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936935/full/max/0/default.jpg" alt="S. 133 des Jahrgangs" class="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/936936/full/max/0/default.jpg" alt="S. 134 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1619_42-3">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Kay. May. etc. Feldläger vor Schwartz vom <span class="date" title="1619-10-03">3. Dito</span>.</h2>
+                     
+                     <p>
+                        Die Beſatzung in Roſenberg hat vnſer General auff den 24. paſſato, mit ihrer Sei-
+                        <span class="br"></span><br>tenwehr/ Sack vnd Pack/ was jeder tragen mögen/ abziehen laſſen die Fähnlein aber
+                        <span class="br"></span><br>in vnſer Läger gebracht worden Wir ſind den 26. paſſato auff Weytrach vnd Gmünt/
+                        <span class="br"></span><br>ſo auff dem Oeſterr: Boden einquartirt/ auch der General mit dem vor Roſenberg ge-
+                        <span class="br"></span><br>legenen Volck/ wider zu vns im Läger ankommen/ vnd daſelbſt ein Fähnlein Knecht in
+                        <span class="br"></span><br>Beſatzung gelaſſen.</p>
+                     
+                     <p>
+                        Geſtern ſeynd wir auff Schwartz/ ein meil von Weithofen/ ſo ein groſſes Dorff/
+                        <span class="br"></span><br>gelegt/ vnd iſt der General mit etlich zu Roß/ vnd 2000. Knechten/ ſampt 10. Stück/
+                        <span class="br"></span><br>auff ein Anſchlag außgezogen/ wohin iſt vnbewuſt/ doch verlaut/ es ſey auff Horn/
+                        fünff
+                        <span class="br"></span><br>meil von hier/ angeſehen/ allda die Ständt vber 1000. Soldaten ligen haben.</p>
+                     
+                     <p>
+                        Wir haben auis, daß die Böheim das Städtlein Wechingen/ ſo wir den 13. Au-</p>
+                     <span class="page-number"><span>[Seitenanfang]</span></span>
+                     
+                     <p>
+                        guſti erobert/ wider einbekommen/ das Schloß aber ſo auff einem Felſen ligt/ halte
+                        noch
+                        <span class="br"></span><br>darinn Hauptmann Augſperger ligt. Gleichfals ſollen ſie Thein/ ſo wir den 5. Augu-
+                        <span class="br"></span><br>ſti erobert/ auch eingenommen haben.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

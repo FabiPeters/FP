@@ -4,62 +4,61 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1620.html">1620</a></li>
-               <li>
-                  / <a href="fp_1620_63.html">63</a></li>
-               <li>/ 12</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1620.html">1620</a></li>
+               <li><a href="fp_1620_63.html">63</a></li>
+               <li aria-current="page">12</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1620_63-11.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1620_65-1.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1620_63-11.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">11</span></a><a rel="next" href="fp_1620_65-1.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">1</span></a></nav>
       </nav>
-      <main>fp_1620_63-12
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00143/full/max/0/default.jpg" alt="S. 143 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1620_63-12">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Budiſſin vom <span class="date" title="1620-11-19">19. ditto</span>.</h2>
-                  
-                  <p>
-                     Das Marggraffthumb Niderlaußnitz iſt biß vff die Statt vnnd Creyß Guben in
-                     <span class="br"></span><br>jhrer Keyſ. M.gehorſam vnd devotion gebracht/ in Ober Laußnitz aber haben wir zwen
-                     <span class="br"></span><br>Creyß/ als den Buͤdiſſiniſchen vnd den Com̃entziſchen jnnen/ die vbrigen hat der
-                     <span class="br"></span><br>Marggraff von Jaͤgerndorff/ vnd die vornembſten Staͤtt/ als Goͤrlitz vnnd Sictaw/
-                     <span class="br"></span><br>mit volck beſetzt/ ſich auch bißhero vff drey meilen von hinnen zu Lieba vffgehalten/
-                     ſeit-
-                     <span class="br"></span><br>her aber die Zeitung von der Boͤhmen niderlag einkommen/ iſt er von dannen vffge-
-                     <span class="br"></span><br>brochen/ die ſtaͤtt beſetzt gelaſſen/ vnd mit etlichen Cornet Reutern in die Schleſien
-                     ver-
-                     <span class="br"></span><br>reiſt/ in willens ſich vnverlengt wider zuruͤck zubegeben.</p>
-                  
-                  <p>
-                     Gleich jetzt komen Zeitung/ daß von Leuthmeritz/ Auſſig vnd etlichen andern Staͤt-
-                     <span class="br"></span><br>ten auß Boͤhmen/ Geſandten zu Puͤrna angelangt/ die begehren ſich vnder J. Churf.
-                     <span class="br"></span><br>Gn. ſchutz zubegeben/ die reſolution ſtehet zuerwarten.</p>
-                  
-                  <p>
-                     Morgen oder vbermorgen wird theils vnſeres Kriegsvolcks mit Geſchuͤtz wider
-                     <span class="br"></span><br>nach Guben ziehen/ die ſtaͤnde auß Goͤrlitz vnnd Sittauiſchen Creyß aber/ kommen
-                     <span class="br"></span><br>heut nach Goͤrlitz beyſamen/ eine reſolution zu faſſen/ vnnd ſich vnſern gnaͤdigſten
-                     <span class="br"></span><br>Herꝛn zu ergeben.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1620_63-12</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00143/full/max/0/default.jpg" alt="S. 143 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1620_63-12">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Budiſſin vom <span class="date" title="1620-11-19">19. ditto</span>.</h2>
+                     
+                     <p>
+                        Das Marggraffthumb Niderlaußnitz iſt biß vff die Statt vnnd Creyß Guben in
+                        <span class="br"></span><br>jhrer Keyſ. M.gehorſam vnd devotion gebracht/ in Ober Laußnitz aber haben wir zwen
+                        <span class="br"></span><br>Creyß/ als den Buͤdiſſiniſchen vnd den Com̃entziſchen jnnen/ die vbrigen hat der
+                        <span class="br"></span><br>Marggraff von Jaͤgerndorff/ vnd die vornembſten Staͤtt/ als Goͤrlitz vnnd Sictaw/
+                        <span class="br"></span><br>mit volck beſetzt/ ſich auch bißhero vff drey meilen von hinnen zu Lieba vffgehalten/
+                        ſeit-
+                        <span class="br"></span><br>her aber die Zeitung von der Boͤhmen niderlag einkommen/ iſt er von dannen vffge-
+                        <span class="br"></span><br>brochen/ die ſtaͤtt beſetzt gelaſſen/ vnd mit etlichen Cornet Reutern in die Schleſien
+                        ver-
+                        <span class="br"></span><br>reiſt/ in willens ſich vnverlengt wider zuruͤck zubegeben.</p>
+                     
+                     <p>
+                        Gleich jetzt komen Zeitung/ daß von Leuthmeritz/ Auſſig vnd etlichen andern Staͤt-
+                        <span class="br"></span><br>ten auß Boͤhmen/ Geſandten zu Puͤrna angelangt/ die begehren ſich vnder J. Churf.
+                        <span class="br"></span><br>Gn. ſchutz zubegeben/ die reſolution ſtehet zuerwarten.</p>
+                     
+                     <p>
+                        Morgen oder vbermorgen wird theils vnſeres Kriegsvolcks mit Geſchuͤtz wider
+                        <span class="br"></span><br>nach Guben ziehen/ die ſtaͤnde auß Goͤrlitz vnnd Sittauiſchen Creyß aber/ kommen
+                        <span class="br"></span><br>heut nach Goͤrlitz beyſamen/ eine reſolution zu faſſen/ vnnd ſich vnſern gnaͤdigſten
+                        <span class="br"></span><br>Herꝛn zu ergeben.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

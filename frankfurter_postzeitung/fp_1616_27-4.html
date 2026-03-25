@@ -4,56 +4,55 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1616.html">1616</a></li>
-               <li>
-                  / <a href="fp_1616_27.html">27</a></li>
-               <li>/ 4</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1616.html">1616</a></li>
+               <li><a href="fp_1616_27.html">27</a></li>
+               <li aria-current="page">4</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1616_27-3.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1616_28-1.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_27-3.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">3</span></a><a rel="next" href="fp_1616_28-1.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">1</span></a></nav>
       </nav>
-      <main>fp_1616_27-4
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904336/full/max/0/default.jpg" alt="S. 76 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1616_27-4">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     Auß Lyon vom <span class="date" title="1616-06-29">29. Junij</span>.</h2>
-                  
-                  <p>
-                     Zu Hoff wird noch ſtets gehandlet/ die
-                     <span class="br"></span><br>Friedenspuncten zu vollſtrecken/ wie dan der Monſr. de Bileaudeß alten Cantz-
-                     <span class="br"></span><br>lers Sohn/ als Secretari de Eſtats ſein Charge bereit dem Monſr. de Ville,
-                     <span class="br"></span><br>roy vbergeben/ doch mit Condition ſolche vff zulaſſung der Königin wider an-
-                     <span class="br"></span><br>zunehmen/ ſo iſt der Mareſchal de Ancre vff begern der Königin gar von ſei-
-                     <span class="br"></span><br>nem Gouerno in Am entabget etten/ vnd ſich nach Pariß begeben/ mit Con-
-                     <span class="br"></span><br>dition/ daß Jhre Maptt.Jme deßwegen Jres beliebens contentiren möge/ deß
-                     <span class="br"></span><br>hat auch der Monſt. di Longa ille/ diewahl das Gouerno in Normandia
-                     <span class="br"></span><br>oder Picardia anzunehmen. Der Ducadi Maine ſolle zum Gubernator in der
-                     <span class="br"></span><br>Paſtilia gemacht worden ſein/ ſo iſt der Monſr. di Vendoſme zu Hoff ange-
-                     <span class="br"></span><br>langt/ vnnd iſt man täglich deß Printzen von Conde gewärtig/ die Eſtats zure-
-                     <span class="br"></span><br>formiren/ die Herrn vom Parlament deß Hoffs haben ſich wol beſchwerdt/ die
-                     <span class="br"></span><br>Friedens Articul paſſiren zu laſſen/ biß ſie zuvor die Seeret deſſelben erſehen/
-                     <span class="br"></span><br>ooch haben ſie leyztlich darinn bewilligt/ welches alles noch in Truckkommen
-                     <span class="br"></span><br>wirdt/ Jetzt iſt man im werck/ die Königliche Schulden zubezahlen.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1616_27-4</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904336/full/max/0/default.jpg" alt="S. 76 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1616_27-4">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        Auß Lyon vom <span class="date" title="1616-06-29">29. Junij</span>.</h2>
+                     
+                     <p>
+                        Zu Hoff wird noch ſtets gehandlet/ die
+                        <span class="br"></span><br>Friedenspuncten zu vollſtrecken/ wie dan der Monſr. de Bileaudeß alten Cantz-
+                        <span class="br"></span><br>lers Sohn/ als Secretari de Eſtats ſein Charge bereit dem Monſr. de Ville,
+                        <span class="br"></span><br>roy vbergeben/ doch mit Condition ſolche vff zulaſſung der Königin wider an-
+                        <span class="br"></span><br>zunehmen/ ſo iſt der Mareſchal de Ancre vff begern der Königin gar von ſei-
+                        <span class="br"></span><br>nem Gouerno in Am entabget etten/ vnd ſich nach Pariß begeben/ mit Con-
+                        <span class="br"></span><br>dition/ daß Jhre Maptt.Jme deßwegen Jres beliebens contentiren möge/ deß
+                        <span class="br"></span><br>hat auch der Monſt. di Longa ille/ diewahl das Gouerno in Normandia
+                        <span class="br"></span><br>oder Picardia anzunehmen. Der Ducadi Maine ſolle zum Gubernator in der
+                        <span class="br"></span><br>Paſtilia gemacht worden ſein/ ſo iſt der Monſr. di Vendoſme zu Hoff ange-
+                        <span class="br"></span><br>langt/ vnnd iſt man täglich deß Printzen von Conde gewärtig/ die Eſtats zure-
+                        <span class="br"></span><br>formiren/ die Herrn vom Parlament deß Hoffs haben ſich wol beſchwerdt/ die
+                        <span class="br"></span><br>Friedens Articul paſſiren zu laſſen/ biß ſie zuvor die Seeret deſſelben erſehen/
+                        <span class="br"></span><br>ooch haben ſie leyztlich darinn bewilligt/ welches alles noch in Truckkommen
+                        <span class="br"></span><br>wirdt/ Jetzt iſt man im werck/ die Königliche Schulden zubezahlen.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

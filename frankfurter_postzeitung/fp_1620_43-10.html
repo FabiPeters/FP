@@ -4,58 +4,57 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1620.html">1620</a></li>
-               <li>
-                  / <a href="fp_1620_43.html">43</a></li>
-               <li>/ 10</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1620.html">1620</a></li>
+               <li><a href="fp_1620_43.html">43</a></li>
+               <li aria-current="page">10</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1620_43-9.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1620_43-11.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1620_43-9.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">9</span></a><a rel="next" href="fp_1620_43-11.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">11</span></a></nav>
       </nav>
-      <main>fp_1620_43-10
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00079/full/max/0/default.jpg" alt="S. 79 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1620_43-10">
-                  <span class="page-number"><span>[Seitenanfang]</span></span><h2>
-                     <span class="br"></span><br>Auß Coͤlln vom <span class="date" title="1620-09-13">13. Ditto</span>.</h2>
-                  
-                  <p>
-                     <span class="br"></span><br>
-                     <a href="fp_1620_43-10.html#1" id="1" class="correspondence-milestone">[#1:]</a>
-                     Newes allein/ das vergangenen mitwochen den 9. Ditto auß dem Laͤger von den
-                     <span class="br"></span><br>herꝛen Staden ſind auffgebrochen 3000. Engellender zu Fuß vnd 32. Compag pferd-
-                     <span class="br"></span><br>ſind geſtern zu Ordingen vnd Kempten vnder Neuß gelegen/ werden jhren weg nach
-                     <span class="br"></span><br>Grauenbruch vnd Berchem nemen/ allda noch 1000. Mußketirer/ vnder Rittmeiſter
-                     <span class="br"></span><br>Thomas Fuͤller mit ſeiner Compag zupferd/ zu jhnen ſtoſſen werden/ das Fußvolck
-                     <span class="br"></span><br>ſitzen 6. auff einem wagen/ haben auch 5. Stuͤck klein vnd groß Geſchuͤtz bey ſich/
-                     mar-
-                     <span class="br"></span><br>chiren nach der Moſel/ allda ſie vberſetzen werden/ vnnd von dannen nach der Pfaltz/
-                     <span class="br"></span><br>Hiebey iſt Printz Heinrich von Naſſaw als General Obriſter/ vnnd ein Hertzog von
-                     <span class="br"></span><br>Braunſchweig/ ſo 2. Compag fuͤhret/ vñ auch ein Landgraff von Heſſen/ iſt ein ſchoͤ-
-                     <span class="br"></span><br>nes volck/ Man vermutet/ wann ſie vber die Moſel ſein/ werden die wagen vnnd auch
-                     <span class="br"></span><br>etliche Compag Reuter wider zu ruck kommen/ doch wirts die zeit geben.</p>
-                  
-                  <section class="catchword">
-                     <span class="br"></span><br>Son</section>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1620_43-10</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/00079/full/max/0/default.jpg" alt="S. 79 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1620_43-10">
+                     <span class="page-number"><span>[Seitenanfang]</span></span><h2>
+                        <span class="br"></span><br>Auß Coͤlln vom <span class="date" title="1620-09-13">13. Ditto</span>.</h2>
+                     
+                     <p>
+                        <span class="br"></span><br>
+                        <a href="fp_1620_43-10.html#1" id="1" class="correspondence-milestone">[#1:]</a>
+                        Newes allein/ das vergangenen mitwochen den 9. Ditto auß dem Laͤger von den
+                        <span class="br"></span><br>herꝛen Staden ſind auffgebrochen 3000. Engellender zu Fuß vnd 32. Compag pferd-
+                        <span class="br"></span><br>ſind geſtern zu Ordingen vnd Kempten vnder Neuß gelegen/ werden jhren weg nach
+                        <span class="br"></span><br>Grauenbruch vnd Berchem nemen/ allda noch 1000. Mußketirer/ vnder Rittmeiſter
+                        <span class="br"></span><br>Thomas Fuͤller mit ſeiner Compag zupferd/ zu jhnen ſtoſſen werden/ das Fußvolck
+                        <span class="br"></span><br>ſitzen 6. auff einem wagen/ haben auch 5. Stuͤck klein vnd groß Geſchuͤtz bey ſich/
+                        mar-
+                        <span class="br"></span><br>chiren nach der Moſel/ allda ſie vberſetzen werden/ vnnd von dannen nach der Pfaltz/
+                        <span class="br"></span><br>Hiebey iſt Printz Heinrich von Naſſaw als General Obriſter/ vnnd ein Hertzog von
+                        <span class="br"></span><br>Braunſchweig/ ſo 2. Compag fuͤhret/ vñ auch ein Landgraff von Heſſen/ iſt ein ſchoͤ-
+                        <span class="br"></span><br>nes volck/ Man vermutet/ wann ſie vber die Moſel ſein/ werden die wagen vnnd auch
+                        <span class="br"></span><br>etliche Compag Reuter wider zu ruck kommen/ doch wirts die zeit geben.</p>
+                     
+                     <section class="catchword">
+                        <span class="br"></span><br>Son</section>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>

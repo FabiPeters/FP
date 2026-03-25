@@ -4,65 +4,64 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title></title>
-      <link rel="stylesheet" href="frankfurter_postzeitung.css">
       <link rel="stylesheet" href="frank_post.css">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script></head>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="https://unpkg.com/hyperscript.org@0.9.14"></script><script src="frank_post.js"></script></head>
    <body>
       <header>
          <h1><a href="index.html">Frankfurter Postzeitung</a></h1>
       </header>
       <hr>
-      <nav class="main">
-         <nav id="breadcrumbs">
-            <ul>
-               <li>
-                  / <a href="index.html">Index</a></li>
-               <li>
-                  / <a href="fp_1616.html">1616</a></li>
-               <li>
-                  / <a href="fp_1616_23.html">23</a></li>
-               <li>/ 5</li>
-            </ul>
+      <nav id="main-navigation">
+         <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+            <ol>
+               <li><a href="index.html">Index</a></li>
+               <li><a href="fp_1616.html">1616</a></li>
+               <li><a href="fp_1616_23.html">23</a></li>
+               <li aria-current="page">5</li>
+            </ol>
          </nav>
-         <nav id="horizontal"><a rel="prev" href="fp_1616_23-4.html">&lt;</a>
-            -
-            <a rel="next" href="fp_1616_24-1.html">&gt;</a></nav>
+         <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_23-4.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">4</span></a><a rel="next" href="fp_1616_24-1.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">1</span></a></nav>
       </nav>
-      <main>fp_1616_23-5
-         <div class="main-content">
-            <section id="facsimile" class="main-content-item"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904319/full/max/0/default.jpg" alt="S. 60 des Jahrgangs" class="facsimile"></section>
-            <section id="transcription" class="main-content-item">
-               <article class="cor" id="fp_1616_23-5">
-                  <span class="page-number"><span>[Seitenanfang]</span></span>
-                  
-                  <h2>
-                     Auß Venedig vom <span class="date" title="1616-06-03">3. Junij</span>.</h2>
-                  
-                  <p>
-                     Sontags ſeynd allhie 100. Marttloſſen/ Montags eine Cormpagnla von Gref-
-                     <span class="br"></span><br>ſa/ wie auch zu Meſter 200. Albeneſiſche Reuter gemuſtert/ vnnd nach dem Läger ge-
-                     <span class="br"></span><br>ſandt worden. ſo hat ſich ein Holländiſcher Cellons bey hieſiger Heerſchofft in Dien-
-                     <span class="br"></span><br>ſien eingelaſſen/ der ſolle 200. Reutter vnnd 600 zu Fuß/ wie gleichfalls ein anderer
-                     <span class="br"></span><br>Aeuſcher 600. zu Fuß führen.</p>
-                  
-                  <p>
-                     Die Veochl haben in Dalmatia abermahls groſſen Schaden gethan/ denen
-                     <span class="br"></span><br>aber die Albaneſer ſtarck entgegen gezogen/ Jhrer viel erlegt/ vnd viel von den Beuthen
-                     <span class="br"></span><br>wider bekommen.</p>
-                  
-                  <p>
-                     Auß Conſtantinopel hat man/ es wören allda bereyt 30. Galleren außgefahren/
-                     <span class="br"></span><br>denen ſollen noch 20. vnnd 2. Maeno folgen/ Obwol die Türcken außgeben/ mit den
-                     <span class="br"></span><br>Perſianern ſeyt ein Anſtandt tractiet/ ſo geſchichtes doch nur die Polen ſicher zuma-
-                     <span class="br"></span><br>chen/ dann der Perſianer mit viel Volck ſtrack vff den Gräntzen liegt.</p>
-                  
-                  <p>
-                     Zu Genua hat ein Curier die Wechſelbrieff zu der letzt getroffener Partita/ als
-                     <span class="br"></span><br>nemblich 300000. Cronen nach Meylandt/ 100000. nach Teutſchlandt/ vnd 30000.
-                     <span class="br"></span><br>nach Hoffe mitgebracht/ der referirt benebens/ daß zu Nimes in Languadocca zwie
-                     <span class="br"></span><br>ſchen den Catholiſchen vnd Hugenotten eine groſſe Schwirigkeit entſtanden.</p>
-                  </article>
-            </section>
+      <main>
+         <div>fp_1616_23-5</div>
+         <div class="main-scroll-container">
+            <div class="main-scroll-item">
+               <section id="facsimile"><img src="https://brema.suub.uni-bremen.de/i3f/v20/904319/full/max/0/default.jpg" alt="S. 60 des Jahrgangs" class="facsimile"></section>
+            </div>
+            <div class="main-scroll-item">
+               <section id="transcription">
+                  <article class="cor" id="fp_1616_23-5">
+                     <span class="page-number"><span>[Seitenanfang]</span></span>
+                     
+                     <h2>
+                        Auß Venedig vom <span class="date" title="1616-06-03">3. Junij</span>.</h2>
+                     
+                     <p>
+                        Sontags ſeynd allhie 100. Marttloſſen/ Montags eine Cormpagnla von Gref-
+                        <span class="br"></span><br>ſa/ wie auch zu Meſter 200. Albeneſiſche Reuter gemuſtert/ vnnd nach dem Läger ge-
+                        <span class="br"></span><br>ſandt worden. ſo hat ſich ein Holländiſcher Cellons bey hieſiger Heerſchofft in Dien-
+                        <span class="br"></span><br>ſien eingelaſſen/ der ſolle 200. Reutter vnnd 600 zu Fuß/ wie gleichfalls ein anderer
+                        <span class="br"></span><br>Aeuſcher 600. zu Fuß führen.</p>
+                     
+                     <p>
+                        Die Veochl haben in Dalmatia abermahls groſſen Schaden gethan/ denen
+                        <span class="br"></span><br>aber die Albaneſer ſtarck entgegen gezogen/ Jhrer viel erlegt/ vnd viel von den Beuthen
+                        <span class="br"></span><br>wider bekommen.</p>
+                     
+                     <p>
+                        Auß Conſtantinopel hat man/ es wören allda bereyt 30. Galleren außgefahren/
+                        <span class="br"></span><br>denen ſollen noch 20. vnnd 2. Maeno folgen/ Obwol die Türcken außgeben/ mit den
+                        <span class="br"></span><br>Perſianern ſeyt ein Anſtandt tractiet/ ſo geſchichtes doch nur die Polen ſicher zuma-
+                        <span class="br"></span><br>chen/ dann der Perſianer mit viel Volck ſtrack vff den Gräntzen liegt.</p>
+                     
+                     <p>
+                        Zu Genua hat ein Curier die Wechſelbrieff zu der letzt getroffener Partita/ als
+                        <span class="br"></span><br>nemblich 300000. Cronen nach Meylandt/ 100000. nach Teutſchlandt/ vnd 30000.
+                        <span class="br"></span><br>nach Hoffe mitgebracht/ der referirt benebens/ daß zu Nimes in Languadocca zwie
+                        <span class="br"></span><br>ſchen den Catholiſchen vnd Hugenotten eine groſſe Schwirigkeit entſtanden.</p>
+                     </article>
+               </section>
+            </div>
          </div>
       </main>
       <hr>
