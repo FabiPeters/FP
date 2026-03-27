@@ -22,10 +22,49 @@
          <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_20.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">20</span></a><a rel="next" href="fp_1616_22.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">22</span></a></nav>
       </nav>
       <main>
-         <div>fp_1616_21</div>
          <div class="main-scroll-container">
             <div class="main-scroll-item">
-               <section id="map"> map </section>
+               <section id="map">
+                  <div id="map-container"></div><script src="fp_map.js"></script><script>
+                    L.marker([52.08, 4.31], {
+                        icon: icon_cor,
+                        title: 'Den Haag'
+                    }).addTo(map).bindPopup('<a href="fp_1616_21-1.html">Den Haag – 1616-05-26</a>');
+                
+                    L.marker([50.942222222222, 6.9577777777778], {
+                        icon: icon_cor,
+                        title: 'Köln'
+                    }).addTo(map).bindPopup('<a href="fp_1616_21-2.html">Köln – 1616-06-02</a>');
+                
+                    L.marker([41.893055555556, 12.482777777778], {
+                        icon: icon_cor,
+                        title: 'Rom'
+                    }).addTo(map).bindPopup('<a href="fp_1616_21-3.html">Rom – 1616-05-14</a>');
+                
+                    L.marker([45.439722222222, 12.331944444444], {
+                        icon: icon_cor,
+                        title: 'Venedig'
+                    }).addTo(map).bindPopup('<a href="fp_1616_21-4.html">Venedig – 1616-05-24</a>');
+                
+                    L.marker([48.208333333333336, 16.3725], {
+                        icon: icon_cor,
+                        title: 'Wien'
+                    }).addTo(map).bindPopup('<a href="fp_1616_21-5.html">Wien – 1616-05-19</a>');
+                
+                    L.marker([47.07083333333333, 15.438611111111111], {
+                        icon: icon_cor,
+                        title: 'Graz'
+                    }).addTo(map).bindPopup('<a href="fp_1616_21-6.html">Graz – 1616-05-16</a>');
+                
+                        L.marker([45.439722222222, 12.331944444444], {
+                            icon: icon_article,
+                            title: 'Venedig'
+                        }).addTo(map).bindPopup('Venedig');
+                        var latlngs = [
+                            [47.07083333333333, 15.438611111111111],
+                            [45.439722222222, 12.331944444444]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);</script></section>
             </div>
             <div class="main-scroll-item">
                <section id="correspondence-list" class="main-content-item">

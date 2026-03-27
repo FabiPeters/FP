@@ -2,6 +2,8 @@
 body {
     --partial-border: 1px solid;
 
+    font-family: Arial, Helvetica, sans-serif;
+
     margin: 0 1rem;
     height: 100dvh;
     display: grid;
@@ -13,9 +15,11 @@ body {
     (pointer: coarse) and (hover: none) and (max-width: 768px) {
         grid-template-areas: "header" "main" "nav" "footer";
         grid-auto-rows: auto 1fr auto auto;
+        margin: 0;
     }
 
     header {
+        padding: 0 1rem;
         border-bottom: var(--partial-border);
 
         display: flex;
@@ -37,31 +41,41 @@ body {
     }
 
     nav#main-navigation {
+        padding: 0 1rem;
         grid-area: nav;
         border-bottom: var(--partial-border);
 
-        /* Layout: side-by-side on wider screens, stacked on narrow */
+        /* Three-column grid on wider screens: breadcrumbs | center-nav | spacer */
         @media (min-width: 768px) {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
             align-items: center;
+            gap: 2rem;
+        }
+
+        /* Stack vertically on narrower screens */
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
             gap: 1rem;
-            padding: 0;
+            padding: 0.75rem 0;
         }
 
         @media (max-width: 480px) {
             border-bottom: none;
             border-top: var(--partial-border);
+            gap: 0.75rem;
+            padding: 0.5rem 0;
         }
 
         nav.breadcrumbs {
-            flex: 1;
             min-width: 0;
 
             ol {
                 padding: 0;
                 display: flex;
                 list-style: none;
-                gap: 0.5rem;
+                gap: 0.75rem;
                 flex-wrap: wrap;
                 align-items: center;
                 font-size: smaller;
@@ -78,8 +92,8 @@ body {
 
             li {
 
-                /* Hide all but last 2 items on screens < 768px */
-                @media (max-width: 767px) {
+                /* Hide all but last 2 items on screens < 480px */
+                @media (max-width: 480px) {
                     display: none;
 
                     /* Show only last 2 children (parent + current) */
@@ -87,11 +101,6 @@ body {
                         display: flex;
                         align-items: center;
                     }
-                }
-
-                /* Reduce gap between crumbs on narrow screens */
-                @media (max-width: 480px) {
-                    gap: 0.25rem;
                 }
             }
 
@@ -102,6 +111,7 @@ body {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+                padding: 0.25rem 0.5rem;
 
                 @media (min-width: 768px) {
                     font-size: 0.95rem;
@@ -109,6 +119,7 @@ body {
 
                 @media (max-width: 480px) {
                     font-size: 0.8rem;
+                    padding: 0.25rem;
                 }
 
                 &:hover {
@@ -118,7 +129,75 @@ body {
         }
 
         nav.horizontal-navigation {
-            flex-shrink: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* justify-content: space-between; */
+
+            @media (min-width: 768px) {
+                padding: 0;
+                gap: 1.5rem;
+            }
+
+            .nav-link {
+                display: grid;
+                text-decoration: none;
+                color: black;
+                min-width: 4rem;
+
+                &:hover {
+                    background-color: whitesmoke;
+                }
+
+                .nav-label {
+                    font-size: smaller;
+                    color: grey;
+
+                    @media (min-width: 768px) {
+                        font-size: 0.9rem;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 0.75rem;
+                    }
+                }
+
+                .nav-title {
+                    font-weight: bold;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size: 0.9rem;
+
+                    @media (min-width: 768px) {
+                        font-size: 1rem;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                &.prev-link {
+                    text-align: center;
+                }
+
+                &.next-link {
+                    text-align: center;
+                }
+            }
+
+            .nav-link-disabled {
+                cursor: default;
+                background-color: transparent;
+                opacity: 0.6;
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        /* nav.horizontal-navigation {
             display: flex;
             justify-content: space-between;
             gap: 0.5rem;
@@ -126,16 +205,16 @@ body {
 
             @media (min-width: 768px) {
                 padding: 0;
-                gap: 1rem;
+                gap: 1.5rem;
             }
 
             .nav-link {
-                flex: 1;
+                flex: 0 1 auto;
                 display: flex;
                 flex-direction: column;
                 text-decoration: none;
                 color: inherit;
-                padding: 0.5rem;
+                padding: 0.5rem 0.75rem;
                 min-width: 5rem;
 
                 @media (min-width: 768px) {
@@ -193,7 +272,7 @@ body {
                     background-color: transparent;
                 }
             }
-        }
+        } */
     }
 
     main {
@@ -229,18 +308,20 @@ body {
 
             @media (min-width: 1280px) {
 
-                /* 3+ items (default) */
+                /* 3+ items */
                 grid-auto-columns: 33.333%;
+
+                /* 2 items exactly: Check if the 1st child is also the 2nd-from-last */
+                &:has(> .main-scroll-item:first-child:nth-last-child(2)) {
+                    grid-auto-columns: 50%;
+                }
 
                 /* 1 item */
                 &:has(.main-scroll-item:only-child) {
                     grid-auto-columns: 50%;
                 }
 
-                /* 2 items exactly: Check if the 1st child is also the 2nd-from-last */
-                &:has(> .main-scroll-item:first-child:nth-last-child(2)) {
-                    grid-auto-columns: 50%;
-                }
+
             }
 
             .main-scroll-item {
@@ -258,6 +339,10 @@ body {
         grid-area: footer;
     }
 
+    a {
+        text-decoration: underline dotted grey;
+    }
+
     hr {
         display: none;
     }
@@ -265,7 +350,7 @@ body {
 
 /* universal section style */
 section {
-    margin: 0 1rem;
+    padding: 1rem;
 }
 
 /* section specific styles */
@@ -285,11 +370,43 @@ section#facsimile {
     }
 }
 
+section#map {
+    div#map-container {
+        height: 60dvh
+    }
+}
+
 section#calendar-list {
-    ul {
+    ul,
+    ol {
+        margin: 0;
         padding: 0;
         list-style: none;
     }
+
+    div.year-list {
+        position: relative;
+        display: grid;
+        grid-template-columns: 10fr 1fr;
+        button.collapse-months,
+        button.expand-months {
+            align-self: self-start;
+            position: sticky;
+            top: 0;
+            padding: 0.5rem; 
+            /* display: inline-block;
+            
+            
+            left: 100%;
+            right: 0;
+            z-index: 100;
+            */
+        }
+    }
+
+    /* Note: `display: grid` auf `li.day` entfernt das Pseudo-Element `::marker` bereits von sich aus */
+    /* Der obige Regelsatz bleibt aber trotzdem besthen,
+    um die Absicht der Entfernung aller Listenmarker zu dokumentieren. */
 
     details {
         summary {
@@ -297,28 +414,47 @@ section#calendar-list {
             background-color: whitesmoke;
             border-bottom: 1px dotted grey;
         }
-    }
 
-    li.day {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
+        ol.month {
+            padding: 0;
 
-        border-bottom: 1px dotted grey;
+            /* list-style: lower-roman; */
+            li.day {
 
-        span.date {
-            display: grid;
-            grid-template-columns: 3rem 3rem;
+                display: grid;
+                grid-template-columns: 1fr 3fr;
 
-            span.weekday {
-                color: grey;
-                font-size: smaller;
+                border-bottom: 1px dotted grey;
+
+                span.date {
+                    padding: 0.5rem;
+                    display: grid;
+                    grid-template-columns: 3rem 3rem;
+
+                    span.weekday {
+                        color: grey;
+                        font-size: smaller;
+                    }
+                }
+
+                ul.link {
+                    li {
+                        margin: 0.5rem;
+                    }
+
+                    a {
+                        padding: 0.5rem;
+                    }
+                }
+            }
+
+            li.sunday {
+                background-color: lightgrey;
             }
         }
     }
 
-    li.sunday {
-        background-color: lightgrey;
-    }
+
 }
 
 /* reusable styles */
@@ -401,4 +537,9 @@ ul.grid-number-list {
             text-decoration: none;
         }
     }
+}
+
+button {
+    border-radius: 0;
+    border: 1px solid lightgrey;
 }

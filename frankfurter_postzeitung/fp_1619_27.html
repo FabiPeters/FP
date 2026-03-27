@@ -22,10 +22,73 @@
          <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1619_26.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">26</span></a><a rel="next" href="fp_1619_28.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">28</span></a></nav>
       </nav>
       <main>
-         <div>fp_1619_27</div>
          <div class="main-scroll-container">
             <div class="main-scroll-item">
-               <section id="map"> map </section>
+               <section id="map">
+                  <div id="map-container"></div><script src="fp_map.js"></script><script>
+                    L.marker([41.893055555556, 12.482777777778], {
+                        icon: icon_cor,
+                        title: 'Rom'
+                    }).addTo(map).bindPopup('<a href="fp_1619_27-1.html">Rom – 1619-06-22</a>');
+                
+                    L.marker([45.439722222222, 12.331944444444], {
+                        icon: icon_cor,
+                        title: 'Venedig'
+                    }).addTo(map).bindPopup('<a href="fp_1619_27-2.html">Venedig – 1619-06-28</a>');
+                
+                        L.marker([52.36666666666667, 4.883333333333333], {
+                            icon: icon_article,
+                            title: 'Amsterdam'
+                        }).addTo(map).bindPopup('Amsterdam');
+                        var latlngs = [
+                            [45.439722222222, 12.331944444444],
+                            [52.36666666666667, 4.883333333333333]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([48.208333333333336, 16.3725], {
+                        icon: icon_cor,
+                        title: 'Wien'
+                    }).addTo(map).bindPopup('<a href="fp_1619_27-3.html">Wien – 1619-06-26</a>');
+                
+                    L.marker([49.016666666666666, 12.083333333333334], {
+                        icon: icon_cor,
+                        title: 'Regensburg'
+                    }).addTo(map).bindPopup('<a href="fp_1619_27-4.html">Regensburg – 1619-06-27</a>');
+                
+                    L.marker([48.5748229, 13.4609744], {
+                        icon: icon_cor,
+                        title: 'Passau'
+                    }).addTo(map).bindPopup('<a href="fp_1619_27-5.html">Passau – 1619-06-19</a>');
+                
+                        L.marker([50.0875, 14.421388888888888], {
+                            icon: icon_article,
+                            title: 'Prag'
+                        }).addTo(map).bindPopup('Prag');
+                        var latlngs = [
+                            [48.5748229, 13.4609744],
+                            [50.0875, 14.421388888888888]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([50.0875, 14.421388888888888], {
+                        icon: icon_cor,
+                        title: 'Prag'
+                    }).addTo(map).bindPopup('<a href="fp_1619_27-6.html">Prag – 1619-06-30</a>');
+                
+                    L.marker([52.08, 4.31], {
+                        icon: icon_cor,
+                        title: 'Den Haag'
+                    }).addTo(map).bindPopup('<a href="fp_1619_27-7.html">Den Haag – 1619-07-02</a>');
+                
+                    L.marker([52.36666666666667, 4.883333333333333], {
+                        icon: icon_cor,
+                        title: 'Amsterdam'
+                    }).addTo(map).bindPopup('<a href="fp_1619_27-8.html">Amsterdam – 1619-07-03</a>');
+                
+                    L.marker([50.942222222222, 6.9577777777778], {
+                        icon: icon_cor,
+                        title: 'Köln'
+                    }).addTo(map).bindPopup('<a href="fp_1619_27-9.html">Köln – 1619-07-09</a>');
+                </script></section>
             </div>
             <div class="main-scroll-item">
                <section id="correspondence-list" class="main-content-item">

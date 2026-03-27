@@ -22,10 +22,123 @@
          <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1620_53.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">53</span></a><a rel="next" href="fp_1620_55.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">55</span></a></nav>
       </nav>
       <main>
-         <div>fp_1620_54</div>
          <div class="main-scroll-container">
             <div class="main-scroll-item">
-               <section id="map"> map </section>
+               <section id="map">
+                  <div id="map-container"></div><script src="fp_map.js"></script><script>
+                    L.marker([46.798562, 8.231973], {
+                        icon: icon_cor,
+                        title: 'Schweiz'
+                    }).addTo(map).bindPopup('<a href="fp_1620_54-1.html">Schweiz – 1620-10-19</a>');
+                
+                    L.marker([45.7675, 4.835], {
+                        icon: icon_cor,
+                        title: 'Lyon'
+                    }).addTo(map).bindPopup('<a href="fp_1620_54-2.html">Lyon – 1620-10-16</a>');
+                
+                        L.marker([48.85666666666667, 2.352222222222222], {
+                            icon: icon_article,
+                            title: 'Paris'
+                        }).addTo(map).bindPopup('Paris');
+                        var latlngs = [
+                            [45.7675, 4.835],
+                            [48.85666666666667, 2.352222222222222]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([48.85666666666667, 2.352222222222222], {
+                        icon: icon_cor,
+                        title: 'Paris'
+                    }).addTo(map).bindPopup('<a href="fp_1620_54-3.html">Paris – 1620-10-12</a>');
+                
+                    L.marker([50.942222222222, 6.9577777777778], {
+                        icon: icon_cor,
+                        title: 'Köln'
+                    }).addTo(map).bindPopup('<a href="fp_1620_54-4.html">Köln – 1620-10-22</a>');
+                
+                        L.marker([53.55, 10.0], {
+                            icon: icon_article,
+                            title: 'Hamburg'
+                        }).addTo(map).bindPopup('Hamburg');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [53.55, 10.0]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([51.152777777778, 14.987222222222], {
+                        icon: icon_cor,
+                        title: 'Görlitz'
+                    }).addTo(map).bindPopup('<a href="fp_1620_54-5.html">Görlitz – 1620-10-16</a>');
+                
+                        L.marker([51.181388888889, 14.423888888889], {
+                            icon: icon_article,
+                            title: 'Bautzen'
+                        }).addTo(map).bindPopup('Bautzen');
+                        var latlngs = [
+                            [51.152777777778, 14.987222222222],
+                            [51.181388888889, 14.423888888889]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([51.414166666667, 13.446388888889], {
+                            icon: icon_article,
+                            title: 'Gröditz'
+                        }).addTo(map).bindPopup('Gröditz');
+                        var latlngs = [
+                            [51.152777777778, 14.987222222222],
+                            [51.414166666667, 13.446388888889]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([51.11, 17.0325], {
+                        icon: icon_cor,
+                        title: 'Breslau'
+                    }).addTo(map).bindPopup('<a href="fp_1620_54-6.html">Breslau – 1620-10-16</a>');
+                
+                    L.marker([51.181388888889, 14.423888888889], {
+                        icon: icon_cor,
+                        title: 'Bautzen'
+                    }).addTo(map).bindPopup('<a href="fp_1620_54-7.html">Bautzen – 1620-10-15</a>');
+                
+                    L.marker([48.144722222222, 17.112777777778], {
+                        icon: icon_cor,
+                        title: 'Bratislava'
+                    }).addTo(map).bindPopup('<a href="fp_1620_54-8.html">Bratislava – 1620-10-12</a>');
+                
+                    L.marker([49.742793661264, 13.594638741285], {
+                        icon: icon_cor,
+                        title: 'Rokycany'
+                    }).addTo(map).bindPopup('<a href="fp_1620_54-9.html">Rokycany – 1620-10-18</a>');
+                
+                    L.marker([50.0875, 14.421388888888888], {
+                        icon: icon_cor,
+                        title: 'Prag'
+                    }).addTo(map).bindPopup('<a href="fp_1620_54-10.html">Prag – 1620-10-19</a>');
+                
+                        L.marker([51.0493286, 13.7381437], {
+                            icon: icon_article,
+                            title: 'Dresden'
+                        }).addTo(map).bindPopup('Dresden');
+                        var latlngs = [
+                            [50.0875, 14.421388888888888],
+                            [51.0493286, 13.7381437]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([49.742793661264, 13.594638741285], {
+                            icon: icon_article,
+                            title: 'Rokycany'
+                        }).addTo(map).bindPopup('Rokycany');
+                        var latlngs = [
+                            [50.0875, 14.421388888888888],
+                            [49.742793661264, 13.594638741285]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([49.195277777778, 16.608333333333], {
+                            icon: icon_article,
+                            title: 'Brünn'
+                        }).addTo(map).bindPopup('Brünn');
+                        var latlngs = [
+                            [50.0875, 14.421388888888888],
+                            [49.195277777778, 16.608333333333]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);</script></section>
             </div>
             <div class="main-scroll-item">
                <section id="correspondence-list" class="main-content-item">

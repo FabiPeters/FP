@@ -22,10 +22,35 @@
          <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1616_22.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">22</span></a><a rel="next" href="fp_1616_24.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">24</span></a></nav>
       </nav>
       <main>
-         <div>fp_1616_23</div>
          <div class="main-scroll-container">
             <div class="main-scroll-item">
-               <section id="map"> map </section>
+               <section id="map">
+                  <div id="map-container"></div><script src="fp_map.js"></script><script>
+                    L.marker([52.08, 4.31], {
+                        icon: icon_cor,
+                        title: 'Den Haag'
+                    }).addTo(map).bindPopup('<a href="fp_1616_23-1.html">Den Haag – 1616-06-06</a>');
+                
+                    L.marker([50.942222222222, 6.9577777777778], {
+                        icon: icon_cor,
+                        title: 'Köln'
+                    }).addTo(map).bindPopup('<a href="fp_1616_23-2.html">Köln – 1616-06-16</a>');
+                
+                    L.marker([53.55, 10.0], {
+                        icon: icon_cor,
+                        title: 'Hamburg'
+                    }).addTo(map).bindPopup('<a href="fp_1616_23-3.html">Hamburg – 1616-06-04</a>');
+                
+                    L.marker([41.893055555556, 12.482777777778], {
+                        icon: icon_cor,
+                        title: 'Rom'
+                    }).addTo(map).bindPopup('<a href="fp_1616_23-4.html">Rom – 1616-05-28</a>');
+                
+                    L.marker([45.439722222222, 12.331944444444], {
+                        icon: icon_cor,
+                        title: 'Venedig'
+                    }).addTo(map).bindPopup('<a href="fp_1616_23-5.html">Venedig – 1616-06-03</a>');
+                </script></section>
             </div>
             <div class="main-scroll-item">
                <section id="correspondence-list" class="main-content-item">

@@ -22,10 +22,259 @@
          <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1620_3.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">3</span></a><a rel="next" href="fp_1620_6.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">6</span></a></nav>
       </nav>
       <main>
-         <div>fp_1620_4</div>
          <div class="main-scroll-container">
             <div class="main-scroll-item">
-               <section id="map"> map </section>
+               <section id="map">
+                  <div id="map-container"></div><script src="fp_map.js"></script><script>
+                    L.marker([41.893055555556, 12.482777777778], {
+                        icon: icon_cor,
+                        title: 'Rom'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-1.html">Rom – 1620-01-11</a>');
+                
+                        L.marker([44.493888888889, 11.342777777778], {
+                            icon: icon_article,
+                            title: 'Bologna'
+                        }).addTo(map).bindPopup('Bologna');
+                        var latlngs = [
+                            [41.893055555556, 12.482777777778],
+                            [44.493888888889, 11.342777777778]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([41.105555555556, 14.213888888889], {
+                            icon: icon_article,
+                            title: 'Capua'
+                        }).addTo(map).bindPopup('Capua');
+                        var latlngs = [
+                            [41.893055555556, 12.482777777778],
+                            [41.105555555556, 14.213888888889]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([40.83583333333333, 14.248611111111112], {
+                            icon: icon_article,
+                            title: 'Neapel'
+                        }).addTo(map).bindPopup('Neapel');
+                        var latlngs = [
+                            [41.893055555556, 12.482777777778],
+                            [40.83583333333333, 14.248611111111112]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([40.2, -3.5], {
+                            icon: icon_article,
+                            title: 'Spanien'
+                        }).addTo(map).bindPopup('Spanien');
+                        var latlngs = [
+                            [41.893055555556, 12.482777777778],
+                            [40.2, -3.5]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([45.439722222222, 12.331944444444], {
+                        icon: icon_cor,
+                        title: 'Venedig'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-2.html">Venedig – 1620-01-17</a>');
+                
+                        L.marker([45.466944444444, 9.19], {
+                            icon: icon_article,
+                            title: 'Mailand'
+                        }).addTo(map).bindPopup('Mailand');
+                        var latlngs = [
+                            [45.439722222222, 12.331944444444],
+                            [45.466944444444, 9.19]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([41.893055555556, 12.482777777778], {
+                            icon: icon_article,
+                            title: 'Rom'
+                        }).addTo(map).bindPopup('Rom');
+                        var latlngs = [
+                            [45.439722222222, 12.331944444444],
+                            [41.893055555556, 12.482777777778]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([40.2, -3.5], {
+                            icon: icon_article,
+                            title: 'Spanien'
+                        }).addTo(map).bindPopup('Spanien');
+                        var latlngs = [
+                            [45.439722222222, 12.331944444444],
+                            [40.2, -3.5]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([40.83, 14.25], {
+                            icon: icon_article,
+                            title: 'Königreich Neapel'
+                        }).addTo(map).bindPopup('Königreich Neapel');
+                        var latlngs = [
+                            [45.439722222222, 12.331944444444],
+                            [40.83, 14.25]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([45.466669444444, 9.1666694444444], {
+                            icon: icon_article,
+                            title: 'Herzogtum Mailand'
+                        }).addTo(map).bindPopup('Herzogtum Mailand');
+                        var latlngs = [
+                            [45.439722222222, 12.331944444444],
+                            [45.466669444444, 9.1666694444444]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([45.55, 11.55], {
+                            icon: icon_article,
+                            title: 'Vicenza'
+                        }).addTo(map).bindPopup('Vicenza');
+                        var latlngs = [
+                            [45.439722222222, 12.331944444444],
+                            [45.55, 11.55]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([45.672219444444, 12.242219444444], {
+                            icon: icon_article,
+                            title: 'Treviso'
+                        }).addTo(map).bindPopup('Treviso');
+                        var latlngs = [
+                            [45.439722222222, 12.331944444444],
+                            [45.672219444444, 12.242219444444]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([50.061388888889, 19.937222222222], {
+                        icon: icon_cor,
+                        title: 'Krakau'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-3.html">Krakau – 1620-01-01</a>');
+                
+                        L.marker([52.0, 19.0], {
+                            icon: icon_article,
+                            title: 'Polen'
+                        }).addTo(map).bindPopup('Polen');
+                        var latlngs = [
+                            [50.061388888889, 19.937222222222],
+                            [52.0, 19.0]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([47.0, 19.0], {
+                            icon: icon_article,
+                            title: 'Ungarn'
+                        }).addTo(map).bindPopup('Ungarn');
+                        var latlngs = [
+                            [50.061388888889, 19.937222222222],
+                            [47.0, 19.0]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([51.11, 17.0325], {
+                        icon: icon_cor,
+                        title: 'Breslau'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-4.html">Breslau – 1620-01-18</a>');
+                
+                        L.marker([51.10638889, 17.03055556], {
+                            icon: icon_article,
+                            title: 'St. Dorothea, Wenzel und Stanislaus'
+                        }).addTo(map).bindPopup('St. Dorothea, Wenzel und Stanislaus');
+                        var latlngs = [
+                            [51.11, 17.0325],
+                            [51.10638889, 17.03055556]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([48.208333333333336, 16.3725], {
+                        icon: icon_cor,
+                        title: 'Wien'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-5.html">Wien – 1620-01-18</a>');
+                
+                    L.marker([49.016666666666666, 12.083333333333334], {
+                        icon: icon_cor,
+                        title: 'Regensburg'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-6.html">Regensburg – 1620-01-14</a>');
+                
+                    L.marker([50.0875, 14.421388888888888], {
+                        icon: icon_cor,
+                        title: 'Prag'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-7.html">Prag – 1620-01-15</a>');
+                
+                        L.marker([48.30583333333333, 14.286388888888888], {
+                            icon: icon_article,
+                            title: 'Linz'
+                        }).addTo(map).bindPopup('Linz');
+                        var latlngs = [
+                            [50.0875, 14.421388888888888],
+                            [48.30583333333333, 14.286388888888888]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([48.208333333333336, 16.3725], {
+                        icon: icon_cor,
+                        title: 'Wien'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-8.html">Wien – 1620-01-15</a>');
+                
+                        L.marker([40.83583333333333, 14.248611111111112], {
+                            icon: icon_article,
+                            title: 'Neapel'
+                        }).addTo(map).bindPopup('Neapel');
+                        var latlngs = [
+                            [48.208333333333336, 16.3725],
+                            [40.83583333333333, 14.248611111111112]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([40.83583333333333, 14.248611111111112], {
+                            icon: icon_article,
+                            title: 'Neapel'
+                        }).addTo(map).bindPopup('Neapel');
+                        var latlngs = [
+                            [48.208333333333336, 16.3725],
+                            [40.83583333333333, 14.248611111111112]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([50.0875, 14.421388888888888], {
+                        icon: icon_cor,
+                        title: 'Prag'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-9.html">Prag – 1620-01-19</a>');
+                
+                    L.marker([52.08, 4.31], {
+                        icon: icon_cor,
+                        title: 'Den Haag'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-11.html">Den Haag – 1620-01-18</a>');
+                
+                        L.marker([51.507222222222, -0.1275], {
+                            icon: icon_article,
+                            title: 'London'
+                        }).addTo(map).bindPopup('London');
+                        var latlngs = [
+                            [52.08, 4.31],
+                            [51.507222222222, -0.1275]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([51.513888888889, 7.4652777777778], {
+                        icon: icon_cor,
+                        title: 'Dortmund'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-12.html">Dortmund – 1620-01-19</a>');
+                
+                    L.marker([50.942222222222, 6.9577777777778], {
+                        icon: icon_cor,
+                        title: 'Köln'
+                    }).addTo(map).bindPopup('<a href="fp_1620_4-13.html">Köln – 1620-01-24</a>');
+                
+                        L.marker([50.833333333333, 6.9], {
+                            icon: icon_article,
+                            title: 'Brühl'
+                        }).addTo(map).bindPopup('Brühl');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [50.833333333333, 6.9]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([50.776207, 6.083788], {
+                            icon: icon_article,
+                            title: 'Aachen'
+                        }).addTo(map).bindPopup('Aachen');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [50.776207, 6.083788]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([50.8031684, 6.4820806], {
+                            icon: icon_article,
+                            title: 'Düren'
+                        }).addTo(map).bindPopup('Düren');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [50.8031684, 6.4820806]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);</script></section>
             </div>
             <div class="main-scroll-item">
                <section id="correspondence-list" class="main-content-item">

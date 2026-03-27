@@ -22,10 +22,130 @@
          <nav class="horizontal-navigation prev-next-nav"><a rel="prev" href="fp_1620_50.html" class="nav-link prev-link"><span class="nav-label">←</span><span class="nav-title">50</span></a><a rel="next" href="fp_1620_52.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">52</span></a></nav>
       </nav>
       <main>
-         <div>fp_1620_51</div>
          <div class="main-scroll-container">
             <div class="main-scroll-item">
-               <section id="map"> map </section>
+               <section id="map">
+                  <div id="map-container"></div><script src="fp_map.js"></script><script>
+                    L.marker([40.41694444444445, -3.703333333333333], {
+                        icon: icon_cor,
+                        title: 'Madrid'
+                    }).addTo(map).bindPopup('<a href="fp_1620_51-1.html">Madrid – 1620-09-20</a>');
+                
+                    L.marker([52.36666666666667, 4.883333333333333], {
+                        icon: icon_cor,
+                        title: 'Amsterdam'
+                    }).addTo(map).bindPopup('<a href="fp_1620_51-2.html">Amsterdam – 1620-10-06</a>');
+                
+                        L.marker([51.5469, 3.5403], {
+                            icon: icon_article,
+                            title: 'Veere'
+                        }).addTo(map).bindPopup('Veere');
+                        var latlngs = [
+                            [52.36666666666667, 4.883333333333333],
+                            [51.5469, 3.5403]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([51.507222222222, -0.1275], {
+                            icon: icon_article,
+                            title: 'London'
+                        }).addTo(map).bindPopup('London');
+                        var latlngs = [
+                            [52.36666666666667, 4.883333333333333],
+                            [51.507222222222, -0.1275]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([45.439722222222, 12.331944444444], {
+                            icon: icon_article,
+                            title: 'Venedig'
+                        }).addTo(map).bindPopup('Venedig');
+                        var latlngs = [
+                            [52.36666666666667, 4.883333333333333],
+                            [45.439722222222, 12.331944444444]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([50.942222222222, 6.9577777777778], {
+                        icon: icon_cor,
+                        title: 'Köln'
+                    }).addTo(map).bindPopup('<a href="fp_1620_51-3.html">Köln – 1620-10-11</a>');
+                
+                        L.marker([50.84666666666666, 4.351666666666667], {
+                            icon: icon_article,
+                            title: 'Brüssel'
+                        }).addTo(map).bindPopup('Brüssel');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [50.84666666666666, 4.351666666666667]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([51.658611111111, 6.6177777777778], {
+                            icon: icon_article,
+                            title: 'Wesel'
+                        }).addTo(map).bindPopup('Wesel');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [51.658611111111, 6.6177777777778]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([50.942222222222, 6.9577777777778], {
+                        icon: icon_cor,
+                        title: 'Köln'
+                    }).addTo(map).bindPopup('<a href="fp_1620_51-4.html">Köln – 1620-10-12</a>');
+                
+                        L.marker([51.22111111111112, 4.399722222222223], {
+                            icon: icon_article,
+                            title: 'Antwerpen'
+                        }).addTo(map).bindPopup('Antwerpen');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [51.22111111111112, 4.399722222222223]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([50.84666666666666, 4.351666666666667], {
+                            icon: icon_article,
+                            title: 'Brüssel'
+                        }).addTo(map).bindPopup('Brüssel');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [50.84666666666666, 4.351666666666667]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([45.7675, 4.835], {
+                        icon: icon_cor,
+                        title: 'Lyon'
+                    }).addTo(map).bindPopup('<a href="fp_1620_51-5.html">Lyon – 1620-10-04</a>');
+                
+                        L.marker([44.586388888889, 5.1344444444444], {
+                            icon: icon_article,
+                            title: 'Bourdeaux'
+                        }).addTo(map).bindPopup('Bourdeaux');
+                        var latlngs = [
+                            [45.7675, 4.835],
+                            [44.586388888889, 5.1344444444444]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([48.85666666666667, 2.352222222222222], {
+                            icon: icon_article,
+                            title: 'Paris'
+                        }).addTo(map).bindPopup('Paris');
+                        var latlngs = [
+                            [45.7675, 4.835],
+                            [48.85666666666667, 2.352222222222222]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([45.439722222222, 12.331944444444], {
+                            icon: icon_article,
+                            title: 'Venedig'
+                        }).addTo(map).bindPopup('Venedig');
+                        var latlngs = [
+                            [45.7675, 4.835],
+                            [45.439722222222, 12.331944444444]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([47.37444444444444, 8.54111111111111], {
+                        icon: icon_cor,
+                        title: 'Zürich'
+                    }).addTo(map).bindPopup('<a href="fp_1620_51-6.html">Zürich – 1620-10-07</a>');
+                </script></section>
             </div>
             <div class="main-scroll-item">
                <section id="correspondence-list" class="main-content-item">

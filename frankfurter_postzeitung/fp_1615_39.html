@@ -22,10 +22,76 @@
          <nav class="horizontal-navigation prev-next-nav"><span class="nav-link prev-link nav-link-disabled"><span class="nav-label">←</span></span><a rel="next" href="fp_1615_42.html" class="nav-link next-link"><span class="nav-label">→</span><span class="nav-title">42</span></a></nav>
       </nav>
       <main>
-         <div>fp_1615_39</div>
          <div class="main-scroll-container">
             <div class="main-scroll-item">
-               <section id="map"> map </section>
+               <section id="map">
+                  <div id="map-container"></div><script src="fp_map.js"></script><script>
+                    L.marker([50.942222222222, 6.9577777777778], {
+                        icon: icon_cor,
+                        title: 'Köln'
+                    }).addTo(map).bindPopup('<a href="fp_1615_39-1.html">Köln – 1615-10-08</a>');
+                
+                        L.marker([48.85666666666667, 2.352222222222222], {
+                            icon: icon_article,
+                            title: 'Paris'
+                        }).addTo(map).bindPopup('Paris');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [48.85666666666667, 2.352222222222222]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([49.443055555556, 1.1025], {
+                            icon: icon_article,
+                            title: 'Rouen'
+                        }).addTo(map).bindPopup('Rouen');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [49.443055555556, 1.1025]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                        L.marker([40.41694444444445, -3.703333333333333], {
+                            icon: icon_article,
+                            title: 'Madrid'
+                        }).addTo(map).bindPopup('Madrid');
+                        var latlngs = [
+                            [50.942222222222, 6.9577777777778],
+                            [40.41694444444445, -3.703333333333333]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([51.11, 17.0325], {
+                        icon: icon_cor,
+                        title: 'Breslau'
+                    }).addTo(map).bindPopup('<a href="fp_1615_39-2.html">Breslau – 1615-09-20</a>');
+                
+                        L.marker([52.15, 9.95], {
+                            icon: icon_article,
+                            title: 'Hildesheim'
+                        }).addTo(map).bindPopup('Hildesheim');
+                        var latlngs = [
+                            [51.11, 17.0325],
+                            [52.15, 9.95]
+                        ];
+                        L.polyline(latlngs, {color: 'red'}).addTo(map);
+                    L.marker([52.269166666667, 10.521111111111], {
+                        icon: icon_cor,
+                        title: 'Braunschweig'
+                    }).addTo(map).bindPopup('<a href="fp_1615_39-3.html">Braunschweig – 1615-09-28</a>');
+                
+                    L.marker([52.1315889, 11.6399609], {
+                        icon: icon_cor,
+                        title: 'Magdeburg'
+                    }).addTo(map).bindPopup('<a href="fp_1615_39-4.html">Magdeburg – 1615-09-29</a>');
+                
+                    L.marker([50.0875, 14.421388888888888], {
+                        icon: icon_cor,
+                        title: 'Prag'
+                    }).addTo(map).bindPopup('<a href="fp_1615_39-5.html">Prag – 1615-10-02</a>');
+                
+                    L.marker([48.208333333333336, 16.3725], {
+                        icon: icon_cor,
+                        title: 'Wien'
+                    }).addTo(map).bindPopup('<a href="fp_1615_39-6.html">Wien – 1615-10-26</a>');
+                </script></section>
             </div>
             <div class="main-scroll-item">
                <section id="correspondence-list" class="main-content-item">
